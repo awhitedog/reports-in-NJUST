@@ -1,0 +1,29 @@
+\contentsline {section}{\numberline {1}正交相干检波器}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}实验目的}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}实验仪器}{1}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}实验原理}{1}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}实验步骤}{2}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}实验结果}{3}{subsection.1.5}
+\contentsline {subsubsection}{\numberline {1.5.1}波形记录}{3}{subsubsection.1.5.1}
+\contentsline {subsubsection}{\numberline {1.5.2}幅度平衡与相位平衡}{4}{subsubsection.1.5.2}
+\contentsline {subsubsection}{\numberline {1.5.3}中频本振幅相不平衡度}{6}{subsubsection.1.5.3}
+\contentsline {subsection}{\numberline {1.6}思考题解答}{6}{subsection.1.6}
+\contentsline {section}{\numberline {2}匹配滤波器}{8}{section.2}
+\contentsline {subsection}{\numberline {2.1}实验目的}{8}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}实验仪器}{8}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}实验原理}{8}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}实验步骤}{9}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}实验结果}{9}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}思考题解答}{12}{subsection.2.6}
+\contentsline {section}{\numberline {3}动目标检测及相参积累}{14}{section.3}
+\contentsline {subsection}{\numberline {3.1}实验目的}{14}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}实验仪器}{14}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}实验原理}{14}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}实验步骤}{16}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}实验结果}{16}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}思考题解答}{18}{subsection.3.6}
+\contentsline {section}{利用MATLAB复现数据波形}{19}{Item.35}
+\contentsline {subsection}{复现原理}{19}{section*.14}
+\contentsline {subsection}{MATLAB代码}{19}{section*.14}
+\contentsline {subsection}{部分复现数据与示波器图片对比}{19}{lstnumber.-1.16}
+\contentsfinish 
