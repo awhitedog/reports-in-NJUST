@@ -1,0 +1,19 @@
+\contentsline {section}{\numberline {1}设计内容简介}{3}{section.1}
+\contentsline {section}{\numberline {2}设计原理}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}脉冲发生电路}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}计时、显时电路}{5}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}清零电路}{5}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}校分电路}{6}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}报时电路}{6}{subsection.2.5}
+\contentsline {section}{\numberline {3}实验部分故障情况及排除方法}{7}{section.3}
+\contentsline {section}{\numberline {4}实验体会}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}针对电路连接的体会}{8}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}针对实验过程的体会}{9}{subsection.4.2}
+\contentsline {section}{附录}{9}{section*.2}
+\contentsline {subsection}{参考文献}{9}{section*.3}
+\contentsline {subsection}{电路总图}{9}{section*.4}
+\contentsline {subsection}{实验工具及元器件清单}{9}{section*.5}
+\contentsline {subsection}{芯片管脚排列图、逻辑图与功能表}{10}{section*.6}
+\contentsline {subsubsection}{管脚排布图}{10}{section*.7}
+\contentsline {subsubsection}{芯片逻辑图}{10}{section*.8}
+\contentsline {subsubsection}{逻辑功能表}{10}{section*.9}
