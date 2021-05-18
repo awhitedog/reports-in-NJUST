@@ -1,0 +1,25 @@
+\contentsline {section}{\numberline {0}引言}{3}{section.0}
+\contentsline {subsection}{\numberline {0.1}问题的背景}{3}{subsection.0.1}
+\contentsline {subsection}{\numberline {0.2}文献综述}{3}{subsection.0.2}
+\contentsline {subsection}{\numberline {0.3}需要解决的问题}{3}{subsection.0.3}
+\contentsline {section}{\numberline {1}裂相电路的建立}{4}{section.1}
+\contentsline {subsection}{\numberline {1.1}单向交流电源分裂为相位差为90\degree 的两相电源的裂相原理}{4}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}单向交流电源分裂为相位差为120\degree 的对称三相电源的裂相原理}{6}{subsection.1.2}
+\contentsline {section}{\numberline {2}二相裂相电路相关数据的测量}{9}{section.2}
+\contentsline {subsection}{\numberline {2.1}电压-负载特性的数据测量与曲线绘制}{9}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}电阻性负载的电压-负载特性}{9}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}容性负载的电压-负载特性}{11}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}感性负载的电压-负载特性}{15}{subsubsection.2.1.3}
+\contentsline {subsection}{\numberline {2.2}功率-负载特性的数据测量与曲线绘制}{15}{subsection.2.2}
+\contentsline {section}{\numberline {3}三相裂相电路相关数据的测量}{17}{section.3}
+\contentsline {subsection}{\numberline {3.1}电压-负载特性的数据测量与曲线绘制}{17}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}电阻性负载的电压-负载特性}{17}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}容性负载的电压-负载特性}{17}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}感性负载的电压-负载特性}{23}{subsubsection.3.1.3}
+\contentsline {subsection}{\numberline {3.2}功率-负载特性的数据测量与曲线绘制}{23}{subsection.3.2}
+\contentsline {section}{\numberline {4}结论}{25}{section.4}
+\contentsline {subsection}{\numberline {4.1}二相裂相电路实验结论}{25}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}三相裂相电路实验结论}{25}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}裂相电路的用途举例}{26}{subsection.4.3}
+\contentsline {section}{参考文献}{26}{subsection.4.3}
+\contentsfinish 
