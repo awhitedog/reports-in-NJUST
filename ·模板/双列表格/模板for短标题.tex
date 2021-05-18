@@ -1,0 +1,140 @@
+\documentclass[12pt]{article}
+
+\usepackage[UTF8]{ctex}
+\usepackage{appendix}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{array}
+\usepackage{bigstrut}
+\usepackage{geometry}
+\usepackage{times}
+\usepackage{floatrow}
+\floatsetup[table]{capposition=top}
+\geometry{left =2.5 cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\usepackage{multirow}
+\usepackage{lastpage}
+\usepackage{longtable}
+\usepackage{listings}
+ \usepackage{color}
+  \usepackage{xcolor}
+  \lstset{
+  language=Matlab,  %代码语言使用的是matlab
+  rulesepcolor=\color{red!20!green!20!blue!20},%代码块边框为淡青色
+  keywordstyle=\color{blue!90}\bfseries, %代码关键字的颜色为蓝色，粗体
+    numbers=left, % 显示行号
+    numberstyle=\tiny,    % 行号字体
+   commentstyle=\color[RGB]{0,130,0},    % 设置代码注释的颜色
+  showstringspaces=false,%不显示代码字符串中间的空格标记
+  stringstyle=\ttfamily, % 代码字符串的特殊格式
+  breaklines=true, %对过长的代码自动换行
+  extendedchars=false,  %解决代码跨页时，章节标题，页眉等汉字不显示的问题
+  escapeinside=``,      % 代码中出现中文必须加上，否则报错
+  texcl=true,}
+\usepackage[section]{placeins}
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\titleformat{\section}{\centering\heiti\zihao{3}}{\thesection}{0.3em}{}
+\titleformat{\subsection}{\heiti \fontsize{12pt}{0}}{\thesubsection}{0.3em}{}
+\renewcommand\figurename{\heiti\zihao{5} 图}
+\renewcommand\tablename{\heiti\zihao{5} 表}
+\renewcommand {\thetable} {\thesection{}.\arabic{table}}
+\renewcommand {\thefigure} {\thesection{}.\arabic{figure}}
+\date{}
+\geometry{a4paper,scale=0.8}
+
+\begin{document}%文档从这里开始。
+
+\numberwithin{footnote}{section}
+\renewcommand{\contentsname}{\centering 目录}
+\renewcommand{\tablename}{表}
+\renewcommand{\figurename}{图}
+\renewcommand\refname{参考文献}
+\renewcommand\appendix{\setcounter{secnumdepth}{0}}
+\renewcommand\abstractname{摘要}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=.6\textwidth]{logo}
+\end{figure}
+\thispagestyle{empty}
+\begin{center}
+\begin{songti}
+\zihao{0}\textbf{高频电子线路综合实验}\\
+\zihao{0}\textbf{实验报告}\\\ \\\
+\zihao{3}
+\\ \
+\renewcommand\arraystretch{1.5}
+\begin{tabular}{p{1.7cm}<{\centering}p{0.2cm}<{\centering}p{3.6cm}<{\centering}p{1.7cm}<{\centering}p{0.2cm}<{\centering}p{3.5cm}<{\centering}}
+作\ \ 者&\textbf{:}&许晓明&学\  \ 号&\textbf{:}&9161040G0734\\\cline{3-3}\cline{6-6}
+学\  \ 院&\textbf{:}&\multicolumn{4}{c}{电光学院}\\\cline{3-6}
+专\ \ 业&\textbf{:}&\multicolumn{4}{c}{电子信息工程}\\\cline{3-6}
+班\ \ 级&\textbf{:}&\multicolumn{4}{c}{电信3班}\\\cline{3-6}
+题 \ \ 目&\textbf{:}&\multicolumn{4}{c}{EDA设计(II)：}\\\cline{3-6}
+&&\multicolumn{4}{c}{多功能数字钟设计}\\\cline{3-6}
+指导者&\textbf{:}&\multicolumn{4}{c}{***}\\\cline{3-6}
+\end{tabular}
+\end{songti}
+\end{center}
+\begin{table}[b]
+  \centering
+\number\year\ 年\ \number\month月
+\end{table}
+
+\begin{center}
+\newpage
+%\raggedright
+\zihao{4}
+\newpage
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+\setcounter{page}{1}
+
+\end{center}
+
+\setcounter{page}{1}
+\begin{table}
+  \centering
+  \begin{tabular}{|c|c|}
+    \hline
+    % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+    1 & 2 \\
+    3 & 1 \\
+    \hline
+  \end{tabular}
+  \caption{}\label{123}
+\end{table}
+\section{设计要求说明}
+\setcounter{equation}{0}
+\autoref{123}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+\verb|\begin{document}|
+2
+3 \begin{verbatim}
+4 在这个环境中所有的命令都不起作用。\end{document}
+5 \end{verbatim}
+
+
+\begin{table}[htp]
+\floatsetup{floatrowsep=qquad,captionskip=5pt} \tabcolsep=9pt
+\begin{floatrow}
+\ttabbox{\caption{各种无线}}{%
+\begin{tabular}{|c|c|c|}\hline
+规范 & 频率 & 速率 \\\hline
+802.11 & 2.4GHz & 2Mbps \\\hline
+802.11a & 5GHz & 54Mbps \\\hline
+802.11b & 2.4GHz & 11Mbps \\\hline
+\end{tabular}}
+\ttabbox{\caption{网络数据比较}}{%
+\begin{tabular}{|c|c|c|c|}\hline
+~ & 802.11b & 蓝牙 & HomeRF \\\hline
+频率 & 2.4GHZ & 2.4GHZ & 2.4GHZ \\\hline
+范围 & 100M & 10M & 50M \\\hline
+\end{tabular}}
+\end{floatrow}
+\end{table}
+\rule{\textwidth}{1pt}
+\end{document}
