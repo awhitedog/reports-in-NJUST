@@ -1,0 +1,19 @@
+\contentsline {section}{\numberline {1}设计目的}{1}{section.1}
+\contentsline {section}{\numberline {2}实验仪器}{1}{section.2}
+\contentsline {section}{\numberline {3}实验原理}{1}{section.3}
+\contentsline {subsection}{\numberline {3.1}雷达工作原理}{1}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}线性调频脉冲信号(LFM)}{2}{subsection.3.2}
+\contentsline {section}{\numberline {4}实验参数要求}{2}{section.4}
+\contentsline {section}{\numberline {5}系统参数理论计算}{2}{section.5}
+\contentsline {section}{\numberline {6}系统仿真与示波器波形}{4}{section.6}
+\contentsline {subsection}{\numberline {6.1}单目标情况}{4}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}中频信号}{4}{subsubsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.2}基带信号}{4}{subsubsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.3}脉压信号}{4}{subsubsection.6.1.3}
+\contentsline {subsection}{\numberline {6.2}双目标情况}{6}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}距离分辨率}{6}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}速度分辨率}{6}{subsubsection.6.2.2}
+\contentsline {section}{\numberline {7}MATLAB仿真}{7}{section.7}
+\contentsline {section}{\numberline {8}实验感想与体会}{9}{section.8}
+\contentsline {section}{\numberline {9}附录:matlab代码}{9}{section.9}
+\contentsfinish 

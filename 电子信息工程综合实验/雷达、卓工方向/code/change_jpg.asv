@@ -1,0 +1,7 @@
+
+path='E:\baogao\电子信息工程综合实验\latex\picture\pre\';
+name='TIM20190915225432';
+aa=imread([path,name,'.png']);
+cc = imcrop(aa,[1000 100 1000 1000]);
+figure;
+imshow(cc)
