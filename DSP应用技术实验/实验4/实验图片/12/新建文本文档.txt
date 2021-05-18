@@ -1,0 +1,5 @@
+   int parameter_int=0;
+   long int parameter_long_int=0x51A04F80;
+   unsigned int parameter_unsigened_int=0;
+
+parameter_unsigened_int=   (parameter_long_int>>16)+0x8000;
