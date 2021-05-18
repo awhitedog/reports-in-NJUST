@@ -1,0 +1,30 @@
+clc;
+clear;
+close all;
+N=1024;
+fs=300;
+%hz
+Ts=1/fs;
+n=0:N-1;
+fp=n/N*fs;
+[FileName,PathName] = uigetfile('USB.dat','Select the USB.dat file');
+f = fullfile(PathName,filesep,FileName);
+fid = fopen(f,'r');
+data = fscanf(fid,'%x');
+fclose(fid);
+data = data(1:2:end)*256 + data(2:2:end);%进制转换
+data_2=data;
+figure(1)
+plot(data_2);
+grid on;%axis([0,500,-inf,inf]);
+axis tight;
+%************均值滤波
+data_3=data;
+for i=1+1:1:1024-1
+    sum=data(i)+data(i-1)+data(i+1);
+    data_3(i)=sum/3;
+end
+figure(1)
+plot(data_3);
+grid on;%axis([0,500,-inf,inf]);
+axis tight;

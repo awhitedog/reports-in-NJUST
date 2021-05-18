@@ -1,0 +1,86 @@
+[Version]
+Signature="$CHICAGO$"
+Class=USB
+provider=%Wintech%
+DriverVer=11/28/2002,1.0
+LayoutFile=layout.inf
+
+[Manufacturer]
+%Wintech%=Wintech
+
+[Wintech]
+%USB\VID_1105&PID_e001.DeviceDesc%=WINTECHDEV.Dev,USB\VID_1105&PID_e001
+%USB\VID_1105&PID_f001.DeviceDesc%=WINTECH.Dev, USB\VID_1105&PID_f001
+
+[PreCopySection]
+HKR,,NoSetupUI,,1
+
+[DestinationDirs]
+Files.Ext = 10,System32\Drivers
+Files.Inf = 10,INF
+
+[WINTECH.Dev]
+CopyFiles=Files.Ext, Files.Inf
+AddReg=WINTECH.AddReg
+
+[WINTECH.Dev.NT]
+; copyfiles commented out for Win2K to avoid user intervention during install
+CopyFiles=Files.Ext, Files.Inf
+AddReg=WINTECH.AddReg
+
+[WINTECH.Dev.NT.Services]
+Addservice = WINTECH, 0x00000002, WINTECH.AddService
+
+[WINTECH.AddService]
+DisplayName    = %WINTECH.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\wtusb510.sys
+LoadOrderGroup = Base
+
+[WINTECH.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,wtusb510.sys
+
+[Files.Ext]
+wtusb510.sys
+wtusb2fw.sys
+
+[Files.Inf]
+wtusb510.Inf
+
+[WINTECHDEV.Dev]
+CopyFiles=Files.Ext, Files.Inf
+AddReg=WINTECHDEV.AddReg
+
+[WINTECHDEV.Dev.NT]
+; copyfiles commented out for Win2K to avoid user intervention during install
+CopyFiles=Files.Ext, Files.Inf
+AddReg=WINTECHDEV.AddReg
+
+[WINTECHDEV.Dev.NT.Services]
+Addservice = upload, 0x00000002, WINTECHDEV.AddService
+
+[WINTECHDEV.AddService]
+DisplayName    = %WINTECHDEV.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\wtusb2fw.sys
+LoadOrderGroup = Base
+
+[WINTECHDEV.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,wtusb2fw.sys
+
+
+;---------------------------------------------------------------;
+
+[Strings]
+Wintech="WintechDigatal"
+
+USB\VID_1105&PID_f001.DeviceDesc="WintechDigital TDS510-USB2.0"
+USB\VID_1105&PID_e001.DeviceDesc="WintechDigital TDS510-USB2.0(uploading)"
+WINTECH.SvcDesc="WintechDigital TDS510-USB2.0"
+WINTECHDEV.SvcDesc="WintechDigital TDS510-USB2.0(uploading)"

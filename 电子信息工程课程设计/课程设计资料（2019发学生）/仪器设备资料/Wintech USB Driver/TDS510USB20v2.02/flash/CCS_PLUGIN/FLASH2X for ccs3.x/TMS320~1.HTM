@@ -1,0 +1,754 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0134)https://www-a.ti.com/downloads/sds_support/C2000-3.1-SA-to-UA-TI-FLASH2XX/TMS320C2000_CCStudio_Flash_Plug-in_v1_11_5_Release_Notes.htm -->
+<HTML xmlns="http://www.w3.org/TR/REC-html40" xmlns:v = 
+"urn:schemas-microsoft-com:vml" xmlns:o = 
+"urn:schemas-microsoft-com:office:office" xmlns:w = 
+"urn:schemas-microsoft-com:office:word" xmlns:x = 
+"urn:schemas-microsoft-com:office:excel"><HEAD><TITLE>TMS320C2000 CCStudio ™ Flash Plug-in v1.10 Release Notes</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content=Word.Document name=ProgId>
+<META content="MSHTML 6.00.2900.2722" name=GENERATOR>
+<META content="Microsoft Word 11" name=Originator><LINK 
+href="TMS320C2000%20CCStudio%20™%20Flash%20Plug-in%20v1_11_5%20Release%20Notes_files/filelist.xml" 
+rel=File-List><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Jonathan Dzoba</o:Author>
+  <o:LastAuthor>TI User</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>443</o:TotalTime>
+  <o:Created>2005-06-17T17:15:00Z</o:Created>
+  <o:LastSaved>2005-06-17T17:15:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1479</o:Words>
+  <o:Characters>8491</o:Characters>
+  <o:Company>TEXAS INSTRUMENTS INC</o:Company>
+  <o:Lines>303</o:Lines>
+  <o:Paragraphs>155</o:Paragraphs>
+  <o:CharactersWithSpaces>9815</o:CharactersWithSpaces>
+  <o:Version>11.6408</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Normal</w:View>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<STYLE>@font-face {
+	font-family: MS Sans Serif;
+}
+@page Section1 {size: 8.5in 11.0in; margin: 1.0in 1.25in 1.0in 1.25in; mso-header-margin: .5in; mso-footer-margin: .5in; mso-paper-source: 0; }
+P.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Times New Roman"; mso-style-parent: ""; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+LI.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Times New Roman"; mso-style-parent: ""; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+DIV.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Times New Roman"; mso-style-parent: ""; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 18pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; FONT-FAMILY: "Times New Roman"; mso-pagination: widow-orphan; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-outline-level: 2
+}
+P {
+	FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; FONT-FAMILY: "Times New Roman"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto
+}
+PRE {
+	FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; COLOR: black; FONT-FAMILY: "Courier New"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt
+}
+SPAN.SpellE {
+	mso-style-name: ""; mso-spl-e: yes
+}
+SPAN.GramE {
+	mso-style-name: ""; mso-gram-e: yes
+}
+DIV.Section1 {
+	page: Section1
+}
+OL {
+	MARGIN-BOTTOM: 0in
+}
+UL {
+	MARGIN-BOTTOM: 0in
+}
+</STYLE>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><HEADER><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="11266"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]--></HEAD>
+<BODY lang=EN-US style="tab-interval: .5in" bgColor=white>
+<DIV class=Section1>
+<P style="TEXT-ALIGN: center" align=center><B><SPAN 
+style="FONT-SIZE: 18pt; FONT-FAMILY: Arial">TMS320C2000 Code Composer Studio™ 
+Flash Plug-in v1.11.5 Release Notes </SPAN></B><SPAN 
+style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><o:p></o:p></SPAN></P>
+<P><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">These TMS320C2000 Code 
+Composer Studio Flash Plug-in v1.11.5 release notes contain valuable information 
+which may not be included in other product documentation. This information will 
+assist you in the use of Code Composer Studio.<o:p></o:p></SPAN></P>
+<P><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">To keep up-to-date on 
+specific items in this list or for newly published errata, visit <SPAN 
+class=SpellE><I>www.ti.com/edsperrata</I></SPAN>. Use the unique identifier 
+(<SPAN class=SpellE>SDSsq</SPAN> number) to find what you are looking for. If 
+you wish to track the resolution or changes to the status of any item found on 
+this page, simply add it to your profile using the <SPAN 
+class=SpellE>myWorkspace</SPAN> feature on <SPAN class=SpellE>TIs</SPAN> website 
+and you will automatically receive email notifications when changes 
+occur.<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 7.5pt; FONT-FAMILY: Arial">Windows, 
+Windows 98, Windows ME, Windows XP, Visual SourceSafe, Visual Basic, and Visual 
+C++ are all trademarks and/or registered trademarks of Microsoft Corporation. 
+<o:p></o:p></SPAN></P>
+<P><SPAN class=SpellE><SPAN 
+style="FONT-SIZE: 7.5pt; FONT-FAMILY: Arial">InstallShield</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 7.5pt; FONT-FAMILY: Arial"> and <SPAN 
+class=SpellE>DemoShield</SPAN> are registered trademarks and service marks of 
+<SPAN class=SpellE>InstallShield</SPAN> Software Corporation. 
+<o:p></o:p></SPAN></P>
+<P style="MARGIN-BOTTOM: 12pt"><SPAN 
+style="FONT-SIZE: 7.5pt; FONT-FAMILY: Arial">C2000, TMS320, TMS470, Code 
+Composer Studio, DSP/BIOS, <SPAN class=SpellE>eXpressDSP</SPAN>, XDS560, and 
+XDS510 are trademarks of Texas Instruments. </SPAN><A 
+name=General-Info-plugins></A><SPAN 
+style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><o:p></o:p></SPAN></P>
+<H2>Information about this update<SPAN 
+style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></H2>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt">This update installs both the 
+F24xx Flash Plug-In and the F28xx Flash Plug-In. It is equivalent to the v1.11.0 
+release with added support for the target connect/disconnect feature which 
+exists in <SPAN class=SpellE>CCStudio</SPAN> 3.1 and newer. Note that this 
+product will only work for <SPAN class=SpellE>CCStudio</SPAN> 3.1 and 
+newer.<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt">The remainder of this release 
+notes is equivalent to that in v1.11.0.<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt">There is only minor bug fix to 
+the F24xx Flash Plug-In in this update. The update for the F28xx Flash Plug-In 
+supplies the user with a new Flash28xx.ocx plug in file.<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">The new Flash28xx.ocx plug in has the following feature 
+changes and bug fixes.<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><B 
+style="mso-bidi-font-weight: normal"><SPAN 
+style="FONT-SIZE: 18pt; FONT-FAMILY: Arial">New 
+Features<o:p></o:p></SPAN></B></P>
+<UL style="MARGIN-TOP: 0in" type=disc>
+  <LI class=MsoNormal 
+  style="tab-stops: list .5in; mso-layout-grid-align: none; mso-list: l1 level1 lfo3"><SPAN 
+  style="FONT-SIZE: 10pt">The following devices are now supported F2801, F2806 
+  and F2808<o:p></o:p></SPAN> 
+  <LI class=MsoNormal 
+  style="tab-stops: list .5in; mso-layout-grid-align: none; mso-list: l1 level1 lfo3"><SPAN 
+  style="FONT-SIZE: 10pt">The Flash Plug-In now automatically detects the device 
+  type. If the type is one of F2801, F2806 or F2808 then the correct device is 
+  automatically selected. If the type is one of F281x then the type is defaulted 
+  to F2812<o:p></o:p></SPAN> 
+  <LI class=MsoNormal 
+  style="tab-stops: list .5in; mso-layout-grid-align: none; mso-list: l1 level1 lfo3"><SPAN 
+  style="FONT-SIZE: 10pt">The Depletion Recovery feature has been added for 
+  F2801, F2806 and F2808 devices only. This looks for sectors that are in 
+  depletion and attempts to recover them.<o:p></o:p></SPAN> 
+  <LI class=MsoNormal 
+  style="tab-stops: list .5in; mso-layout-grid-align: none; mso-list: l1 level1 lfo3"><SPAN 
+  style="FONT-SIZE: 10pt">The Flash API Interface File field no longer has a 
+  default. When a File is selected, the plug-in will maintain this selection 
+  until the Device Type is changed at which point the file field will be 
+  blanked.<o:p></o:p></SPAN> </LI></UL>
+<H2><SPAN style="FONT-FAMILY: Arial">Fixed Problems<o:p></o:p></SPAN></H2>
+<TABLE class=MsoNormalTable 
+style="WIDTH: 100%; mso-cellspacing: 0in; mso-padding-alt: 0in 0in 0in 0in" 
+cellSpacing=0 borderColorDark=#c0c0c0 cellPadding=0 width="100%" 
+borderColorLight=#c0c0c0 border=1>
+  <TBODY>
+  <TR style="mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; BACKGROUND: #e4e4e4; PADDING-BOTTOM: 0in; WIDTH: 10%; PADDING-TOP: 0in" 
+    width="10%">
+      <P style="MARGIN-LEFT: 7.5pt; TEXT-ALIGN: center" align=center><B><SPAN 
+      style="FONT-FAMILY: 'MS Sans Serif'"><JJV>Identifier</SPAN></B><B><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'"><o:p></o:p></SPAN></B></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; BACKGROUND: #e4e4e4; PADDING-BOTTOM: 0in; WIDTH: 60.02%; PADDING-TOP: 0in" 
+    width="60%">
+      <P style="MARGIN-LEFT: 7.5pt; TEXT-ALIGN: center" align=center><B><SPAN 
+      style="FONT-FAMILY: 'MS Sans Serif'">Headline</SPAN></B><B><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'"><o:p></o:p></SPAN></B></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; BACKGROUND: #e4e4e4; PADDING-BOTTOM: 0in; WIDTH: 20%; PADDING-TOP: 0in" 
+    width="20%">
+      <P style="MARGIN-LEFT: 7.5pt; TEXT-ALIGN: center" align=center><B><SPAN 
+      style="FONT-FAMILY: 'MS Sans Serif'">Component</SPAN></B><B><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'"><o:p></o:p></SPAN></B></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; BACKGROUND: #e4e4e4; PADDING-BOTTOM: 0in; WIDTH: 9.98%; PADDING-TOP: 0in" 
+    width="9%">
+      <P style="MARGIN-LEFT: 0.75pt; TEXT-ALIGN: center" align=center><B><SPAN 
+      style="FONT-FAMILY: 'MS Sans Serif'">Target</SPAN></B><B><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'"><o:p></o:p></SPAN></B></P></TD></TR>
+  <TR style="mso-yfti-irow: 1">
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN 
+      style="FONT-SIZE: 8pt">SDSsq35371<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN style="FONT-SIZE: 8pt">Flash <SPAN 
+      class=SpellE>plugin</SPAN> assumes path of d:\ti for clear, erase, program 
+      algorithms<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN style="FONT-SIZE: 8pt">C2000 On-chip 
+      Flash Programmer<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN 
+      style="FONT-SIZE: 8pt">C2400<o:p></o:p></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 2">
+    <TD 
+    style="PADDING-RIGHT: 23.75pt; PADDING-LEFT: 23.75pt; PADDING-BOTTOM: 0.1in; PADDING-TOP: 0.1in" 
+    colSpan=4><PRE><SPAN style="FONT-SIZE: 8pt; FONT-FAMILY: 'Times New Roman'">If the default Clock Configuration in the On-Chip Flash Programmer <SPAN class=SpellE>plugin</SPAN> v1.10 for C2000 CCS 2.21 is changed, then when the clear, erase, program algorithms are recompiled, CCS assumes an install path of d:\ti. Since this may not be the correct install path, there will be build errors. The user needs to edit the path in the .<SPAN class=SpellE>pjt</SPAN> files before the projects can compile successfully.<o:p></o:p></SPAN></PRE></TD></TR>
+  <TR style="mso-yfti-irow: 3">
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P 
+      style="MARGIN-LEFT: 7.5pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><SPAN 
+      style="FONT-SIZE: 8pt">SDSsq34046<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P 
+      style="MARGIN-LEFT: 7.5pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><SPAN 
+      style="FONT-SIZE: 8pt">Breakpoints in user code will prevent flash 
+      programming.<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P 
+      style="MARGIN-LEFT: 7.5pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><SPAN 
+      style="FONT-SIZE: 8pt">C2000 On-chip Flash 
+    Programmer<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P 
+      style="MARGIN-LEFT: 7.5pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><SPAN 
+      style="FONT-SIZE: 8pt">C2800<o:p></o:p></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 4">
+    <TD 
+    style="PADDING-RIGHT: 23.75pt; PADDING-LEFT: 23.75pt; PADDING-BOTTOM: 0.1in; PADDING-TOP: 0.1in" 
+    colSpan=4>
+      <P class=MsoNormal 
+      style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><SPAN 
+      style="FONT-SIZE: 8pt; COLOR: black">If you have breakpoints set in your 
+      code, you must disable all breakpoints before clicking the Execute Flash 
+      button. Failure to do so will result in a warning that your source line 
+      breakpoints could not be removed. The Flash API code will be loaded, but 
+      will not be executed because of this error.<o:p></o:p></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 5">
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P 
+      style="MARGIN-LEFT: 7.5pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><SPAN 
+      style="FONT-SIZE: 8pt">SDSsq39603<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P 
+      style="MARGIN-LEFT: 7.5pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><SPAN 
+      style="FONT-SIZE: 8pt">Flash <SPAN class=SpellE>plugin</SPAN> cannot 
+      erase/program if breakpoints are set in CCS<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P 
+      style="MARGIN-LEFT: 7.5pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><SPAN 
+      style="FONT-SIZE: 8pt">C2000 On-chip Flash 
+    Programmer<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P 
+      style="MARGIN-LEFT: 7.5pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><SPAN 
+      style="FONT-SIZE: 8pt">C2800<o:p></o:p></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 6">
+    <TD 
+    style="PADDING-RIGHT: 23.75pt; PADDING-LEFT: 23.75pt; PADDING-BOTTOM: 0.1in; PADDING-TOP: 0.1in" 
+    colSpan=4><PRE><SPAN style="FONT-SIZE: 8pt; FONT-FAMILY: 'Times New Roman'">The F28xx Flash Programmer <SPAN class=SpellE>plugin</SPAN> in CCS cannot erase/program into Flash if the existing code in Flash has breakpoints set.<o:p></o:p></SPAN></PRE></TD></TR>
+  <TR style="mso-yfti-irow: 7">
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P 
+      style="MARGIN-LEFT: 7.5pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><SPAN 
+      style="FONT-SIZE: 8pt">SDSsq39111<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P 
+      style="MARGIN-LEFT: 7.5pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><SPAN 
+      style="FONT-SIZE: 8pt">Saving and restoring a Flash <SPAN 
+      class=SpellE>plugin</SPAN> workspace does not preserve 
+      settings<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P 
+      style="MARGIN-LEFT: 7.5pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><SPAN 
+      style="FONT-SIZE: 8pt">C2000 On-chip Flash 
+    Programmer<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P 
+      style="MARGIN-LEFT: 7.5pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><SPAN 
+      style="FONT-SIZE: 8pt">C2800<o:p></o:p></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 8; mso-yfti-lastrow: yes">
+    <TD 
+    style="PADDING-RIGHT: 23.75pt; PADDING-LEFT: 23.75pt; PADDING-BOTTOM: 0.1in; PADDING-TOP: 0.1in" 
+    colSpan=4><PRE><SPAN style="FONT-SIZE: 8pt; FONT-FAMILY: 'Times New Roman'">The frequency test settings in the C2000 On-chip Flash Programmer <SPAN class=SpellE>plugin</SPAN> are not correctly saved and restored as workspaces.<o:p></o:p></SPAN></PRE></TD></TR></TBODY></TABLE>
+<H2><SPAN style="FONT-FAMILY: Arial">Known Problems<o:p></o:p></SPAN></H2>
+<TABLE class=MsoNormalTable 
+style="WIDTH: 100%; mso-cellspacing: 0in; mso-padding-alt: 0in 0in 0in 0in" 
+cellSpacing=0 borderColorDark=#c0c0c0 cellPadding=0 width="100%" 
+borderColorLight=#c0c0c0 border=1>
+  <TBODY>
+  <TR style="mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; BACKGROUND: #e4e4e4; PADDING-BOTTOM: 0in; WIDTH: 10%; PADDING-TOP: 0in" 
+    width="10%">
+      <P style="MARGIN-LEFT: 7.5pt; TEXT-ALIGN: center" align=center><B><SPAN 
+      style="FONT-FAMILY: 'MS Sans Serif'"><JJV>Identifier</SPAN></B><B><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'"><o:p></o:p></SPAN></B></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; BACKGROUND: #e4e4e4; PADDING-BOTTOM: 0in; WIDTH: 60.02%; PADDING-TOP: 0in" 
+    width="60%">
+      <P style="MARGIN-LEFT: 7.5pt; TEXT-ALIGN: center" align=center><B><SPAN 
+      style="FONT-FAMILY: 'MS Sans Serif'">Headline</SPAN></B><B><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'"><o:p></o:p></SPAN></B></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; BACKGROUND: #e4e4e4; PADDING-BOTTOM: 0in; WIDTH: 20%; PADDING-TOP: 0in" 
+    width="20%">
+      <P style="MARGIN-LEFT: 7.5pt; TEXT-ALIGN: center" align=center><B><SPAN 
+      style="FONT-FAMILY: 'MS Sans Serif'">Component</SPAN></B><B><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'"><o:p></o:p></SPAN></B></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; BACKGROUND: #e4e4e4; PADDING-BOTTOM: 0in; WIDTH: 9.98%; PADDING-TOP: 0in" 
+    width="9%">
+      <P style="MARGIN-LEFT: 0.75pt; TEXT-ALIGN: center" align=center><B><SPAN 
+      style="FONT-FAMILY: 'MS Sans Serif'">Target</SPAN></B><B><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'"><o:p></o:p></SPAN></B></P></TD></TR>
+  <TR style="mso-yfti-irow: 1">
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">SDSsq33887<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">CCS On-Chip Flash 
+      plug-in for LF240xA does not work on Windows 98<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">C2000 On-chip Flash 
+      Programmer<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">C2400<o:p></o:p></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 2">
+    <TD 
+    style="PADDING-RIGHT: 23.75pt; PADDING-LEFT: 23.75pt; PADDING-BOTTOM: 0.1in; PADDING-TOP: 0.1in" 
+    colSpan=4>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">The F24xx Flash 
+      Plug-In does not work on a Windows 98 platform. 
+  <o:p></o:p></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 3">
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">SDSsq34047<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">Placement of 
+      initialized data sections (like .const)<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">C2000 On-chip Flash 
+      Programmer<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">C2400<o:p></o:p></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 4">
+    <TD 
+    style="PADDING-RIGHT: 23.75pt; PADDING-LEFT: 23.75pt; PADDING-BOTTOM: 0.1in; PADDING-TOP: 0.1in" 
+    colSpan=4>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">Initialized data 
+      sections (like .const) need to be placed in flash program space in order 
+      to be initialized correctly. The F24xx flash programmer is not responsible 
+      for initializing data space.&nbsp; Refer to section 6.1.3 Allocating 
+      .const to Program Memory on page 6-5 of the TMS320C2x/C2xx/C5x Optimizing 
+      C Compiler User's Guide (SPRU024E) for details.&nbsp; This manual is 
+      located <SPAN class=GramE>in ..</SPAN>\docs\<SPAN class=SpellE>pdf</SPAN> 
+      directory under your Code Composer installation directory. F24xx Flash 
+      Plug-in. <o:p></o:p></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 5">
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">SDSsq34229<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">F24xx flash <SPAN 
+      class=SpellE>plugin</SPAN> crashes when <SPAN 
+      class=SpellE>overinstalling</SPAN> the newer flash <SPAN 
+      class=SpellE>plugin</SPAN><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">C2000 On-chip Flash 
+      Programmer<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">All<o:p></o:p></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 6">
+    <TD 
+    style="PADDING-RIGHT: 23.75pt; PADDING-LEFT: 23.75pt; PADDING-BOTTOM: 0.1in; PADDING-TOP: 0.1in" 
+    colSpan=4>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">Installing the 
+      TMS320C2000 Code Composer Studio FLASH Plug-In v1.11 Flash plug-in patch 
+      over an existing flash plug-in installation results in initial failures of 
+      the F24x Flash plug-in v1.11. <BR><BR><B>Workaround<SPAN 
+      class=GramE>:</SPAN></B><BR>If you have previously installed the 
+      TMS320C2000 Code Composer Studio FLASH Plug-In patch, you must uninstall 
+      it prior to installing the v1.11 update. <o:p></o:p></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 7">
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><A name=Known-Info-plugins></A><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">SDSsq34222<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">"Execution" displays 
+      confusing pop-up.<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">C2000 On-chip Flash 
+      Programmer<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">C2800<o:p></o:p></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 8">
+    <TD 
+    style="PADDING-RIGHT: 23.75pt; PADDING-LEFT: 23.75pt; PADDING-BOTTOM: 0.1in; PADDING-TOP: 0.1in" 
+    colSpan=4>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">After hitting the 
+      "Execute Operation" button, a message appears asking the user to locate 
+      the file "<SPAN class=SpellE>FlashAPIInterface.c</SPAN>".<SPAN 
+      style="mso-spacerun: yes">&nbsp; </SPAN>Note that this problem has been 
+      fixed for CCS 3.1.<BR><BR><B>Workaround<SPAN 
+      class=GramE>:</SPAN></B><BR>The workaround for this problem is for the 
+      user to turn off the CCS option to look for source code when debugging as 
+      follows. <o:p></o:p></SPAN></P>
+      <UL style="MARGIN-TOP: 0in" type=disc>
+        <LI class=MsoNormal 
+        style="tab-stops: list .5in; mso-list: l0 level1 lfo6"><SPAN 
+        style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">Select the "<SPAN 
+        class=SpellE>Option<SPAN class=GramE>:Customize</SPAN></SPAN>" menu 
+        item. <o:p></o:p></SPAN>
+        <LI class=MsoNormal 
+        style="tab-stops: list .5in; mso-list: l0 level1 lfo6"><SPAN 
+        style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">Under the Editor 
+        Properties tab, deselect the checkbox for the "Enable file browse while 
+        debugging" option. <o:p></o:p></SPAN></LI></UL></TD></TR>
+  <TR style="mso-yfti-irow: 9">
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">SDSsq34227<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">Error <SPAN 
+      class=SpellE>msg</SPAN> appears twice when exiting 
+      CCS.<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">C2000 On-chip Flash 
+      Programmer<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">C2800<o:p></o:p></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 10">
+    <TD 
+    style="PADDING-RIGHT: 23.75pt; PADDING-LEFT: 23.75pt; PADDING-BOTTOM: 0.1in; PADDING-TOP: 0.1in" 
+    colSpan=4>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">Upon exiting Code 
+      Composer Studio, the user may receive two warnings about not being able to 
+      remove breakpoints. <BR><BR><B>Workaround<SPAN 
+      class=GramE>:</SPAN></B><BR>The workaround for this problem is to not turn 
+      on the option to remove all breakpoints when loading a new program. To do 
+      so: <o:p></o:p></SPAN></P>
+      <UL style="MARGIN-TOP: 0in" type=disc>
+        <LI class=MsoNormal 
+        style="tab-stops: list .5in; mso-list: l3 level1 lfo9"><SPAN 
+        style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">Select the <SPAN 
+        class=SpellE>Options<SPAN class=GramE>:Customize</SPAN></SPAN> menu 
+        item. <o:p></o:p></SPAN>
+        <LI class=MsoNormal 
+        style="tab-stops: list .5in; mso-list: l3 level1 lfo9"><SPAN 
+        style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">Click on the 
+        Program Load Options tab. <o:p></o:p></SPAN>
+        <LI class=MsoNormal 
+        style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; tab-stops: list .5in; mso-list: l3 level1 lfo9"><SPAN 
+        style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">Check the "Clear 
+        All Breakpoints When Loading New Programs" option. <o:p></o:p></SPAN>
+        <LI class=MsoNormal 
+        style="tab-stops: list .5in; mso-list: l3 level1 lfo9"><SPAN 
+        style="FONT-SIZE: 8pt; FONT-FAMILY: 'MS Sans Serif'">Click "OK" to 
+        dismiss the Customize dialog box. <o:p></o:p></SPAN></LI></UL></TD></TR>
+  <TR style="mso-yfti-irow: 11">
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN 
+      style="FONT-SIZE: 8pt">SDSsq36915<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN style="FONT-SIZE: 8pt">First two 
+      locations of OTP memory are not programmed 
+    correctly.<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN style="FONT-SIZE: 8pt">C2000 On-chip 
+      Flash Programmer<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; PADDING-TOP: 0in">
+      <P style="MARGIN-LEFT: 7.5pt"><SPAN 
+      style="FONT-SIZE: 8pt">C2800<o:p></o:p></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 12; mso-yfti-lastrow: yes">
+    <TD 
+    style="PADDING-RIGHT: 23.75pt; PADDING-LEFT: 23.75pt; PADDING-BOTTOM: 0.1in; PADDING-TOP: 0.1in" 
+    colSpan=4>
+      <P class=MsoNormal><SPAN style="FONT-SIZE: 8pt">Using the CCS Flash 
+      Programmer <SPAN class=SpellE>plugin</SPAN> to program the F2812 OTP, the 
+      first two locations of the OTP are not programmed correctly. 
+      <o:p></o:p></SPAN></P>
+      <P class=MsoNormal style="MARGIN-LEFT: 0.25in"><SPAN 
+      style="FONT-SIZE: 8pt"><o:p>&nbsp;</o:p></SPAN></P>
+      <P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN 
+      style="FONT-SIZE: 8pt">Workaround:<o:p></o:p></SPAN></B></P>
+      <P class=MsoNormal><SPAN style="FONT-SIZE: 8pt">If you encounter this 
+      problem (it does not always occur) then a workaround is to program the 
+      first two locations first and then program the rest<B 
+      style="mso-bidi-font-weight: normal"><o:p></o:p></B></SPAN></P></TD></TR></TBODY></TABLE>
+<P class=MsoNormal style="MARGIN-BOTTOM: 12pt"><o:p>&nbsp;</o:p></P>
+<H2><SPAN style="FONT-FAMILY: Arial">Installation Details<o:p></o:p></SPAN></H2>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal">F24xx Flash Plug-In 
+<o:p></o:p></B></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt">The <SPAN 
+style="mso-bidi-font-weight: bold">TMS320C2000 Code Composer Studio Flash 
+Plug-in v1.11.0 installs</SPAN> the same F24xx Flash Plug-In files as the <SPAN 
+style="mso-bidi-font-weight: bold">TMS320C2000 Code Composer Studio Flash 
+Plug-in v1.10.2 install.</SPAN><o:p></o:p></SPAN></P>
+<P class=MsoNormal><B 
+style="mso-bidi-font-weight: normal"><o:p>&nbsp;</o:p></B></P>
+<P class=MsoNormal><B 
+style="mso-bidi-font-weight: normal"><o:p>&nbsp;</o:p></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal">F28xx Flash 
+Plug-In<o:p></o:p></B></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN 
+style="FONT-SIZE: 10pt">The <SPAN style="mso-bidi-font-weight: bold">TMS320C2000 
+Code Composer Studio Flash Plug-in v1.10 <SPAN class=GramE>install</SPAN> placed 
+the following files on the user’s system:</SPAN><o:p></o:p></SPAN></B></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">&lt;InstallDir&gt;:\ti\plugins\Flash28xx\Algorithms\2810\FlashAPIInterface2810V1_0Beta.out<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">&lt;InstallDir&gt;:\ti\plugins\Flash28xx\Algorithms\2811\FlashAPIInterface2811V1_0Beta.out<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">&lt;InstallDir&gt;:\ti\plugins\Flash28xx\Algorithms\2812\FlashAPIInterface2812V1_0Beta.out<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN class=GramE><SPAN 
+style="FONT-SIZE: 10pt">&lt;<SPAN 
+class=SpellE>InstallDir</SPAN>&gt;:\ti\plugins\Flash28xx\Flash28xx.ocx, File 
+Version 1.0.0.2.</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 10pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN 
+style="FONT-SIZE: 10pt">The <SPAN style="mso-bidi-font-weight: bold">TMS320C2000 
+Code Composer Studio Flash Plug-in v1.10.1 <SPAN class=GramE>install</SPAN> 
+placed the following files on the user’s 
+system:</SPAN><o:p></o:p></SPAN></B></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">&lt;InstallDir&gt;:\ti\plugins\Flash28xx\Algorithms\2810\FlashAPIInterface2810V1_0.out<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">&lt;InstallDir&gt;:\ti\plugins\Flash28xx\Algorithms\2810\FlashAPIInterface2810V1_0Beta.out<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>This file is identical to the one installed by the previous 
+release.<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">&lt;InstallDir&gt;:\ti\plugins\Flash28xx\Algorithms\2811\FlashAPIInterface2811V1_0.out<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">&lt;InstallDir&gt;:\ti\plugins\Flash28xx\Algorithms\2811\FlashAPIInterface2811V1_0Beta.out<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>This file is identical to the one installed by the previous 
+release.<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">&lt;<SPAN 
+class=SpellE>InstallDir</SPAN>&gt;:\ti\plugins\Flash28xx\Algorithms\2812\ 
+FlashAPIInterface2812V1_0.out<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">&lt;<SPAN 
+class=SpellE>InstallDir</SPAN>&gt;:\ti\plugins\Flash28xx\Algorithms\2812\ 
+FlashAPIInterface2812V1_0Beta.out<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>This file is identical to the one installed by the previous 
+release.<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">&lt;<SPAN 
+class=SpellE>InstallDir</SPAN>&gt;:\ti\plugins\Flash28xx\Flash28xx.ocx, File 
+Version 1.0.0.4<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">The install replaces Flash28xx.ocx, File Version 
+1.0.0.2.<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN 
+style="FONT-SIZE: 10pt">The <SPAN style="mso-bidi-font-weight: bold">TMS320C2000 
+Code Composer Studio Flash Plug-in v1.10.2 install places the following files on 
+the <SPAN class=SpellE>user’s</SPAN> system:</SPAN><o:p></o:p></SPAN></B></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">The following files are identical to the ones installed 
+by the previous release:<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">&lt;InstallDir&gt;:\ti\plugins\Flash28xx\Algorithms\2810\FlashAPIInterface2810V1_0.out<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">&lt;InstallDir&gt;:\ti\plugins\Flash28xx\Algorithms\2810\FlashAPIInterface2810V1_0Beta.out<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">&lt;InstallDir&gt;:\ti\plugins\Flash28xx\Algorithms\2811\FlashAPIInterface2811V1_0.out<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">&lt;InstallDir&gt;:\ti\plugins\Flash28xx\Algorithms\2811\FlashAPIInterface2811V1_0Beta.out<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">&lt;<SPAN 
+class=SpellE>InstallDir</SPAN>&gt;:\ti\plugins\Flash28xx\Algorithms\2812\ 
+FlashAPIInterface2812V1_0.out<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">&lt;<SPAN 
+class=SpellE>InstallDir</SPAN>&gt;:\ti\plugins\Flash28xx\Algorithms\2812\ 
+FlashAPIInterface2812V1_0Beta.out<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">The install replaces Flash28xx.ocx, File Version 
+1.0.0.4.<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">&lt;<SPAN 
+class=SpellE>InstallDir</SPAN>&gt;:\ti\plugins\Flash28xx\Flash28xx.ocx, File 
+Version 1.0.0.5<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in; mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN 
+style="FONT-SIZE: 10pt">The <SPAN style="mso-bidi-font-weight: bold">TMS320C2000 
+Code Composer Studio Flash Plug-in v1.11.0 install places the following files on 
+the <SPAN class=SpellE>user’s</SPAN> system:</SPAN><o:p></o:p></SPAN></B></P>
+<P class=MsoNormal><SPAN style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">The following files are identical to the ones installed 
+by the previous release:<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">&lt;InstallDir&gt;:\ti\plugins\Flash28xx\Algorithms\2801\FlashAPIInterface2801V2_0.out<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">&lt;InstallDir&gt;:\ti\plugins\Flash28xx\Algorithms\2806\FlashAPIInterface2806V2_0.out<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">&lt;InstallDir&gt;:\ti\plugins\Flash28xx\Algorithms\2808\FlashAPIInterface2808V2_0.out<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">&lt;InstallDir&gt;:\ti\plugins\Flash28xx\Algorithms\2810\FlashAPIInterface2810V1_0.out<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">&lt;InstallDir&gt;:\ti\plugins\Flash28xx\Algorithms\2811\FlashAPIInterface2811V1_0.out<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">&lt;<SPAN 
+class=SpellE>InstallDir</SPAN>&gt;:\ti\plugins\Flash28xx\Algorithms\2812\ 
+FlashAPIInterface2812V1_0.out<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">The install replaces Flash28xx.ocx, File Version 
+1.0.0.5.<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt">&lt;<SPAN 
+class=SpellE>InstallDir</SPAN>&gt;:\ti\plugins\Flash28xx\Flash28xx.ocx, File 
+Version 5.90.0.xx<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-SIZE: 10pt"><o:p>&nbsp;</o:p></SPAN></P></DIV></BODY></HTML>

@@ -1,0 +1,76 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="E:\c2000_debug_flash\"
+ProjectType=Executable
+CPUFamily=TMS320C28XX
+Tool="Compiler"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="AD.c"
+Source="cfft32aq.asm"
+Source="cfft32br2.asm"
+Source="cfft32c.asm"
+Source="cfft32i.asm"
+Source="cfft32m.asm"
+Source="cfft32w.asm"
+Source="cfft32z.asm"
+Source="descriptors.c"
+Source="DSP281x_Adc.c"
+Source="DSP281x_CpuTimers.c"
+Source="DSP281x_DefaultIsr.c"
+Source="DSP281x_GlobalVariableDefs.c"
+Source="DSP281x_PieCtrl.c"
+Source="DSP281x_PieVect.c"
+Source="DSP281x_usDelay.asm"
+Source="DSP28_CodeStartBranch.asm"
+Source="DSP28_Gpio.c"
+Source="DSP28_InitPeripherals.c"
+Source="DSP28_Xintf.c"
+Source="DSP28_XIntrupt.c"
+Source="fft.lib"
+Source="filter.lib"
+Source="fir16.asm"
+Source="iir16.asm"
+Source="LCD.C"
+Source="rts2800.lib"
+Source="rts2800_ml.lib"
+Source="sel_q.asm"
+Source="stb.lib"
+Source="DSP281x_Headers_nonBIOS.cmd"
+Source="F2812_EzDSP_RAM_lnk.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -fr"E:\c2000_debug_flash\Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28
+
+["Compiler" Settings: "Release"]
+Options=-q -o3 -fr"E:\c2000_debug_flash\Release" -d"LARGE_MODEL" -ml -v28
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v28
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v28
+
+["Linker" Settings: "Debug"]
+Options=-q -c -m".\Debug\kandad.map" -o".\Debug\adc.out" -x
+
+["Linker" Settings: "Release"]
+Options=-q -c -m".\Release\kandad.map" -o".\Release\kandad.out" -x
+
+["DSP281x_Headers_nonBIOS.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["DSP281x_Headers_nonBIOS.cmd" Settings: "Release"]
+LinkOrder=1
+
+["F2812_EzDSP_RAM_lnk.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["F2812_EzDSP_RAM_lnk.cmd" Settings: "Release"]
+LinkOrder=1
+

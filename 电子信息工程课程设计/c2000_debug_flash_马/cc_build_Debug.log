@@ -1,0 +1,8 @@
+--------------------------  c2000_debug.pjt - Debug  --------------------------
+[AD.c] "C:\CCStudio_v3.3PLA\C2000\cgtools\bin\cl2000" -g -q -fr"C:/Users/admin/Desktop/c2000_debug_flash/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "AD.c"
+
+[Linking...] "C:\CCStudio_v3.3PLA\C2000\cgtools\bin\cl2000" -@"Debug.lkf"
+<Linking>
+
+Build Complete,
+  0 Errors, 0 Warnings, 0 Remarks.

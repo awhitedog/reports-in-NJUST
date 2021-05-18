@@ -1,0 +1,55 @@
+--------------------------  c2000_debug.pjt - Debug  --------------------------
+"C:\ti\c2000\cgtools\bin\cl2000" -g -q -fr"E:/c2000_debug_tiaoshi/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "AD.c"
+
+"C:\ti\c2000\cgtools\bin\cl2000" -g -q -fr"E:/c2000_debug_tiaoshi/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "cfft32aq.asm"
+
+"C:\ti\c2000\cgtools\bin\cl2000" -g -q -fr"E:/c2000_debug_tiaoshi/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "cfft32br2.asm"
+
+"C:\ti\c2000\cgtools\bin\cl2000" -g -q -fr"E:/c2000_debug_tiaoshi/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "cfft32c.asm"
+
+"C:\ti\c2000\cgtools\bin\cl2000" -g -q -fr"E:/c2000_debug_tiaoshi/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "cfft32i.asm"
+
+"C:\ti\c2000\cgtools\bin\cl2000" -g -q -fr"E:/c2000_debug_tiaoshi/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "cfft32m.asm"
+
+"C:\ti\c2000\cgtools\bin\cl2000" -g -q -fr"E:/c2000_debug_tiaoshi/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "cfft32w.asm"
+
+"C:\ti\c2000\cgtools\bin\cl2000" -g -q -fr"E:/c2000_debug_tiaoshi/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "cfft32z.asm"
+
+"C:\ti\c2000\cgtools\bin\cl2000" -g -q -fr"E:/c2000_debug_tiaoshi/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "descriptors.c"
+
+"C:\ti\c2000\cgtools\bin\cl2000" -g -q -fr"E:/c2000_debug_tiaoshi/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "DSP281x_Adc.c"
+
+"C:\ti\c2000\cgtools\bin\cl2000" -g -q -fr"E:/c2000_debug_tiaoshi/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "DSP281x_CpuTimers.c"
+
+"C:\ti\c2000\cgtools\bin\cl2000" -g -q -fr"E:/c2000_debug_tiaoshi/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "DSP281x_DefaultIsr.c"
+
+"C:\ti\c2000\cgtools\bin\cl2000" -g -q -fr"E:/c2000_debug_tiaoshi/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "DSP281x_GlobalVariableDefs.c"
+
+"C:\ti\c2000\cgtools\bin\cl2000" -g -q -fr"E:/c2000_debug_tiaoshi/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "DSP281x_PieCtrl.c"
+
+"C:\ti\c2000\cgtools\bin\cl2000" -g -q -fr"E:/c2000_debug_tiaoshi/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "DSP281x_PieVect.c"
+
+"C:\ti\c2000\cgtools\bin\cl2000" -g -q -fr"E:/c2000_debug_tiaoshi/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "DSP281x_usDelay.asm"
+
+"C:\ti\c2000\cgtools\bin\cl2000" -g -q -fr"E:/c2000_debug_tiaoshi/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "DSP28_CodeStartBranch.asm"
+
+"C:\ti\c2000\cgtools\bin\cl2000" -g -q -fr"E:/c2000_debug_tiaoshi/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "DSP28_Gpio.c"
+
+"C:\ti\c2000\cgtools\bin\cl2000" -g -q -fr"E:/c2000_debug_tiaoshi/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "DSP28_InitPeripherals.c"
+
+"C:\ti\c2000\cgtools\bin\cl2000" -g -q -fr"E:/c2000_debug_tiaoshi/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "DSP28_Xintf.c"
+
+"C:\ti\c2000\cgtools\bin\cl2000" -g -q -fr"E:/c2000_debug_tiaoshi/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "DSP28_XIntrupt.c"
+
+"C:\ti\c2000\cgtools\bin\cl2000" -g -q -fr"E:/c2000_debug_tiaoshi/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "fir16.asm"
+
+"C:\ti\c2000\cgtools\bin\cl2000" -g -q -fr"E:/c2000_debug_tiaoshi/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "iir16.asm"
+
+"C:\ti\c2000\cgtools\bin\cl2000" -g -q -fr"E:/c2000_debug_tiaoshi/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "LCD.C"
+
+"C:\ti\c2000\cgtools\bin\cl2000" -g -q -fr"E:/c2000_debug_tiaoshi/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "sel_q.asm"
+
+"C:\ti\c2000\cgtools\bin\cl2000" -@"Debug.lkf"
+
+Build Complete,
+  0 Errors, 0 Warnings, 0 Remarks.
