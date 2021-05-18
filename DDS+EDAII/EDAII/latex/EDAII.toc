@@ -1,0 +1,48 @@
+\contentsline {section}{\numberline {1}设计要求说明}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}设计基本要求}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}设计提高部分要求}{1}{subsection.1.2}
+\contentsline {section}{\numberline {2}方案论证（整体电路的工作原理）}{2}{section.2}
+\contentsline {section}{\numberline {3}各子模块设计原理}{2}{section.3}
+\contentsline {subsection}{\numberline {3.1}分频模块}{2}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}2分频}{2}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}4分频}{3}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}10分频}{3}{subsubsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.4}12分频}{5}{subsubsection.3.1.4}
+\contentsline {subsubsection}{\numberline {3.1.5}1000分频}{5}{subsubsection.3.1.5}
+\contentsline {subsubsection}{\numberline {3.1.6}分频模块}{7}{subsubsection.3.1.6}
+\contentsline {subsection}{\numberline {3.2}总计时模块}{7}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}由模7、模24、模60模块组成的基本计时模块}{7}{subsubsection.3.2.1}
+\contentsline {paragraph}{VHDL代码实现模7}{7}{subsubsection.3.2.1}
+\contentsline {paragraph}{VHDL代码实现模24}{9}{figure.20}
+\contentsline {paragraph}{VHDL代码实现模60}{11}{figure.22}
+\contentsline {subsubsection}{\numberline {3.2.2}校时模块}{13}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}清零、保持模块}{13}{subsubsection.3.2.3}
+\contentsline {paragraph}{清零}{13}{subsubsection.3.2.3}
+\contentsline {paragraph}{保持}{13}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}消颤模块}{13}{subsubsection.3.2.4}
+\contentsline {subsubsection}{\numberline {3.2.5}报时模块}{16}{subsubsection.3.2.5}
+\contentsline {subsubsection}{\numberline {3.2.6}总计时模块}{19}{subsubsection.3.2.6}
+\contentsline {subsection}{\numberline {3.3}音乐模块}{19}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}音符的产生}{19}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}音乐模块}{21}{subsubsection.3.3.2}
+\contentsline {subsection}{\numberline {3.4}显示模块}{25}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}模8计数器}{26}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}八选一}{28}{subsubsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.3}3线-8线译码器}{29}{subsubsection.3.4.3}
+\contentsline {subsubsection}{\numberline {3.4.4}七段译码器}{30}{subsubsection.3.4.4}
+\contentsline {subsubsection}{\numberline {3.4.5}显示模块}{31}{subsubsection.3.4.5}
+\contentsline {subsection}{\numberline {3.5}万年历模块}{33}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}日计数}{33}{subsubsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.2}月计数}{35}{subsubsection.3.5.2}
+\contentsline {subsubsection}{\numberline {3.5.3}年计数}{38}{subsubsection.3.5.3}
+\contentsline {subsubsection}{\numberline {3.5.4}日进制判断信号judge}{40}{subsubsection.3.5.4}
+\contentsline {subsubsection}{\numberline {3.5.5}万年历模块}{42}{subsubsection.3.5.5}
+\contentsline {section}{\numberline {4}多功能数字时钟总电路}{46}{section.4}
+\contentsline {section}{\numberline {5}调试、仿真、编程下载}{46}{section.5}
+\contentsline {section}{\numberline {6} 结论}{48}{section.6}
+\contentsline {section}{\numberline {7}实验感想}{48}{section.7}
+\contentsline {subsection}{\numberline {7.1}实验过程中遇到的问题及解决问题的方法}{48}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}实验的收获与感受}{49}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}期望及要求}{50}{subsection.7.3}
+\contentsline {section}{参考文献}{50}{subsection.7.3}
+\contentsfinish 

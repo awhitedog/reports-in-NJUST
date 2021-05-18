@@ -1,0 +1,19 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+ENTITY mo8 IS 
+ PORT
+(
+clk  :IN  std_logic;
+q :buffer std_logic_vector(2 downto 0)
+);
+END mo8;
+ARCHITECTURE beh OF mo8 IS
+BEGIN
+PROCESS(clk)
+BEGIN
+IF(clk'EVENT and clk='1')THEN
+q<=q+1;
+end if;
+END PROCESS;
+END beh;

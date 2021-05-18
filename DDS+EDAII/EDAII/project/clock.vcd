@@ -1,0 +1,282 @@
+$comment
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+$end
+
+$date 
+  11/01/2018 03:09:33 
+$end
+$version 
+ QUARTUS_VCD_EXPORT 1.0 
+$end
+$timescale
+  1 ps
+$end
+$scope module mo8 $end
+$var reg 1 ! clk $end
+$var reg 3 " q[2:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+b0 "
+$end
+#15000
+1!
+#21258
+b1 "
+#30000
+0!
+#45000
+1!
+#51256
+b0 "
+#51516
+b10 "
+#60000
+0!
+#75000
+1!
+#81258
+b11 "
+#90000
+0!
+#105000
+1!
+#111229
+b111 "
+#111256
+b110 "
+#111461
+b100 "
+#120000
+0!
+#135000
+1!
+#141258
+b101 "
+#150000
+0!
+#165000
+1!
+#171256
+b100 "
+#171516
+b110 "
+#180000
+0!
+#195000
+1!
+#201258
+b111 "
+#210000
+0!
+#225000
+1!
+#231230
+b11 "
+#231256
+b10 "
+#231461
+b0 "
+#240000
+0!
+#255000
+1!
+#261258
+b1 "
+#270000
+0!
+#285000
+1!
+#291256
+b0 "
+#291516
+b10 "
+#300000
+0!
+#315000
+1!
+#321258
+b11 "
+#330000
+0!
+#345000
+1!
+#351229
+b111 "
+#351256
+b110 "
+#351461
+b100 "
+#360000
+0!
+#375000
+1!
+#381258
+b101 "
+#390000
+0!
+#405000
+1!
+#411256
+b100 "
+#411516
+b110 "
+#420000
+0!
+#435000
+1!
+#441258
+b111 "
+#450000
+0!
+#465000
+1!
+#471230
+b11 "
+#471256
+b10 "
+#471461
+b0 "
+#480000
+0!
+#495000
+1!
+#501258
+b1 "
+#510000
+0!
+#525000
+1!
+#531256
+b0 "
+#531516
+b10 "
+#540000
+0!
+#555000
+1!
+#561258
+b11 "
+#570000
+0!
+#585000
+1!
+#591229
+b111 "
+#591256
+b110 "
+#591461
+b100 "
+#600000
+0!
+#615000
+1!
+#621258
+b101 "
+#630000
+0!
+#645000
+1!
+#651256
+b100 "
+#651516
+b110 "
+#660000
+0!
+#675000
+1!
+#681258
+b111 "
+#690000
+0!
+#705000
+1!
+#711230
+b11 "
+#711256
+b10 "
+#711461
+b0 "
+#720000
+0!
+#735000
+1!
+#741258
+b1 "
+#750000
+0!
+#765000
+1!
+#771256
+b0 "
+#771516
+b10 "
+#780000
+0!
+#795000
+1!
+#801258
+b11 "
+#810000
+0!
+#825000
+1!
+#831229
+b111 "
+#831256
+b110 "
+#831461
+b100 "
+#840000
+0!
+#855000
+1!
+#861258
+b101 "
+#870000
+0!
+#885000
+1!
+#891256
+b100 "
+#891516
+b110 "
+#900000
+0!
+#915000
+1!
+#921258
+b111 "
+#930000
+0!
+#945000
+1!
+#951230
+b11 "
+#951256
+b10 "
+#951461
+b0 "
+#960000
+0!
+#975000
+1!
+#981258
+b1 "
+#990000
+0!
+#1000000

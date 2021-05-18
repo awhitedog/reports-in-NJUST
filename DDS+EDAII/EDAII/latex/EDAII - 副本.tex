@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+
+\usepackage[UTF8]{ctex}
+\usepackage{appendix}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{ listings} 
+\usepackage{bigstrut}
+\usepackage{multirow}
+\usepackage{geometry}
+\usepackage{longtable}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{color}
+\usepackage[section]{placeins}
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+\usepackage[]{caption2} 
+\renewcommand{\captionlabeldelim}{ }
+\usepackage{titlesec}  
+\usepackage{titletoc}
+\geometry{a4paper,scale=0.8}
+\renewcommand\figurename{\heiti\zihao{5} 图}
+\renewcommand\tablename{\heiti\zihao{5} 表}
+\renewcommand{\contentsname}{\centering 目录}
+\lstset{
+    columns=fixed,       
+    numbers=left,                                        % 在左侧显示行号
+    frame=none,                                          % 不显示背景边框
+    backgroundcolor=\color[RGB]{245,245,244},            % 设定背景颜色
+    keywordstyle=\color[RGB]{40,40,255}\bf,                 % 设定关键字颜色
+    numberstyle=\footnotesize\color{darkgray},           % 设定行号格式
+    commentstyle=\it\color[RGB]{0,96,96},                % 设置代码注释的格式
+    stringstyle=\rmfamily\slshape\color[RGB]{128,0,0},   % 设置字符串格式
+%labelstyle=\tiny\color[RGB]{255,0,0},
+    showstringspaces=false,                              % 不显示字符串中的空格
+    escapeinside=``,
+    language=VHDL,                                        % 设置语言
+}
+\begin{document}%文档从这里开始。
+\renewcommand\refname{参考文献}
+
+\section{总计时模块}
+\subsubsection{由模7、模24、模60模块组成的基本计时模块}
+利用VHDL语言的IF语句，对计数的条件进行判断。例如模7，则在计数到0111（7）时跳转到0001，即可实现数字1到7的循环计数。
+\begin{lstlisting}[ language=VHDL,]
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+ENTITY mo7 IS 
+ PORT
+( en   :IN  std_logic;
+clear:IN  std_logic;--when 0,output is always 0
+clk  :IN  std_logic;
+ql :buffer std_logic_vector(3 downto 0)
+);
+END mo7;
+ARCHITECTURE beh OF mo7 IS
+BEGIN
+PROCESS(clk,clear)
+BEGIN
+IF(clear='0')THEN
+ql<="0000";
+ELSIF(clk'EVENT AND clk='1')THEN
+if(en='1')then
+if(ql=7) then
+ql<="0001";
+else
+ql<=ql+1;
+end if;
+end if;
+END IF;
+END PROCESS;
+END beh;
+} 
+\end{lstlisting} 
+\end{document}

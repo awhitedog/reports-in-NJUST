@@ -1,0 +1,44 @@
+GED
+
+	Undo Commands
+	     1.	Delete
+	     2.	Delete
+	     3.	Properties
+	     4.	Insert Node
+	     5.	Properties
+	     6.	Insert Node
+	     7.	Properties
+	     8.	Insert Node
+	     9.	Properties
+	    10.	Insert Node
+	    11.	Properties
+	    12.	Insert Node
+	    13.	Properties
+	    14.	Insert Node
+	    15.	Move
+	    16.	Move
+	    17.	Move
+	    18.	Move
+	    19.	Insert Symbol
+
+
+GED
+
+	Undo Commands
+	     1.	Properties
+	     2.	Properties
+	     3.	Properties
+	     4.	Properties
+	     5.	Properties
+	     6.	Properties
+	     7.	Properties
+
+
+WED
+
+	Undo Commands
+	     1.	Clock
+	     2.	Edit Waveform
+	     3.	Insert Node or Bus
+
+

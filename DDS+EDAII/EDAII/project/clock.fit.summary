@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Dec 12 12:40:25 2018
+Quartus II 64-Bit Version : 9.1 Build 222 10/21/2009 SJ Full Version
+Revision Name : clock
+Top-level Entity Name : all
+Family : Cyclone III
+Device : EP3C25F324C8
+Timing Models : Final
+Total logic elements : 293 / 24,624 ( 1 % )
+    Total combinational functions : 268 / 24,624 ( 1 % )
+    Dedicated logic registers : 127 / 24,624 ( < 1 % )
+Total registers : 127
+Total pins : 25 / 216 ( 12 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup '48MHZ'
+Slack : -5.343
+TNS   : -171.468
+
+Type  : Slow 1200mV 85C Model Setup 'fenpin2:inst11|mhz'
+Slack : -4.818
+TNS   : -183.926
+
+Type  : Slow 1200mV 85C Model Setup 'fenpin2:inst11|hz1'
+Slack : -1.509
+TNS   : -13.061
+
+Type  : Slow 1200mV 85C Model Hold '48MHZ'
+Slack : 0.061
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'fenpin2:inst11|hz1'
+Slack : 0.434
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'fenpin2:inst11|mhz'
+Slack : 0.553
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fenpin2:inst11|mhz'
+Slack : -4.000
+TNS   : -201.458
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width '48MHZ'
+Slack : -3.000
+TNS   : -83.298
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fenpin2:inst11|hz1'
+Slack : -1.487
+TNS   : -20.818
+
+Type  : Slow 1200mV 0C Model Setup '48MHZ'
+Slack : -4.868
+TNS   : -154.715
+
+Type  : Slow 1200mV 0C Model Setup 'fenpin2:inst11|mhz'
+Slack : -4.332
+TNS   : -166.770
+
+Type  : Slow 1200mV 0C Model Setup 'fenpin2:inst11|hz1'
+Slack : -1.389
+TNS   : -11.516
+
+Type  : Slow 1200mV 0C Model Hold '48MHZ'
+Slack : 0.054
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'fenpin2:inst11|hz1'
+Slack : 0.382
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'fenpin2:inst11|mhz'
+Slack : 0.497
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst11|mhz'
+Slack : -4.000
+TNS   : -201.648
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width '48MHZ'
+Slack : -3.000
+TNS   : -83.298
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst11|hz1'
+Slack : -1.487
+TNS   : -20.818
+
+Type  : Fast 1200mV 0C Model Setup '48MHZ'
+Slack : -1.885
+TNS   : -45.820
+
+Type  : Fast 1200mV 0C Model Setup 'fenpin2:inst11|mhz'
+Slack : -1.559
+TNS   : -33.115
+
+Type  : Fast 1200mV 0C Model Setup 'fenpin2:inst11|hz1'
+Slack : -0.088
+TNS   : -0.205
+
+Type  : Fast 1200mV 0C Model Hold '48MHZ'
+Slack : -0.150
+TNS   : -0.182
+
+Type  : Fast 1200mV 0C Model Hold 'fenpin2:inst11|hz1'
+Slack : 0.166
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'fenpin2:inst11|mhz'
+Slack : 0.202
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width '48MHZ'
+Slack : -3.000
+TNS   : -60.189
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst11|mhz'
+Slack : -1.000
+TNS   : -84.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst11|hz1'
+Slack : -1.000
+TNS   : -14.000
+
+------------------------------------------------------------

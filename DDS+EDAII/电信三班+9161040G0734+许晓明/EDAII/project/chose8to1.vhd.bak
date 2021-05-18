@@ -1,0 +1,25 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+entity chose8to1 is
+port(wl,hh,hl,fh,fl,mh,ml:in std_logic_vector(3 downto 0);
+sel:in std_logic_vector(2 downto 0);
+q:out std_logic_vector(3 downto 0)); 
+end chose8to1;
+architecture xuanze of chose8to1 is
+begin
+process(sel,wl,hh,hl,fh,fl,mh,ml)
+begin
+case sel is
+when"000"=>q<=wl;
+when"001"=>q<="1111";
+when"010"=>q<=hh;
+when"011"=>q<=hl;
+when"100"=>q<=fh;
+when"101"=>q<=fl;
+when"110"=>q<=mh;
+when"111"=>q<=ml;
+when others=>q<="0000";
+end case;
+end process;
+end xuanze;

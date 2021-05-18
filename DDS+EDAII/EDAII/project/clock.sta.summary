@@ -1,0 +1,953 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup '48mhz'
+Slack : -9.648
+TNS   : -199.632
+
+Type  : Slow 1200mV 85C Model Setup 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -5.580
+TNS   : -103.248
+
+Type  : Slow 1200mV 85C Model Setup 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -5.177
+TNS   : -69.239
+
+Type  : Slow 1200mV 85C Model Setup 'music:inst16|clk1khz'
+Slack : -2.324
+TNS   : -12.737
+
+Type  : Slow 1200mV 85C Model Setup 'music:inst16|clk4hz'
+Slack : -1.701
+TNS   : -11.907
+
+Type  : Slow 1200mV 85C Model Setup 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : -0.567
+TNS   : -1.004
+
+Type  : Slow 1200mV 85C Model Setup 'fenpin2:inst|2fenpin:inst5|inst1'
+Slack : -0.567
+TNS   : -0.725
+
+Type  : Slow 1200mV 85C Model Setup 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : -0.566
+TNS   : -0.730
+
+Type  : Slow 1200mV 85C Model Setup 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : -0.566
+TNS   : -0.724
+
+Type  : Slow 1200mV 85C Model Setup 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : -0.557
+TNS   : -0.922
+
+Type  : Slow 1200mV 85C Model Setup 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : -0.556
+TNS   : -0.921
+
+Type  : Slow 1200mV 85C Model Setup 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : -0.555
+TNS   : -0.905
+
+Type  : Slow 1200mV 85C Model Setup 'fenpin2:inst|4fenpin:inst2|2fenpin:inst1|inst1'
+Slack : -0.541
+TNS   : -0.864
+
+Type  : Slow 1200mV 85C Model Setup 'fenpin2:inst|12fenpin:inst|74161:inst|f74161:sub|110'
+Slack : -0.539
+TNS   : -0.539
+
+Type  : Slow 1200mV 85C Model Setup 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst2|74160:inst|8'
+Slack : -0.192
+TNS   : -0.192
+
+Type  : Slow 1200mV 85C Model Setup 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst2|74160:inst|8'
+Slack : -0.155
+TNS   : -0.155
+
+Type  : Slow 1200mV 85C Model Setup 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst1|74160:inst|8'
+Slack : -0.154
+TNS   : -0.154
+
+Type  : Slow 1200mV 85C Model Setup 'fenpin2:inst|4fenpin:inst2|2fenpin:inst|inst1'
+Slack : -0.133
+TNS   : -0.133
+
+Type  : Slow 1200mV 85C Model Setup 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst|74160:inst|8'
+Slack : -0.096
+TNS   : -0.096
+
+Type  : Slow 1200mV 85C Model Setup 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst2|74160:inst|8'
+Slack : 0.024
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst|74160:inst|8'
+Slack : 0.058
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst1|74160:inst|8'
+Slack : 0.073
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst1|74160:inst|8'
+Slack : 0.079
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst|74160:inst|8'
+Slack : 0.079
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -0.844
+TNS   : -10.426
+
+Type  : Slow 1200mV 85C Model Hold 'music:inst16|clk1khz'
+Slack : -0.659
+TNS   : -0.659
+
+Type  : Slow 1200mV 85C Model Hold 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -0.455
+TNS   : -0.888
+
+Type  : Slow 1200mV 85C Model Hold 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : -0.447
+TNS   : -1.197
+
+Type  : Slow 1200mV 85C Model Hold '48mhz'
+Slack : -0.342
+TNS   : -0.562
+
+Type  : Slow 1200mV 85C Model Hold 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -0.333
+TNS   : -0.987
+
+Type  : Slow 1200mV 85C Model Hold 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : -0.309
+TNS   : -0.573
+
+Type  : Slow 1200mV 85C Model Hold 'fenpin2:inst|12fenpin:inst|74161:inst|f74161:sub|110'
+Slack : -0.280
+TNS   : -0.596
+
+Type  : Slow 1200mV 85C Model Hold 'fenpin2:inst|2fenpin:inst5|inst1'
+Slack : -0.245
+TNS   : -0.323
+
+Type  : Slow 1200mV 85C Model Hold 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : -0.221
+TNS   : -0.649
+
+Type  : Slow 1200mV 85C Model Hold 'fenpin2:inst|4fenpin:inst2|2fenpin:inst1|inst1'
+Slack : -0.182
+TNS   : -0.539
+
+Type  : Slow 1200mV 85C Model Hold 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : -0.147
+TNS   : -0.418
+
+Type  : Slow 1200mV 85C Model Hold 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : -0.128
+TNS   : -0.347
+
+Type  : Slow 1200mV 85C Model Hold 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : -0.008
+TNS   : -0.014
+
+Type  : Slow 1200mV 85C Model Hold 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst|74160:inst|8'
+Slack : -0.001
+TNS   : -0.001
+
+Type  : Slow 1200mV 85C Model Hold 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst1|74160:inst|8'
+Slack : 0.070
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst|74160:inst|8'
+Slack : 0.070
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst1|74160:inst|8'
+Slack : 0.074
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst2|74160:inst|8'
+Slack : 0.124
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst1|74160:inst|8'
+Slack : 0.177
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst|74160:inst|8'
+Slack : 0.177
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst2|74160:inst|8'
+Slack : 0.178
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'fenpin2:inst|4fenpin:inst2|2fenpin:inst|inst1'
+Slack : 0.191
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst2|74160:inst|8'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'music:inst16|clk4hz'
+Slack : 0.753
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -0.751
+TNS   : -12.725
+
+Type  : Slow 1200mV 85C Model Recovery 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -0.582
+TNS   : -1.686
+
+Type  : Slow 1200mV 85C Model Removal 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -0.140
+TNS   : -1.738
+
+Type  : Slow 1200mV 85C Model Removal 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : 0.222
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width '48mhz'
+Slack : -3.000
+TNS   : -59.506
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -1.487
+TNS   : -40.149
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -1.487
+TNS   : -35.688
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'music:inst16|clk1khz'
+Slack : -1.487
+TNS   : -11.896
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'music:inst16|clk4hz'
+Slack : -1.487
+TNS   : -10.409
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fenpin2:inst|4fenpin:inst2|2fenpin:inst1|inst1'
+Slack : -1.487
+TNS   : -8.922
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : -1.487
+TNS   : -4.461
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : -1.487
+TNS   : -4.461
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : -1.487
+TNS   : -4.461
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : -1.487
+TNS   : -4.461
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : -1.487
+TNS   : -4.461
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : -1.487
+TNS   : -4.461
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fenpin2:inst|12fenpin:inst|74161:inst|f74161:sub|110'
+Slack : -1.487
+TNS   : -4.461
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fenpin2:inst|2fenpin:inst5|inst1'
+Slack : -1.487
+TNS   : -4.461
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -1.487
+TNS   : -2.974
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst1|74160:inst|8'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst2|74160:inst|8'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst|74160:inst|8'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst1|74160:inst|8'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst2|74160:inst|8'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst|74160:inst|8'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst1|74160:inst|8'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst2|74160:inst|8'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst|74160:inst|8'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fenpin2:inst|4fenpin:inst2|2fenpin:inst|inst1'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Setup '48mhz'
+Slack : -8.825
+TNS   : -181.134
+
+Type  : Slow 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -5.318
+TNS   : -96.309
+
+Type  : Slow 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -4.886
+TNS   : -65.058
+
+Type  : Slow 1200mV 0C Model Setup 'music:inst16|clk1khz'
+Slack : -2.102
+TNS   : -10.953
+
+Type  : Slow 1200mV 0C Model Setup 'music:inst16|clk4hz'
+Slack : -1.540
+TNS   : -10.780
+
+Type  : Slow 1200mV 0C Model Setup 'fenpin2:inst|2fenpin:inst5|inst1'
+Slack : -0.414
+TNS   : -0.493
+
+Type  : Slow 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : -0.413
+TNS   : -0.493
+
+Type  : Slow 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : -0.412
+TNS   : -0.778
+
+Type  : Slow 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : -0.412
+TNS   : -0.490
+
+Type  : Slow 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : -0.405
+TNS   : -0.635
+
+Type  : Slow 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : -0.405
+TNS   : -0.635
+
+Type  : Slow 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : -0.404
+TNS   : -0.620
+
+Type  : Slow 1200mV 0C Model Setup 'fenpin2:inst|4fenpin:inst2|2fenpin:inst1|inst1'
+Slack : -0.390
+TNS   : -0.568
+
+Type  : Slow 1200mV 0C Model Setup 'fenpin2:inst|12fenpin:inst|74161:inst|f74161:sub|110'
+Slack : -0.389
+TNS   : -0.389
+
+Type  : Slow 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst2|74160:inst|8'
+Slack : -0.109
+TNS   : -0.109
+
+Type  : Slow 1200mV 0C Model Setup 'fenpin2:inst|4fenpin:inst2|2fenpin:inst|inst1'
+Slack : -0.096
+TNS   : -0.096
+
+Type  : Slow 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst1|74160:inst|8'
+Slack : -0.078
+TNS   : -0.078
+
+Type  : Slow 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst2|74160:inst|8'
+Slack : -0.077
+TNS   : -0.077
+
+Type  : Slow 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst|74160:inst|8'
+Slack : -0.056
+TNS   : -0.056
+
+Type  : Slow 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst2|74160:inst|8'
+Slack : 0.082
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst|74160:inst|8'
+Slack : 0.085
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst1|74160:inst|8'
+Slack : 0.124
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst1|74160:inst|8'
+Slack : 0.132
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst|74160:inst|8'
+Slack : 0.132
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : 0.150
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -0.823
+TNS   : -10.241
+
+Type  : Slow 1200mV 0C Model Hold 'music:inst16|clk1khz'
+Slack : -0.566
+TNS   : -0.566
+
+Type  : Slow 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -0.366
+TNS   : -0.713
+
+Type  : Slow 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -0.365
+TNS   : -1.080
+
+Type  : Slow 1200mV 0C Model Hold '48mhz'
+Slack : -0.305
+TNS   : -0.502
+
+Type  : Slow 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : -0.279
+TNS   : -0.739
+
+Type  : Slow 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : -0.150
+TNS   : -0.253
+
+Type  : Slow 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : -0.123
+TNS   : -0.327
+
+Type  : Slow 1200mV 0C Model Hold 'fenpin2:inst|12fenpin:inst|74161:inst|f74161:sub|110'
+Slack : -0.100
+TNS   : -0.151
+
+Type  : Slow 1200mV 0C Model Hold 'fenpin2:inst|2fenpin:inst5|inst1'
+Slack : -0.098
+TNS   : -0.098
+
+Type  : Slow 1200mV 0C Model Hold 'fenpin2:inst|4fenpin:inst2|2fenpin:inst1|inst1'
+Slack : -0.046
+TNS   : -0.066
+
+Type  : Slow 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : -0.040
+TNS   : -0.098
+
+Type  : Slow 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst|74160:inst|8'
+Slack : -0.004
+TNS   : -0.004
+
+Type  : Slow 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : 0.023
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst1|74160:inst|8'
+Slack : 0.081
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst|74160:inst|8'
+Slack : 0.081
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst1|74160:inst|8'
+Slack : 0.086
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : 0.104
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst2|74160:inst|8'
+Slack : 0.135
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst|74160:inst|8'
+Slack : 0.157
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'fenpin2:inst|4fenpin:inst2|2fenpin:inst|inst1'
+Slack : 0.168
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst1|74160:inst|8'
+Slack : 0.173
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst2|74160:inst|8'
+Slack : 0.173
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst2|74160:inst|8'
+Slack : 0.200
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'music:inst16|clk4hz'
+Slack : 0.699
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -0.662
+TNS   : -9.907
+
+Type  : Slow 1200mV 0C Model Recovery 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -0.463
+TNS   : -1.331
+
+Type  : Slow 1200mV 0C Model Removal 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -0.294
+TNS   : -3.327
+
+Type  : Slow 1200mV 0C Model Removal 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : 0.118
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width '48mhz'
+Slack : -3.000
+TNS   : -59.506
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -1.487
+TNS   : -41.512
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -1.487
+TNS   : -36.952
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'music:inst16|clk1khz'
+Slack : -1.487
+TNS   : -11.896
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'music:inst16|clk4hz'
+Slack : -1.487
+TNS   : -10.409
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|4fenpin:inst2|2fenpin:inst1|inst1'
+Slack : -1.487
+TNS   : -8.922
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : -1.487
+TNS   : -4.461
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : -1.487
+TNS   : -4.461
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : -1.487
+TNS   : -4.461
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : -1.487
+TNS   : -4.461
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : -1.487
+TNS   : -4.461
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : -1.487
+TNS   : -4.461
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|12fenpin:inst|74161:inst|f74161:sub|110'
+Slack : -1.487
+TNS   : -4.461
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|2fenpin:inst5|inst1'
+Slack : -1.487
+TNS   : -4.461
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -1.487
+TNS   : -2.974
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst1|74160:inst|8'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst2|74160:inst|8'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst|74160:inst|8'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst1|74160:inst|8'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst2|74160:inst|8'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst|74160:inst|8'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst1|74160:inst|8'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst2|74160:inst|8'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst|74160:inst|8'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|4fenpin:inst2|2fenpin:inst|inst1'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Fast 1200mV 0C Model Setup '48mhz'
+Slack : -3.452
+TNS   : -63.834
+
+Type  : Fast 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -1.788
+TNS   : -29.677
+
+Type  : Fast 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -1.670
+TNS   : -18.629
+
+Type  : Fast 1200mV 0C Model Setup 'music:inst16|clk1khz'
+Slack : -0.438
+TNS   : -1.204
+
+Type  : Fast 1200mV 0C Model Setup 'music:inst16|clk4hz'
+Slack : -0.133
+TNS   : -0.931
+
+Type  : Fast 1200mV 0C Model Setup 'fenpin2:inst|12fenpin:inst|74161:inst|f74161:sub|110'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'fenpin2:inst|2fenpin:inst5|inst1'
+Slack : 0.155
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : 0.157
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : 0.206
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst2|74160:inst|8'
+Slack : 0.219
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : 0.228
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst2|74160:inst|8'
+Slack : 0.233
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst1|74160:inst|8'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst|74160:inst|8'
+Slack : 0.271
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : 0.281
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'fenpin2:inst|4fenpin:inst2|2fenpin:inst|inst1'
+Slack : 0.281
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst2|74160:inst|8'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : 0.322
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst|74160:inst|8'
+Slack : 0.334
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst1|74160:inst|8'
+Slack : 0.336
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'fenpin2:inst|4fenpin:inst2|2fenpin:inst1|inst1'
+Slack : 0.336
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst1|74160:inst|8'
+Slack : 0.337
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst|74160:inst|8'
+Slack : 0.338
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : 0.461
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'music:inst16|clk1khz'
+Slack : -0.455
+TNS   : -0.455
+
+Type  : Fast 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -0.384
+TNS   : -4.911
+
+Type  : Fast 1200mV 0C Model Hold '48mhz'
+Slack : -0.318
+TNS   : -0.770
+
+Type  : Fast 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : -0.304
+TNS   : -0.877
+
+Type  : Fast 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -0.300
+TNS   : -0.596
+
+Type  : Fast 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : -0.254
+TNS   : -0.564
+
+Type  : Fast 1200mV 0C Model Hold 'fenpin2:inst|4fenpin:inst2|2fenpin:inst1|inst1'
+Slack : -0.246
+TNS   : -0.690
+
+Type  : Fast 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : -0.218
+TNS   : -0.506
+
+Type  : Fast 1200mV 0C Model Hold 'fenpin2:inst|2fenpin:inst5|inst1'
+Slack : -0.217
+TNS   : -0.408
+
+Type  : Fast 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : -0.195
+TNS   : -0.570
+
+Type  : Fast 1200mV 0C Model Hold 'fenpin2:inst|12fenpin:inst|74161:inst|f74161:sub|110'
+Slack : -0.172
+TNS   : -0.480
+
+Type  : Fast 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : -0.157
+TNS   : -0.361
+
+Type  : Fast 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -0.145
+TNS   : -0.428
+
+Type  : Fast 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : -0.129
+TNS   : -0.338
+
+Type  : Fast 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst|74160:inst|8'
+Slack : -0.018
+TNS   : -0.018
+
+Type  : Fast 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst1|74160:inst|8'
+Slack : -0.017
+TNS   : -0.017
+
+Type  : Fast 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst1|74160:inst|8'
+Slack : -0.017
+TNS   : -0.017
+
+Type  : Fast 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst|74160:inst|8'
+Slack : -0.010
+TNS   : -0.010
+
+Type  : Fast 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst2|74160:inst|8'
+Slack : 0.011
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst1|74160:inst|8'
+Slack : 0.037
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst2|74160:inst|8'
+Slack : 0.037
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst2|74160:inst|8'
+Slack : 0.051
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'fenpin2:inst|4fenpin:inst2|2fenpin:inst|inst1'
+Slack : 0.058
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst|74160:inst|8'
+Slack : 0.059
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'music:inst16|clk4hz'
+Slack : 0.291
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : 0.231
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -0.119
+TNS   : -0.935
+
+Type  : Fast 1200mV 0C Model Removal 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : 0.111
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width '48mhz'
+Slack : -3.000
+TNS   : -43.166
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -1.000
+TNS   : -27.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -1.000
+TNS   : -24.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'music:inst16|clk1khz'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'music:inst16|clk4hz'
+Slack : -1.000
+TNS   : -7.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|4fenpin:inst2|2fenpin:inst1|inst1'
+Slack : -1.000
+TNS   : -6.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : -1.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : -1.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : -1.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : -1.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst1|2fenpin:inst4|inst1'
+Slack : -1.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst|2fenpin:inst4|inst1'
+Slack : -1.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|12fenpin:inst|74161:inst|f74161:sub|110'
+Slack : -1.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|2fenpin:inst5|inst1'
+Slack : -1.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst2|2fenpin:inst4|inst1'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst1|74160:inst|8'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst2|74160:inst|8'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst1|10fenpin:inst|74160:inst|8'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst1|74160:inst|8'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst2|74160:inst|8'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst4|10fenpin:inst|74160:inst|8'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst1|74160:inst|8'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst2|74160:inst|8'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|1000fenpin:inst6|10fenpin:inst|74160:inst|8'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fenpin2:inst|4fenpin:inst2|2fenpin:inst|inst1'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------

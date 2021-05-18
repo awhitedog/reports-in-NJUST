@@ -1,0 +1,4511 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+
+/*
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+
+HEADER
+{
+	VERSION = 1;
+	TIME_UNIT = ns;
+	DATA_OFFSET = 0.0;
+	DATA_DURATION = 100000.0;
+	SIMULATION_TIME = 100000.0;
+	GRID_PHASE = 0.0;
+	GRID_PERIOD = 10.0;
+	GRID_DUTY_CYCLE = 50;
+}
+
+SIGNAL("1hz")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("2hz")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("dh")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 4;
+	LSB_INDEX = 1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("dh[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dh";
+}
+
+SIGNAL("dh[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dh";
+}
+
+SIGNAL("dh[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dh";
+}
+
+SIGNAL("dh[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dh";
+}
+
+SIGNAL("dl")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 4;
+	LSB_INDEX = 1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("dl[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dl";
+}
+
+SIGNAL("dl[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dl";
+}
+
+SIGNAL("dl[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dl";
+}
+
+SIGNAL("dl[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dl";
+}
+
+SIGNAL("in1")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("k2")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("k5")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("k6")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("k7")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("k8")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("mh")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 4;
+	LSB_INDEX = 1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("mh[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "mh";
+}
+
+SIGNAL("mh[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "mh";
+}
+
+SIGNAL("mh[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "mh";
+}
+
+SIGNAL("mh[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "mh";
+}
+
+SIGNAL("ml")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 4;
+	LSB_INDEX = 1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("ml[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "ml";
+}
+
+SIGNAL("ml[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "ml";
+}
+
+SIGNAL("ml[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "ml";
+}
+
+SIGNAL("ml[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "ml";
+}
+
+SIGNAL("y3")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 4;
+	LSB_INDEX = 1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("y3[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "y3";
+}
+
+SIGNAL("y3[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "y3";
+}
+
+SIGNAL("y3[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "y3";
+}
+
+SIGNAL("y3[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "y3";
+}
+
+SIGNAL("y4")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 4;
+	LSB_INDEX = 1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("y4[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "y4";
+}
+
+SIGNAL("y4[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "y4";
+}
+
+SIGNAL("y4[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "y4";
+}
+
+SIGNAL("y4[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "y4";
+}
+
+TRANSITION_LIST("1hz")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 5000;
+			LEVEL 0 FOR 10.0;
+			LEVEL 1 FOR 10.0;
+		}
+	}
+}
+
+TRANSITION_LIST("2hz")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 10000;
+			LEVEL 0 FOR 5.0;
+			LEVEL 1 FOR 5.0;
+		}
+	}
+}
+
+TRANSITION_LIST("dh[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("dh[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("dh[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 390.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 180.0;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 240.0;
+			LEVEL 0 FOR 380.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 220.0;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 240.0;
+			LEVEL 0 FOR 380.0;
+		}
+		LEVEL 1 FOR 240.0;
+		LEVEL 0 FOR 380.0;
+		LEVEL 1 FOR 220.0;
+		LEVEL 0 FOR 380.0;
+		LEVEL 1 FOR 240.0;
+		LEVEL 0 FOR 520.0;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 240.0;
+			LEVEL 0 FOR 380.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 180.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 380.0;
+				LEVEL 1 FOR 240.0;
+				LEVEL 0 FOR 380.0;
+				LEVEL 1 FOR 220.0;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 380.0;
+				LEVEL 1 FOR 240.0;
+			}
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 220.0;
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 0 FOR 380.0;
+				LEVEL 1 FOR 240.0;
+			}
+			LEVEL 0 FOR 380.0;
+		}
+		LEVEL 1 FOR 180.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 240.0;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 220.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 240.0;
+		}
+		LEVEL 0 FOR 380.0;
+		LEVEL 1 FOR 220.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 240.0;
+		}
+		LEVEL 0 FOR 380.0;
+		LEVEL 1 FOR 200.0;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 380.0;
+				LEVEL 1 FOR 240.0;
+				LEVEL 0 FOR 380.0;
+				LEVEL 1 FOR 220.0;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 380.0;
+				LEVEL 1 FOR 240.0;
+			}
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 220.0;
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 0 FOR 380.0;
+				LEVEL 1 FOR 240.0;
+			}
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 180.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 240.0;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 220.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 240.0;
+		}
+		LEVEL 0 FOR 380.0;
+		LEVEL 1 FOR 220.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 240.0;
+		}
+		LEVEL 0 FOR 380.0;
+		LEVEL 1 FOR 180.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 240.0;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 220.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 240.0;
+		}
+		LEVEL 0 FOR 380.0;
+		LEVEL 1 FOR 220.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 240.0;
+		}
+		LEVEL 0 FOR 380.0;
+		LEVEL 1 FOR 200.0;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 380.0;
+				LEVEL 1 FOR 240.0;
+				LEVEL 0 FOR 380.0;
+				LEVEL 1 FOR 220.0;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 380.0;
+				LEVEL 1 FOR 240.0;
+			}
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 220.0;
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 0 FOR 380.0;
+				LEVEL 1 FOR 240.0;
+			}
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 180.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 240.0;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 220.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 240.0;
+		}
+		LEVEL 0 FOR 380.0;
+		LEVEL 1 FOR 220.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 240.0;
+		}
+		LEVEL 0 FOR 380.0;
+		LEVEL 1 FOR 180.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 240.0;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 220.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 240.0;
+		}
+		LEVEL 0 FOR 380.0;
+		LEVEL 1 FOR 220.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 240.0;
+		}
+		LEVEL 0 FOR 380.0;
+		LEVEL 1 FOR 200.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 240.0;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 220.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 240.0;
+		}
+		LEVEL 0 FOR 380.0;
+		LEVEL 1 FOR 220.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 240.0;
+		}
+		LEVEL 0 FOR 380.0;
+		LEVEL 1 FOR 180.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 240.0;
+			LEVEL 0 FOR 380.0;
+			LEVEL 1 FOR 220.0;
+		}
+		LEVEL 0 FOR 380.0;
+		LEVEL 1 FOR 70.0;
+	}
+}
+
+TRANSITION_LIST("dh[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 190.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 360.0;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 20.0;
+			LEVEL 0 FOR 180.0;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+		}
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 180.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 180.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 180.0;
+		LEVEL 1 FOR 340.0;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			LEVEL 1 FOR 200.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 360.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 200.0;
+				LEVEL 0 FOR 200.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 180.0;
+				LEVEL 1 FOR 200.0;
+				LEVEL 0 FOR 200.0;
+				LEVEL 1 FOR 20.0;
+				LEVEL 0 FOR 180.0;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 200.0;
+				LEVEL 0 FOR 200.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 180.0;
+			}
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 20.0;
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 0 FOR 180.0;
+				LEVEL 1 FOR 200.0;
+				LEVEL 0 FOR 200.0;
+				LEVEL 1 FOR 40.0;
+			}
+			LEVEL 0 FOR 180.0;
+			LEVEL 1 FOR 200.0;
+		}
+		LEVEL 0 FOR 360.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 20.0;
+			LEVEL 0 FOR 180.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+		}
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 20.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 180.0;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 40.0;
+		}
+		LEVEL 0 FOR 180.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 380.0;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 200.0;
+				LEVEL 0 FOR 200.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 180.0;
+				LEVEL 1 FOR 200.0;
+				LEVEL 0 FOR 200.0;
+				LEVEL 1 FOR 20.0;
+				LEVEL 0 FOR 180.0;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 200.0;
+				LEVEL 0 FOR 200.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 180.0;
+			}
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 20.0;
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 0 FOR 180.0;
+				LEVEL 1 FOR 200.0;
+				LEVEL 0 FOR 200.0;
+				LEVEL 1 FOR 40.0;
+			}
+			LEVEL 0 FOR 180.0;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 360.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 20.0;
+			LEVEL 0 FOR 180.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+		}
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 20.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 180.0;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 40.0;
+		}
+		LEVEL 0 FOR 180.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 360.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 20.0;
+			LEVEL 0 FOR 180.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+		}
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 20.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 180.0;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 40.0;
+		}
+		LEVEL 0 FOR 180.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 380.0;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 200.0;
+				LEVEL 0 FOR 200.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 180.0;
+				LEVEL 1 FOR 200.0;
+				LEVEL 0 FOR 200.0;
+				LEVEL 1 FOR 20.0;
+				LEVEL 0 FOR 180.0;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 200.0;
+				LEVEL 0 FOR 200.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 180.0;
+			}
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 20.0;
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 0 FOR 180.0;
+				LEVEL 1 FOR 200.0;
+				LEVEL 0 FOR 200.0;
+				LEVEL 1 FOR 40.0;
+			}
+			LEVEL 0 FOR 180.0;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 360.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 20.0;
+			LEVEL 0 FOR 180.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+		}
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 20.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 180.0;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 40.0;
+		}
+		LEVEL 0 FOR 180.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 360.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 20.0;
+			LEVEL 0 FOR 180.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+		}
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 20.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 180.0;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 40.0;
+		}
+		LEVEL 0 FOR 180.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 380.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 20.0;
+			LEVEL 0 FOR 180.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+		}
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 20.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 180.0;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 40.0;
+		}
+		LEVEL 0 FOR 180.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 360.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 20.0;
+			LEVEL 0 FOR 180.0;
+		}
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 70.0;
+	}
+}
+
+TRANSITION_LIST("dl[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 150.0;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+			LEVEL 1 FOR 20.0;
+			LEVEL 0 FOR 140.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 160.0;
+		}
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 180.0;
+		NODE
+		{
+			REPEAT = 5;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 160.0;
+		}
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 180.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 300.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 160.0;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 20.0;
+			LEVEL 0 FOR 140.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 180.0;
+				NODE
+				{
+					REPEAT = 5;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 160.0;
+				}
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 180.0;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 160.0;
+				}
+			}
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 180.0;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 160.0;
+				}
+			}
+		}
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 140.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 160.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 160.0;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+		}
+		LEVEL 1 FOR 40.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 140.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 180.0;
+				NODE
+				{
+					REPEAT = 5;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 160.0;
+				}
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 180.0;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 160.0;
+				}
+			}
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 180.0;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 160.0;
+				}
+			}
+			LEVEL 1 FOR 20.0;
+		}
+		LEVEL 0 FOR 140.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 160.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 160.0;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+		}
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 140.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 160.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 160.0;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+		}
+		LEVEL 1 FOR 40.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 140.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 180.0;
+				NODE
+				{
+					REPEAT = 5;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 160.0;
+				}
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 180.0;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 160.0;
+				}
+			}
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 180.0;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 160.0;
+				}
+			}
+			LEVEL 1 FOR 20.0;
+		}
+		LEVEL 0 FOR 140.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 160.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 160.0;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+		}
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 140.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 160.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 160.0;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+		}
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 140.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 160.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 160.0;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 180.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 160.0;
+			}
+		}
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 140.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 160.0;
+		}
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 180.0;
+		NODE
+		{
+			REPEAT = 5;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 160.0;
+		}
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 180.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 160.0;
+		}
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 70.0;
+	}
+}
+
+TRANSITION_LIST("dl[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 70.0;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 80.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 140.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 140.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 120.0;
+		}
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 140.0;
+		NODE
+		{
+			REPEAT = 5;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 120.0;
+		}
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 120.0;
+		LEVEL 1 FOR 220.0;
+		LEVEL 0 FOR 120.0;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 140.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 80.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 140.0;
+				NODE
+				{
+					REPEAT = 5;
+					LEVEL 1 FOR 80.0;
+					LEVEL 0 FOR 120.0;
+				}
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 140.0;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 80.0;
+					LEVEL 0 FOR 120.0;
+				}
+			}
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 140.0;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 80.0;
+					LEVEL 0 FOR 120.0;
+				}
+			}
+		}
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 120.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 140.0;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 140.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 120.0;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 140.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+		}
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 100.0;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 140.0;
+				NODE
+				{
+					REPEAT = 5;
+					LEVEL 1 FOR 80.0;
+					LEVEL 0 FOR 120.0;
+				}
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 140.0;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 80.0;
+					LEVEL 0 FOR 120.0;
+				}
+			}
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 140.0;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 80.0;
+					LEVEL 0 FOR 120.0;
+				}
+			}
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 80.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 120.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 140.0;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 140.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 120.0;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 140.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+		}
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 120.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 140.0;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 140.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 120.0;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 140.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+		}
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 100.0;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 140.0;
+				NODE
+				{
+					REPEAT = 5;
+					LEVEL 1 FOR 80.0;
+					LEVEL 0 FOR 120.0;
+				}
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 140.0;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 80.0;
+					LEVEL 0 FOR 120.0;
+				}
+			}
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 140.0;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 80.0;
+					LEVEL 0 FOR 120.0;
+				}
+			}
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 80.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 120.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 140.0;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 140.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 120.0;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 140.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+		}
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 120.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 140.0;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 140.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 120.0;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 140.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+		}
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 100.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 120.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 140.0;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 140.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 120.0;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 140.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 80.0;
+				LEVEL 0 FOR 120.0;
+			}
+		}
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 120.0;
+		}
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 140.0;
+		NODE
+		{
+			REPEAT = 5;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 120.0;
+		}
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 140.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 120.0;
+		}
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 110.0;
+	}
+}
+
+TRANSITION_LIST("dl[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 30.0;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+			}
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+			}
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 100.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+			}
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 100.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 80.0;
+		}
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 100.0;
+		NODE
+		{
+			REPEAT = 5;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 80.0;
+		}
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 180.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 80.0;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 100.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 100.0;
+				NODE
+				{
+					REPEAT = 5;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 40.0;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 80.0;
+				}
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 100.0;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 40.0;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 80.0;
+				}
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+			}
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+			}
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 100.0;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 40.0;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 80.0;
+				}
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 80.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 100.0;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+			}
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 100.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+			}
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 80.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 100.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+			}
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+		}
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 60.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 80.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 100.0;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 100.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 80.0;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 100.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 100.0;
+				NODE
+				{
+					REPEAT = 5;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 40.0;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 80.0;
+				}
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 100.0;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 40.0;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 80.0;
+				}
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+			}
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+			}
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 100.0;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 40.0;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 80.0;
+				}
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 80.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 100.0;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+			}
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 100.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+			}
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 80.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 100.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+			}
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+		}
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 60.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 80.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 100.0;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 100.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 80.0;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 100.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 100.0;
+				NODE
+				{
+					REPEAT = 5;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 40.0;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 80.0;
+				}
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 100.0;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 40.0;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 80.0;
+				}
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+			}
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+			}
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 100.0;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 40.0;
+					LEVEL 1 FOR 40.0;
+					LEVEL 0 FOR 80.0;
+				}
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 80.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 100.0;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+			}
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 100.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+			}
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 80.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 100.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+			}
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+		}
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 60.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 80.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 100.0;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 100.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 80.0;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 100.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 40.0;
+				LEVEL 1 FOR 40.0;
+				LEVEL 0 FOR 80.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 80.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+		}
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 100.0;
+		NODE
+		{
+			REPEAT = 5;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 80.0;
+		}
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 100.0;
+		NODE
+		{
+			REPEAT = 5;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 80.0;
+		}
+		LEVEL 1 FOR 30.0;
+	}
+}
+
+TRANSITION_LIST("dl[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 10.0;
+		NODE
+		{
+			REPEAT = 29;
+			LEVEL 1 FOR 20.0;
+			LEVEL 0 FOR 20.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			NODE
+			{
+				REPEAT = 28;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+			LEVEL 0 FOR 20.0;
+		}
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		NODE
+		{
+			REPEAT = 29;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 40.0;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 15;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
+		}
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		NODE
+		{
+			REPEAT = 6;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
+		}
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 160.0;
+		NODE
+		{
+			REPEAT = 7;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 40.0;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 40.0;
+			NODE
+			{
+				REPEAT = 28;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+		}
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		NODE
+		{
+			REPEAT = 29;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 40.0;
+				NODE
+				{
+					REPEAT = 14;
+					LEVEL 0 FOR 20.0;
+					LEVEL 1 FOR 20.0;
+				}
+			}
+			NODE
+			{
+				REPEAT = 15;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 40.0;
+				NODE
+				{
+					REPEAT = 14;
+					LEVEL 0 FOR 20.0;
+					LEVEL 1 FOR 20.0;
+				}
+			}
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 40.0;
+				NODE
+				{
+					REPEAT = 29;
+					LEVEL 0 FOR 20.0;
+					LEVEL 1 FOR 20.0;
+				}
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 40.0;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 15;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 40.0;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+		}
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		NODE
+		{
+			REPEAT = 14;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 40.0;
+			NODE
+			{
+				REPEAT = 13;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+		}
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 40.0;
+				NODE
+				{
+					REPEAT = 29;
+					LEVEL 0 FOR 20.0;
+					LEVEL 1 FOR 20.0;
+				}
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 40.0;
+				NODE
+				{
+					REPEAT = 14;
+					LEVEL 0 FOR 20.0;
+					LEVEL 1 FOR 20.0;
+				}
+			}
+			NODE
+			{
+				REPEAT = 15;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 40.0;
+				NODE
+				{
+					REPEAT = 14;
+					LEVEL 0 FOR 20.0;
+					LEVEL 1 FOR 20.0;
+				}
+			}
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 40.0;
+			NODE
+			{
+				REPEAT = 29;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 40.0;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 15;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 40.0;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 14;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 40.0;
+			NODE
+			{
+				REPEAT = 29;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 40.0;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 15;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 40.0;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+		}
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		NODE
+		{
+			REPEAT = 14;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 40.0;
+			NODE
+			{
+				REPEAT = 13;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+		}
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 40.0;
+				NODE
+				{
+					REPEAT = 29;
+					LEVEL 0 FOR 20.0;
+					LEVEL 1 FOR 20.0;
+				}
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 40.0;
+				NODE
+				{
+					REPEAT = 14;
+					LEVEL 0 FOR 20.0;
+					LEVEL 1 FOR 20.0;
+				}
+			}
+			NODE
+			{
+				REPEAT = 15;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 40.0;
+				NODE
+				{
+					REPEAT = 14;
+					LEVEL 0 FOR 20.0;
+					LEVEL 1 FOR 20.0;
+				}
+			}
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 40.0;
+			NODE
+			{
+				REPEAT = 29;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 40.0;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 15;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 40.0;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 14;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 40.0;
+			NODE
+			{
+				REPEAT = 29;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 40.0;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 15;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 40.0;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+		}
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		NODE
+		{
+			REPEAT = 14;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 40.0;
+			NODE
+			{
+				REPEAT = 13;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+		}
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 40.0;
+			NODE
+			{
+				REPEAT = 29;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 40.0;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 15;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 40.0;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 14;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
+		}
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		NODE
+		{
+			REPEAT = 29;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
+		}
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		NODE
+		{
+			REPEAT = 25;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
+		}
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+	}
+}
+
+TRANSITION_LIST("in1")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 6940.0;
+		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 92920.0;
+	}
+}
+
+TRANSITION_LIST("k2")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("k5")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("k6")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("k7")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("k8")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("mh[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("mh[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("mh[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("mh[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 6050.0;
+		LEVEL 1 FOR 2000.0;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 0 FOR 5460.0;
+			LEVEL 1 FOR 1860.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 5480.0;
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 1860.0;
+				LEVEL 0 FOR 5460.0;
+			}
+			LEVEL 1 FOR 1860.0;
+		}
+		LEVEL 0 FOR 5480.0;
+		LEVEL 1 FOR 1860.0;
+		LEVEL 0 FOR 4050.0;
+	}
+}
+
+TRANSITION_LIST("ml[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 4830.0;
+		LEVEL 1 FOR 1220.0;
+		LEVEL 0 FOR 6240.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 1220.0;
+			LEVEL 0 FOR 6100.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 1220.0;
+			LEVEL 0 FOR 6120.0;
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 1220.0;
+				LEVEL 0 FOR 6100.0;
+			}
+		}
+		LEVEL 1 FOR 1220.0;
+		LEVEL 0 FOR 6120.0;
+		LEVEL 1 FOR 1220.0;
+		LEVEL 0 FOR 5910.0;
+	}
+}
+
+TRANSITION_LIST("ml[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 2390.0;
+		LEVEL 1 FOR 2440.0;
+		LEVEL 0 FOR 5020.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 2440.0;
+			LEVEL 0 FOR 4880.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 2440.0;
+			LEVEL 0 FOR 4900.0;
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 2440.0;
+				LEVEL 0 FOR 4880.0;
+			}
+		}
+		LEVEL 1 FOR 2440.0;
+		LEVEL 0 FOR 4900.0;
+		LEVEL 1 FOR 2440.0;
+		LEVEL 0 FOR 4880.0;
+		LEVEL 1 FOR 2250.0;
+	}
+}
+
+TRANSITION_LIST("ml[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1210.0;
+		LEVEL 1 FOR 1180.0;
+		LEVEL 0 FOR 1220.0;
+		LEVEL 1 FOR 1220.0;
+		LEVEL 0 FOR 2600.0;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 620.0;
+			LEVEL 0 FOR 620.0;
+			LEVEL 1 FOR 1180.0;
+			LEVEL 0 FOR 1220.0;
+			LEVEL 1 FOR 1220.0;
+			LEVEL 0 FOR 2460.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 620.0;
+			LEVEL 0 FOR 620.0;
+			LEVEL 1 FOR 1200.0;
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 0 FOR 1220.0;
+				LEVEL 1 FOR 1220.0;
+				LEVEL 0 FOR 2460.0;
+				LEVEL 1 FOR 620.0;
+				LEVEL 0 FOR 620.0;
+				LEVEL 1 FOR 1180.0;
+			}
+			LEVEL 0 FOR 1220.0;
+			LEVEL 1 FOR 1220.0;
+			LEVEL 0 FOR 2460.0;
+		}
+		LEVEL 1 FOR 620.0;
+		LEVEL 0 FOR 620.0;
+		LEVEL 1 FOR 1200.0;
+		LEVEL 0 FOR 1220.0;
+		LEVEL 1 FOR 1220.0;
+		LEVEL 0 FOR 2460.0;
+		LEVEL 1 FOR 620.0;
+		LEVEL 0 FOR 620.0;
+		LEVEL 1 FOR 1180.0;
+		LEVEL 0 FOR 1220.0;
+		LEVEL 1 FOR 1030.0;
+	}
+}
+
+TRANSITION_LIST("ml[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 590.0;
+		LEVEL 1 FOR 620.0;
+		LEVEL 0 FOR 560.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 620.0;
+			LEVEL 0 FOR 600.0;
+		}
+		LEVEL 1 FOR 620.0;
+		LEVEL 0 FOR 620.0;
+		LEVEL 1 FOR 600.0;
+		LEVEL 0 FOR 620.0;
+		LEVEL 1 FOR 760.0;
+		LEVEL 0 FOR 620.0;
+		LEVEL 1 FOR 620.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 560.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 620.0;
+				LEVEL 0 FOR 600.0;
+			}
+			LEVEL 1 FOR 620.0;
+			LEVEL 0 FOR 620.0;
+			LEVEL 1 FOR 600.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 620.0;
+				LEVEL 1 FOR 620.0;
+			}
+		}
+		LEVEL 0 FOR 560.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 620.0;
+			LEVEL 0 FOR 600.0;
+		}
+		LEVEL 1 FOR 620.0;
+		LEVEL 0 FOR 620.0;
+		LEVEL 1 FOR 600.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 620.0;
+			LEVEL 1 FOR 620.0;
+		}
+		LEVEL 0 FOR 580.0;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 620.0;
+				LEVEL 0 FOR 600.0;
+			}
+			LEVEL 1 FOR 620.0;
+			LEVEL 0 FOR 620.0;
+			LEVEL 1 FOR 600.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 620.0;
+				LEVEL 1 FOR 620.0;
+			}
+			LEVEL 0 FOR 560.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 620.0;
+			LEVEL 0 FOR 600.0;
+		}
+		LEVEL 1 FOR 620.0;
+		LEVEL 0 FOR 620.0;
+		LEVEL 1 FOR 600.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 620.0;
+			LEVEL 1 FOR 620.0;
+		}
+		LEVEL 0 FOR 560.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 620.0;
+			LEVEL 0 FOR 600.0;
+		}
+		LEVEL 1 FOR 620.0;
+		LEVEL 0 FOR 620.0;
+		LEVEL 1 FOR 600.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 620.0;
+			LEVEL 1 FOR 620.0;
+		}
+		LEVEL 0 FOR 580.0;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 620.0;
+				LEVEL 0 FOR 600.0;
+			}
+			LEVEL 1 FOR 620.0;
+			LEVEL 0 FOR 620.0;
+			LEVEL 1 FOR 600.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 620.0;
+				LEVEL 1 FOR 620.0;
+			}
+			LEVEL 0 FOR 560.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 620.0;
+			LEVEL 0 FOR 600.0;
+		}
+		LEVEL 1 FOR 620.0;
+		LEVEL 0 FOR 620.0;
+		LEVEL 1 FOR 600.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 620.0;
+			LEVEL 1 FOR 620.0;
+		}
+		LEVEL 0 FOR 560.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 620.0;
+			LEVEL 0 FOR 600.0;
+		}
+		LEVEL 1 FOR 620.0;
+		LEVEL 0 FOR 620.0;
+		LEVEL 1 FOR 600.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 620.0;
+			LEVEL 1 FOR 620.0;
+		}
+		LEVEL 0 FOR 580.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 620.0;
+			LEVEL 0 FOR 600.0;
+		}
+		LEVEL 1 FOR 620.0;
+		LEVEL 0 FOR 620.0;
+		LEVEL 1 FOR 600.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 620.0;
+			LEVEL 1 FOR 620.0;
+		}
+		LEVEL 0 FOR 560.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 620.0;
+			LEVEL 0 FOR 600.0;
+		}
+		LEVEL 1 FOR 430.0;
+	}
+}
+
+TRANSITION_LIST("y3[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("y3[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("y3[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("y3[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 73970.0;
+		LEVEL 1 FOR 26030.0;
+	}
+}
+
+TRANSITION_LIST("y4[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 59310.0;
+		LEVEL 1 FOR 14660.0;
+		LEVEL 0 FOR 26030.0;
+	}
+}
+
+TRANSITION_LIST("y4[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 30010.0;
+		LEVEL 1 FOR 29300.0;
+		LEVEL 0 FOR 40690.0;
+	}
+}
+
+TRANSITION_LIST("y4[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 15370.0;
+		LEVEL 1 FOR 14640.0;
+		LEVEL 0 FOR 14660.0;
+		LEVEL 1 FOR 14640.0;
+		LEVEL 0 FOR 29300.0;
+		LEVEL 1 FOR 11390.0;
+	}
+}
+
+TRANSITION_LIST("y4[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 8050.0;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 7320.0;
+			LEVEL 0 FOR 7320.0;
+			LEVEL 1 FOR 7320.0;
+			LEVEL 0 FOR 7340.0;
+		}
+		LEVEL 1 FOR 4050.0;
+	}
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "1hz";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 0;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "2hz";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 1;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dh";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 2;
+	TREE_LEVEL = 0;
+	CHILDREN = 3, 4, 5, 6;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dh[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 3;
+	TREE_LEVEL = 1;
+	PARENT = 2;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dh[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 4;
+	TREE_LEVEL = 1;
+	PARENT = 2;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dh[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 5;
+	TREE_LEVEL = 1;
+	PARENT = 2;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dh[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 6;
+	TREE_LEVEL = 1;
+	PARENT = 2;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dl";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 7;
+	TREE_LEVEL = 0;
+	CHILDREN = 8, 9, 10, 11;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dl[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 8;
+	TREE_LEVEL = 1;
+	PARENT = 7;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dl[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 9;
+	TREE_LEVEL = 1;
+	PARENT = 7;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dl[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 10;
+	TREE_LEVEL = 1;
+	PARENT = 7;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dl[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 11;
+	TREE_LEVEL = 1;
+	PARENT = 7;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "in1";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 12;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "k2";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 13;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "k5";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 14;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "k6";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 15;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "k7";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 16;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "k8";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 17;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "mh";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 18;
+	TREE_LEVEL = 0;
+	CHILDREN = 19, 20, 21, 22;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "mh[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 19;
+	TREE_LEVEL = 1;
+	PARENT = 18;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "mh[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 20;
+	TREE_LEVEL = 1;
+	PARENT = 18;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "mh[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 21;
+	TREE_LEVEL = 1;
+	PARENT = 18;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "mh[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 22;
+	TREE_LEVEL = 1;
+	PARENT = 18;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ml";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 23;
+	TREE_LEVEL = 0;
+	CHILDREN = 24, 25, 26, 27;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ml[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 24;
+	TREE_LEVEL = 1;
+	PARENT = 23;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ml[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 25;
+	TREE_LEVEL = 1;
+	PARENT = 23;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ml[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 26;
+	TREE_LEVEL = 1;
+	PARENT = 23;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ml[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 27;
+	TREE_LEVEL = 1;
+	PARENT = 23;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "y3";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 28;
+	TREE_LEVEL = 0;
+	CHILDREN = 29, 30, 31, 32;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "y3[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 29;
+	TREE_LEVEL = 1;
+	PARENT = 28;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "y3[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 30;
+	TREE_LEVEL = 1;
+	PARENT = 28;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "y3[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 31;
+	TREE_LEVEL = 1;
+	PARENT = 28;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "y3[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 32;
+	TREE_LEVEL = 1;
+	PARENT = 28;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "y4";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 33;
+	TREE_LEVEL = 0;
+	CHILDREN = 34, 35, 36, 37;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "y4[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 34;
+	TREE_LEVEL = 1;
+	PARENT = 33;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "y4[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 35;
+	TREE_LEVEL = 1;
+	PARENT = 33;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "y4[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 36;
+	TREE_LEVEL = 1;
+	PARENT = 33;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "y4[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 37;
+	TREE_LEVEL = 1;
+	PARENT = 33;
+}
+
+TIME_BAR
+{
+	TIME = 100000;
+	MASTER = TRUE;
+}
+
+TIME_BAR
+{
+	TIME = 360000;
+	MASTER = FALSE;
+}
+;

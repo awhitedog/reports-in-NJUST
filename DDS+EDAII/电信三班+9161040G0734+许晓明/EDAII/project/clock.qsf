@@ -1,0 +1,151 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 9.1 Build 222 10/21/2009 SJ Full Version
+# Date created = 09:49:16  October 30, 2018
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		clock_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C25F324C8
+set_global_assignment -name TOP_LEVEL_ENTITY all
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:49:16  OCTOBER 30, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION 9.1
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 324
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name BDF_FILE 10fenpin.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE 10fenpin.vwf
+set_global_assignment -name BDF_FILE 2fenpin.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE 2fenpin.vwf
+set_global_assignment -name BDF_FILE 12fenpin.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE 12fenpin.vwf
+set_global_assignment -name BDF_FILE 4fenpin.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE 4fenpin.vwf
+set_global_assignment -name BDF_FILE 1000fenpin.bdf
+set_global_assignment -name BDF_FILE fenpin.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE fenpin.vwf
+set_global_assignment -name BDF_FILE 1k.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE 1k.vwf
+set_global_assignment -name BDF_FILE xiaochan.bdf
+set_global_assignment -name VHDL_FILE mo7.vhd
+set_global_assignment -name BDF_FILE baoshi.bdf
+set_global_assignment -name BDF_FILE xiaochanjihe.bdf
+set_global_assignment -name VHDL_FILE mo24.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE mo24.vwf
+set_global_assignment -name VHDL_FILE mo60.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE mo60.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE mo7.vwf
+set_global_assignment -name BDF_FILE jiaofen.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE jiaofen.vwf
+set_global_assignment -name BDF_FILE baochi.bdf
+set_global_assignment -name BDF_FILE jiaoshi.bdf
+set_global_assignment -name BDF_FILE jiaoxq.bdf
+set_global_assignment -name VHDL_FILE mo8.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE mo8.vwf
+set_global_assignment -name ADD_DEFAULT_PINS_TO_SIMULATION_OUTPUT_WAVEFORMS ON
+set_global_assignment -name SIMULATOR_GENERATE_POWERPLAY_VCD_FILE OFF
+set_global_assignment -name BDF_FILE jishi.bdf
+set_global_assignment -name VHDL_FILE chose8to1.vhd
+set_global_assignment -name VHDL_FILE translate3to8.vhd
+set_global_assignment -name VHDL_FILE 7yimaqi.vhd
+set_global_assignment -name BDF_FILE naozhongxiaochan.bdf
+set_global_assignment -name VHDL_FILE compare.vhd
+set_global_assignment -name BDF_FILE jiaoxqfuyong.bdf
+set_global_assignment -name BDF_FILE xianshi.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE mo8t2.vwf
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name SETUP_HOLD_DETECTION OFF
+set_global_assignment -name SIMULATOR_GENERATE_SIGNAL_ACTIVITY_FILE OFF
+set_global_assignment -name BDF_FILE all.bdf
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_F8 -to buzzer
+set_location_assignment PIN_A10 -to 48mhz
+set_location_assignment PIN_J13 -to dig[7]
+set_location_assignment PIN_H16 -to dig[6]
+set_location_assignment PIN_L16 -to dig[5]
+set_location_assignment PIN_L14 -to dig[4]
+set_location_assignment PIN_D16 -to dig[3]
+set_location_assignment PIN_A18 -to dig[2]
+set_location_assignment PIN_E14 -to dig[1]
+set_location_assignment PIN_H15 -to dig[0]
+set_location_assignment PIN_V9 -to k1
+set_location_assignment PIN_U10 -to k2
+set_location_assignment PIN_B9 -to k3
+set_location_assignment PIN_B10 -to k4
+set_location_assignment PIN_R18 -to k5
+set_location_assignment PIN_C14 -to led[7]
+set_location_assignment PIN_E13 -to led[6]
+set_location_assignment PIN_D12 -to led[5]
+set_location_assignment PIN_C12 -to led[4]
+set_location_assignment PIN_F12 -to led[3]
+set_location_assignment PIN_E11 -to led[2]
+set_location_assignment PIN_F10 -to led[1]
+set_global_assignment -name MISC_FILE "E:/baogao/EDAII DGDZ/project/clock.dpf"
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_WEAK_PULLUP "AS INPUT TRI-STATED"
+set_global_assignment -name BDF_FILE fenpin2.bdf
+set_global_assignment -name VHDL_FILE month.vhd
+set_global_assignment -name VHDL_FILE day.vhd
+set_global_assignment -name VHDL_FILE year.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE day.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE month.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE year.vwf
+set_global_assignment -name BDF_FILE rilixiaochan.bdf
+set_global_assignment -name VHDL_FILE judge.vhd
+set_global_assignment -name BDF_FILE nianli.bdf
+set_global_assignment -name BDF_FILE jiaonian.bdf
+set_global_assignment -name BDF_FILE jiaoyue.bdf
+set_global_assignment -name BDF_FILE jiaori.bdf
+set_global_assignment -name BDF_FILE rilijiaoshi.bdf
+set_global_assignment -name BDF_FILE xianshinianli.bdf
+set_global_assignment -name VHDL_FILE translate3to8no2.vhd
+set_global_assignment -name VHDL_FILE chose8to1no2.vhd
+set_location_assignment PIN_R17 -to k6
+set_location_assignment PIN_P18 -to k7
+set_location_assignment PIN_P17 -to k8
+set_global_assignment -name VHDL_FILE music.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE nianli.vwf
+set_global_assignment -name QIP_FILE lpm_mux1.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE judge.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE 001.vwf
+set_global_assignment -name CHECK_OUTPUTS OFF
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE nianli.vwf
+set_global_assignment -name BDF_FILE rilifuyong.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

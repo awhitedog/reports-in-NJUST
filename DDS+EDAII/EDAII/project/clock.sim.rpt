@@ -1,0 +1,818 @@
+Simulator report for clock
+Tue Dec 11 13:57:50 2018
+Quartus II 64-Bit Version 9.1 Build 222 10/21/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 100.0 us     ;
+; Simulation Netlist Size     ; 513 nodes    ;
+; Simulation Coverage         ;      71.48 % ;
+; Total Number of Transitions ; 321115       ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; nianli.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      71.48 % ;
+; Total nodes checked                                 ; 513          ;
+; Total output ports checked                          ; 512          ;
+; Total output ports with complete 1/0-value coverage ; 366          ;
+; Total output ports with no 1/0-value coverage       ; 140          ;
+; Total output ports with no 1-value coverage         ; 140          ;
+; Total output ports with no 0-value coverage         ; 146          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                        ;
++------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+; Node Name                                                              ; Output Port Name                                                       ; Output Port Type ;
++------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+; |nianli|dh[2]                                                          ; |nianli|dh[2]                                                          ; pin_out          ;
+; |nianli|dh[1]                                                          ; |nianli|dh[1]                                                          ; pin_out          ;
+; |nianli|2hz                                                            ; |nianli|2hz                                                            ; out              ;
+; |nianli|1hz                                                            ; |nianli|1hz                                                            ; out              ;
+; |nianli|in1                                                            ; |nianli|in1                                                            ; out              ;
+; |nianli|mh[1]                                                          ; |nianli|mh[1]                                                          ; pin_out          ;
+; |nianli|ml[4]                                                          ; |nianli|ml[4]                                                          ; pin_out          ;
+; |nianli|ml[3]                                                          ; |nianli|ml[3]                                                          ; pin_out          ;
+; |nianli|ml[2]                                                          ; |nianli|ml[2]                                                          ; pin_out          ;
+; |nianli|ml[1]                                                          ; |nianli|ml[1]                                                          ; pin_out          ;
+; |nianli|dl[4]                                                          ; |nianli|dl[4]                                                          ; pin_out          ;
+; |nianli|dl[3]                                                          ; |nianli|dl[3]                                                          ; pin_out          ;
+; |nianli|dl[2]                                                          ; |nianli|dl[2]                                                          ; pin_out          ;
+; |nianli|dl[1]                                                          ; |nianli|dl[1]                                                          ; pin_out          ;
+; |nianli|y4[4]                                                          ; |nianli|y4[4]                                                          ; pin_out          ;
+; |nianli|y4[3]                                                          ; |nianli|y4[3]                                                          ; pin_out          ;
+; |nianli|y4[2]                                                          ; |nianli|y4[2]                                                          ; pin_out          ;
+; |nianli|y4[1]                                                          ; |nianli|y4[1]                                                          ; pin_out          ;
+; |nianli|jiaonian:inst7|inst3                                           ; |nianli|jiaonian:inst7|inst3                                           ; out0             ;
+; |nianli|jiaonian:inst7|inst                                            ; |nianli|jiaonian:inst7|inst                                            ; out0             ;
+; |nianli|year:inst|r[0]                                                 ; |nianli|year:inst|r[0]                                                 ; regout           ;
+; |nianli|year:inst|run                                                  ; |nianli|year:inst|run                                                  ; regout           ;
+; |nianli|year:inst|y4~0                                                 ; |nianli|year:inst|y4~0                                                 ; out              ;
+; |nianli|year:inst|y4~1                                                 ; |nianli|year:inst|y4~1                                                 ; out              ;
+; |nianli|year:inst|y4~2                                                 ; |nianli|year:inst|y4~2                                                 ; out              ;
+; |nianli|year:inst|y4~3                                                 ; |nianli|year:inst|y4~3                                                 ; out              ;
+; |nianli|year:inst|y4~4                                                 ; |nianli|year:inst|y4~4                                                 ; out              ;
+; |nianli|year:inst|y4~5                                                 ; |nianli|year:inst|y4~5                                                 ; out              ;
+; |nianli|year:inst|y4~6                                                 ; |nianli|year:inst|y4~6                                                 ; out              ;
+; |nianli|year:inst|y4~7                                                 ; |nianli|year:inst|y4~7                                                 ; out              ;
+; |nianli|year:inst|y4~8                                                 ; |nianli|year:inst|y4~8                                                 ; out              ;
+; |nianli|year:inst|y4~9                                                 ; |nianli|year:inst|y4~9                                                 ; out              ;
+; |nianli|year:inst|y4~10                                                ; |nianli|year:inst|y4~10                                                ; out              ;
+; |nianli|year:inst|y4~11                                                ; |nianli|year:inst|y4~11                                                ; out              ;
+; |nianli|year:inst|y4~12                                                ; |nianli|year:inst|y4~12                                                ; out              ;
+; |nianli|year:inst|y4~13                                                ; |nianli|year:inst|y4~13                                                ; out              ;
+; |nianli|year:inst|y4~14                                                ; |nianli|year:inst|y4~14                                                ; out              ;
+; |nianli|year:inst|y4~15                                                ; |nianli|year:inst|y4~15                                                ; out              ;
+; |nianli|year:inst|r~0                                                  ; |nianli|year:inst|r~0                                                  ; out              ;
+; |nianli|year:inst|r~1                                                  ; |nianli|year:inst|r~1                                                  ; out              ;
+; |nianli|year:inst|y4~16                                                ; |nianli|year:inst|y4~16                                                ; out              ;
+; |nianli|year:inst|y4~17                                                ; |nianli|year:inst|y4~17                                                ; out              ;
+; |nianli|year:inst|y4~18                                                ; |nianli|year:inst|y4~18                                                ; out              ;
+; |nianli|year:inst|y4~19                                                ; |nianli|year:inst|y4~19                                                ; out              ;
+; |nianli|year:inst|y3~11                                                ; |nianli|year:inst|y3~11                                                ; out              ;
+; |nianli|year:inst|run~0                                                ; |nianli|year:inst|run~0                                                ; out              ;
+; |nianli|year:inst|r~2                                                  ; |nianli|year:inst|r~2                                                  ; out              ;
+; |nianli|year:inst|r~3                                                  ; |nianli|year:inst|r~3                                                  ; out              ;
+; |nianli|year:inst|y3~15                                                ; |nianli|year:inst|y3~15                                                ; out              ;
+; |nianli|year:inst|y4~20                                                ; |nianli|year:inst|y4~20                                                ; out              ;
+; |nianli|year:inst|y4~21                                                ; |nianli|year:inst|y4~21                                                ; out              ;
+; |nianli|year:inst|y4~22                                                ; |nianli|year:inst|y4~22                                                ; out              ;
+; |nianli|year:inst|y4~23                                                ; |nianli|year:inst|y4~23                                                ; out              ;
+; |nianli|year:inst|r~4                                                  ; |nianli|year:inst|r~4                                                  ; out              ;
+; |nianli|year:inst|r~5                                                  ; |nianli|year:inst|r~5                                                  ; out              ;
+; |nianli|year:inst|r[1]                                                 ; |nianli|year:inst|r[1]                                                 ; regout           ;
+; |nianli|year:inst|y4[0]                                                ; |nianli|year:inst|y4[0]                                                ; regout           ;
+; |nianli|year:inst|y4[1]                                                ; |nianli|year:inst|y4[1]                                                ; regout           ;
+; |nianli|year:inst|y4[2]                                                ; |nianli|year:inst|y4[2]                                                ; regout           ;
+; |nianli|year:inst|y4[3]                                                ; |nianli|year:inst|y4[3]                                                ; regout           ;
+; |nianli|judge:inst3|process_0~0                                        ; |nianli|judge:inst3|process_0~0                                        ; out0             ;
+; |nianli|judge:inst3|process_0~1                                        ; |nianli|judge:inst3|process_0~1                                        ; out0             ;
+; |nianli|judge:inst3|process_0~2                                        ; |nianli|judge:inst3|process_0~2                                        ; out0             ;
+; |nianli|judge:inst3|process_0~3                                        ; |nianli|judge:inst3|process_0~3                                        ; out0             ;
+; |nianli|judge:inst3|process_0~4                                        ; |nianli|judge:inst3|process_0~4                                        ; out0             ;
+; |nianli|judge:inst3|process_0~5                                        ; |nianli|judge:inst3|process_0~5                                        ; out0             ;
+; |nianli|judge:inst3|process_0~6                                        ; |nianli|judge:inst3|process_0~6                                        ; out0             ;
+; |nianli|judge:inst3|process_0~7                                        ; |nianli|judge:inst3|process_0~7                                        ; out0             ;
+; |nianli|judge:inst3|process_0~8                                        ; |nianli|judge:inst3|process_0~8                                        ; out0             ;
+; |nianli|judge:inst3|process_0~9                                        ; |nianli|judge:inst3|process_0~9                                        ; out0             ;
+; |nianli|judge:inst3|process_0~10                                       ; |nianli|judge:inst3|process_0~10                                       ; out0             ;
+; |nianli|judge:inst3|process_0~11                                       ; |nianli|judge:inst3|process_0~11                                       ; out0             ;
+; |nianli|judge:inst3|process_0~12                                       ; |nianli|judge:inst3|process_0~12                                       ; out0             ;
+; |nianli|judge:inst3|process_0~13                                       ; |nianli|judge:inst3|process_0~13                                       ; out0             ;
+; |nianli|judge:inst3|j~0                                                ; |nianli|judge:inst3|j~0                                                ; out              ;
+; |nianli|judge:inst3|j[1]                                               ; |nianli|judge:inst3|j[1]                                               ; out              ;
+; |nianli|judge:inst3|j[0]                                               ; |nianli|judge:inst3|j[0]                                               ; out              ;
+; |nianli|jiaoyue:inst8|inst3                                            ; |nianli|jiaoyue:inst8|inst3                                            ; out0             ;
+; |nianli|jiaoyue:inst8|inst                                             ; |nianli|jiaoyue:inst8|inst                                             ; out0             ;
+; |nianli|month:inst1|rco~0                                              ; |nianli|month:inst1|rco~0                                              ; out0             ;
+; |nianli|month:inst1|rco                                                ; |nianli|month:inst1|rco                                                ; out0             ;
+; |nianli|month:inst1|ml[0]                                              ; |nianli|month:inst1|ml[0]                                              ; regout           ;
+; |nianli|month:inst1|process_0~0                                        ; |nianli|month:inst1|process_0~0                                        ; out0             ;
+; |nianli|month:inst1|process_0~1                                        ; |nianli|month:inst1|process_0~1                                        ; out0             ;
+; |nianli|month:inst1|ml~0                                               ; |nianli|month:inst1|ml~0                                               ; out              ;
+; |nianli|month:inst1|ml~1                                               ; |nianli|month:inst1|ml~1                                               ; out              ;
+; |nianli|month:inst1|ml~2                                               ; |nianli|month:inst1|ml~2                                               ; out              ;
+; |nianli|month:inst1|ml~3                                               ; |nianli|month:inst1|ml~3                                               ; out              ;
+; |nianli|month:inst1|mh~3                                               ; |nianli|month:inst1|mh~3                                               ; out              ;
+; |nianli|month:inst1|mh[0]                                              ; |nianli|month:inst1|mh[0]                                              ; regout           ;
+; |nianli|month:inst1|ml[3]                                              ; |nianli|month:inst1|ml[3]                                              ; regout           ;
+; |nianli|month:inst1|ml[2]                                              ; |nianli|month:inst1|ml[2]                                              ; regout           ;
+; |nianli|month:inst1|ml[1]                                              ; |nianli|month:inst1|ml[1]                                              ; regout           ;
+; |nianli|rilijiaoshi:inst5|inst4                                        ; |nianli|rilijiaoshi:inst5|inst4                                        ; out0             ;
+; |nianli|rilijiaoshi:inst5|inst1                                        ; |nianli|rilijiaoshi:inst5|inst1                                        ; out0             ;
+; |nianli|rilijiaoshi:inst5|inst5                                        ; |nianli|rilijiaoshi:inst5|inst5                                        ; out0             ;
+; |nianli|rilijiaoshi:inst5|inst2                                        ; |nianli|rilijiaoshi:inst5|inst2                                        ; out0             ;
+; |nianli|rilijiaoshi:inst5|inst9                                        ; |nianli|rilijiaoshi:inst5|inst9                                        ; out0             ;
+; |nianli|rilijiaoshi:inst5|inst7                                        ; |nianli|rilijiaoshi:inst5|inst7                                        ; out0             ;
+; |nianli|jiaori:inst9|inst3                                             ; |nianli|jiaori:inst9|inst3                                             ; out0             ;
+; |nianli|jiaori:inst9|inst                                              ; |nianli|jiaori:inst9|inst                                              ; out0             ;
+; |nianli|day:inst2|dl[2]                                                ; |nianli|day:inst2|dl[2]                                                ; regout           ;
+; |nianli|day:inst2|process_0~0                                          ; |nianli|day:inst2|process_0~0                                          ; out0             ;
+; |nianli|day:inst2|dh~2                                                 ; |nianli|day:inst2|dh~2                                                 ; out              ;
+; |nianli|day:inst2|dh~3                                                 ; |nianli|day:inst2|dh~3                                                 ; out              ;
+; |nianli|day:inst2|dl~0                                                 ; |nianli|day:inst2|dl~0                                                 ; out              ;
+; |nianli|day:inst2|dl~1                                                 ; |nianli|day:inst2|dl~1                                                 ; out              ;
+; |nianli|day:inst2|dl~2                                                 ; |nianli|day:inst2|dl~2                                                 ; out              ;
+; |nianli|day:inst2|dl~3                                                 ; |nianli|day:inst2|dl~3                                                 ; out              ;
+; |nianli|day:inst2|dl[1]                                                ; |nianli|day:inst2|dl[1]                                                ; regout           ;
+; |nianli|day:inst2|process_0~1                                          ; |nianli|day:inst2|process_0~1                                          ; out0             ;
+; |nianli|day:inst2|dh~6                                                 ; |nianli|day:inst2|dh~6                                                 ; out              ;
+; |nianli|day:inst2|dh~7                                                 ; |nianli|day:inst2|dh~7                                                 ; out              ;
+; |nianli|day:inst2|dl~4                                                 ; |nianli|day:inst2|dl~4                                                 ; out              ;
+; |nianli|day:inst2|dl~5                                                 ; |nianli|day:inst2|dl~5                                                 ; out              ;
+; |nianli|day:inst2|dl~6                                                 ; |nianli|day:inst2|dl~6                                                 ; out              ;
+; |nianli|day:inst2|dl~7                                                 ; |nianli|day:inst2|dl~7                                                 ; out              ;
+; |nianli|day:inst2|dl[0]                                                ; |nianli|day:inst2|dl[0]                                                ; regout           ;
+; |nianli|day:inst2|process_0~2                                          ; |nianli|day:inst2|process_0~2                                          ; out0             ;
+; |nianli|day:inst2|dh~10                                                ; |nianli|day:inst2|dh~10                                                ; out              ;
+; |nianli|day:inst2|dh~11                                                ; |nianli|day:inst2|dh~11                                                ; out              ;
+; |nianli|day:inst2|dl~8                                                 ; |nianli|day:inst2|dl~8                                                 ; out              ;
+; |nianli|day:inst2|dl~9                                                 ; |nianli|day:inst2|dl~9                                                 ; out              ;
+; |nianli|day:inst2|dl~10                                                ; |nianli|day:inst2|dl~10                                                ; out              ;
+; |nianli|day:inst2|dl~11                                                ; |nianli|day:inst2|dl~11                                                ; out              ;
+; |nianli|day:inst2|rco                                                  ; |nianli|day:inst2|rco                                                  ; regout           ;
+; |nianli|day:inst2|process_0~3                                          ; |nianli|day:inst2|process_0~3                                          ; out0             ;
+; |nianli|day:inst2|dh~14                                                ; |nianli|day:inst2|dh~14                                                ; out              ;
+; |nianli|day:inst2|dh~15                                                ; |nianli|day:inst2|dh~15                                                ; out              ;
+; |nianli|day:inst2|dl~12                                                ; |nianli|day:inst2|dl~12                                                ; out              ;
+; |nianli|day:inst2|dl~13                                                ; |nianli|day:inst2|dl~13                                                ; out              ;
+; |nianli|day:inst2|dl~14                                                ; |nianli|day:inst2|dl~14                                                ; out              ;
+; |nianli|day:inst2|dl~15                                                ; |nianli|day:inst2|dl~15                                                ; out              ;
+; |nianli|day:inst2|dh~18                                                ; |nianli|day:inst2|dh~18                                                ; out              ;
+; |nianli|day:inst2|dh~19                                                ; |nianli|day:inst2|dh~19                                                ; out              ;
+; |nianli|day:inst2|dl~16                                                ; |nianli|day:inst2|dl~16                                                ; out              ;
+; |nianli|day:inst2|dl~17                                                ; |nianli|day:inst2|dl~17                                                ; out              ;
+; |nianli|day:inst2|dl~18                                                ; |nianli|day:inst2|dl~18                                                ; out              ;
+; |nianli|day:inst2|dl~19                                                ; |nianli|day:inst2|dl~19                                                ; out              ;
+; |nianli|day:inst2|dh~22                                                ; |nianli|day:inst2|dh~22                                                ; out              ;
+; |nianli|day:inst2|dh~23                                                ; |nianli|day:inst2|dh~23                                                ; out              ;
+; |nianli|day:inst2|dl~20                                                ; |nianli|day:inst2|dl~20                                                ; out              ;
+; |nianli|day:inst2|dl~21                                                ; |nianli|day:inst2|dl~21                                                ; out              ;
+; |nianli|day:inst2|dl~22                                                ; |nianli|day:inst2|dl~22                                                ; out              ;
+; |nianli|day:inst2|dl~23                                                ; |nianli|day:inst2|dl~23                                                ; out              ;
+; |nianli|day:inst2|rco~0                                                ; |nianli|day:inst2|rco~0                                                ; out              ;
+; |nianli|day:inst2|dl[3]                                                ; |nianli|day:inst2|dl[3]                                                ; regout           ;
+; |nianli|day:inst2|dh[0]                                                ; |nianli|day:inst2|dh[0]                                                ; regout           ;
+; |nianli|day:inst2|dh[1]                                                ; |nianli|day:inst2|dh[1]                                                ; regout           ;
+; |nianli|year:inst|Add3~0                                               ; |nianli|year:inst|Add3~0                                               ; out0             ;
+; |nianli|year:inst|Add3~1                                               ; |nianli|year:inst|Add3~1                                               ; out0             ;
+; |nianli|year:inst|Add3~2                                               ; |nianli|year:inst|Add3~2                                               ; out0             ;
+; |nianli|year:inst|Add3~3                                               ; |nianli|year:inst|Add3~3                                               ; out0             ;
+; |nianli|year:inst|Add3~4                                               ; |nianli|year:inst|Add3~4                                               ; out0             ;
+; |nianli|year:inst|Add4~0                                               ; |nianli|year:inst|Add4~0                                               ; out0             ;
+; |nianli|month:inst1|Add0~0                                             ; |nianli|month:inst1|Add0~0                                             ; out0             ;
+; |nianli|month:inst1|Add0~1                                             ; |nianli|month:inst1|Add0~1                                             ; out0             ;
+; |nianli|month:inst1|Add0~2                                             ; |nianli|month:inst1|Add0~2                                             ; out0             ;
+; |nianli|month:inst1|Add0~3                                             ; |nianli|month:inst1|Add0~3                                             ; out0             ;
+; |nianli|month:inst1|Add0~4                                             ; |nianli|month:inst1|Add0~4                                             ; out0             ;
+; |nianli|day:inst2|Add0~0                                               ; |nianli|day:inst2|Add0~0                                               ; out0             ;
+; |nianli|day:inst2|Add0~1                                               ; |nianli|day:inst2|Add0~1                                               ; out0             ;
+; |nianli|day:inst2|Add0~2                                               ; |nianli|day:inst2|Add0~2                                               ; out0             ;
+; |nianli|day:inst2|Add1~0                                               ; |nianli|day:inst2|Add1~0                                               ; out0             ;
+; |nianli|day:inst2|Add1~1                                               ; |nianli|day:inst2|Add1~1                                               ; out0             ;
+; |nianli|day:inst2|Add1~2                                               ; |nianli|day:inst2|Add1~2                                               ; out0             ;
+; |nianli|day:inst2|Add1~3                                               ; |nianli|day:inst2|Add1~3                                               ; out0             ;
+; |nianli|day:inst2|Add1~4                                               ; |nianli|day:inst2|Add1~4                                               ; out0             ;
+; |nianli|year:inst|Equal0~0                                             ; |nianli|year:inst|Equal0~0                                             ; out0             ;
+; |nianli|year:inst|Equal4~0                                             ; |nianli|year:inst|Equal4~0                                             ; out0             ;
+; |nianli|judge:inst3|Equal0~0                                           ; |nianli|judge:inst3|Equal0~0                                           ; out0             ;
+; |nianli|judge:inst3|Equal1~0                                           ; |nianli|judge:inst3|Equal1~0                                           ; out0             ;
+; |nianli|judge:inst3|Equal2~0                                           ; |nianli|judge:inst3|Equal2~0                                           ; out0             ;
+; |nianli|judge:inst3|Equal3~0                                           ; |nianli|judge:inst3|Equal3~0                                           ; out0             ;
+; |nianli|judge:inst3|Equal4~0                                           ; |nianli|judge:inst3|Equal4~0                                           ; out0             ;
+; |nianli|judge:inst3|Equal5~0                                           ; |nianli|judge:inst3|Equal5~0                                           ; out0             ;
+; |nianli|judge:inst3|Equal6~0                                           ; |nianli|judge:inst3|Equal6~0                                           ; out0             ;
+; |nianli|judge:inst3|Equal7~0                                           ; |nianli|judge:inst3|Equal7~0                                           ; out0             ;
+; |nianli|judge:inst3|Equal8~0                                           ; |nianli|judge:inst3|Equal8~0                                           ; out0             ;
+; |nianli|judge:inst3|Equal9~0                                           ; |nianli|judge:inst3|Equal9~0                                           ; out0             ;
+; |nianli|judge:inst3|Equal10~0                                          ; |nianli|judge:inst3|Equal10~0                                          ; out0             ;
+; |nianli|judge:inst3|Equal11~0                                          ; |nianli|judge:inst3|Equal11~0                                          ; out0             ;
+; |nianli|month:inst1|Equal0~0                                           ; |nianli|month:inst1|Equal0~0                                           ; out0             ;
+; |nianli|month:inst1|Equal1~0                                           ; |nianli|month:inst1|Equal1~0                                           ; out0             ;
+; |nianli|month:inst1|Equal2~0                                           ; |nianli|month:inst1|Equal2~0                                           ; out0             ;
+; |nianli|month:inst1|Equal3~0                                           ; |nianli|month:inst1|Equal3~0                                           ; out0             ;
+; |nianli|month:inst1|Equal4~0                                           ; |nianli|month:inst1|Equal4~0                                           ; out0             ;
+; |nianli|day:inst2|Equal0~0                                             ; |nianli|day:inst2|Equal0~0                                             ; out0             ;
+; |nianli|day:inst2|Equal1~0                                             ; |nianli|day:inst2|Equal1~0                                             ; out0             ;
+; |nianli|day:inst2|Equal2~0                                             ; |nianli|day:inst2|Equal2~0                                             ; out0             ;
+; |nianli|day:inst2|Equal3~0                                             ; |nianli|day:inst2|Equal3~0                                             ; out0             ;
+; |nianli|day:inst2|Equal4~0                                             ; |nianli|day:inst2|Equal4~0                                             ; out0             ;
+; |nianli|day:inst2|Equal5~0                                             ; |nianli|day:inst2|Equal5~0                                             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~0              ; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~0              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~1              ; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~1              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~2              ; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~2              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~3              ; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~3              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~4              ; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~4              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~5              ; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~5              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~6              ; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~6              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~7              ; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~7              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~8              ; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~8              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|result_node[0]~0 ; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~9              ; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~9              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~10             ; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~10             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~11             ; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~11             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~12             ; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~12             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~13             ; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~13             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~14             ; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~14             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~15             ; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~15             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~16             ; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~16             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~17             ; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|_~17             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|result_node[0]~1 ; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|result_node[0]   ; |nianli|day:inst2|lpm_mux:Mux8|mux_7qc:auto_generated|result_node[0]   ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~0              ; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~0              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~1              ; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~1              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~2              ; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~2              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~3              ; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~3              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~4              ; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~4              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~5              ; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~5              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~6              ; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~6              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~7              ; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~7              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~8              ; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~8              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|result_node[0]~0 ; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~9              ; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~9              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~10             ; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~10             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~11             ; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~11             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~12             ; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~12             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~13             ; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~13             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~14             ; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~14             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~15             ; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~15             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~16             ; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~16             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~17             ; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|_~17             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|result_node[0]~1 ; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|result_node[0]   ; |nianli|day:inst2|lpm_mux:Mux7|mux_7qc:auto_generated|result_node[0]   ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~0              ; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~0              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~1              ; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~1              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~2              ; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~2              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~3              ; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~3              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~4              ; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~4              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~5              ; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~5              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~6              ; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~6              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~7              ; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~7              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~8              ; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~8              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|result_node[0]~0 ; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~9              ; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~9              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~10             ; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~10             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~11             ; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~11             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~12             ; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~12             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~13             ; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~13             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~14             ; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~14             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~15             ; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~15             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~16             ; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~16             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~17             ; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|_~17             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|result_node[0]~1 ; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|result_node[0]   ; |nianli|day:inst2|lpm_mux:Mux6|mux_7qc:auto_generated|result_node[0]   ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~0              ; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~0              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~1              ; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~1              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~2              ; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~2              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~3              ; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~3              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~4              ; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~4              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~5              ; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~5              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~6              ; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~6              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~7              ; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~7              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~8              ; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~8              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|result_node[0]~0 ; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~9              ; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~9              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~10             ; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~10             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~11             ; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~11             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~12             ; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~12             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~13             ; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~13             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~14             ; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~14             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~15             ; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~15             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~16             ; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~16             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~17             ; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|_~17             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|result_node[0]~1 ; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|result_node[0]   ; |nianli|day:inst2|lpm_mux:Mux5|mux_7qc:auto_generated|result_node[0]   ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~0              ; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~0              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~1              ; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~1              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~2              ; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~2              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~3              ; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~3              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~4              ; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~4              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~5              ; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~5              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~6              ; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~6              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~7              ; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~7              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~8              ; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~8              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|result_node[0]~0 ; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~9              ; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~9              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~10             ; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~10             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~11             ; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~11             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~12             ; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~12             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~13             ; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~13             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~14             ; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~14             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~15             ; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~15             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~16             ; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~16             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~17             ; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|_~17             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|result_node[0]~1 ; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|result_node[0]   ; |nianli|day:inst2|lpm_mux:Mux4|mux_7qc:auto_generated|result_node[0]   ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~0              ; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~0              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~1              ; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~1              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~2              ; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~2              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~3              ; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~3              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~4              ; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~4              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~5              ; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~5              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~6              ; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~6              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~7              ; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~7              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~8              ; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~8              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|result_node[0]~0 ; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~9              ; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~9              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~10             ; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~10             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~11             ; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~11             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~12             ; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~12             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~13             ; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~13             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~14             ; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~14             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~15             ; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~15             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~16             ; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~16             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~17             ; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|_~17             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|result_node[0]~1 ; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|result_node[0]   ; |nianli|day:inst2|lpm_mux:Mux3|mux_7qc:auto_generated|result_node[0]   ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~1              ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~1              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~3              ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~3              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~5              ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~5              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~6              ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~6              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~7              ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~7              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~8              ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~8              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~9              ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~9              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~11             ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~11             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~13             ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~13             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~14             ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~14             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~15             ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~15             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~16             ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~16             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~17             ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~17             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~1              ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~1              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~3              ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~3              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~5              ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~5              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~6              ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~6              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~7              ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~7              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~8              ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~8              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~9              ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~9              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~11             ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~11             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~13             ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~13             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~14             ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~14             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~15             ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~15             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~16             ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~16             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~17             ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~17             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~0              ; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~0              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~1              ; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~1              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~2              ; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~2              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~3              ; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~3              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~4              ; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~4              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~5              ; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~5              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~6              ; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~6              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~7              ; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~7              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~8              ; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~8              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]~0 ; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~9              ; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~9              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~10             ; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~10             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~11             ; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~11             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~12             ; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~12             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~13             ; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~13             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~14             ; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~14             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~15             ; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~15             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~16             ; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~16             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~17             ; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|_~17             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]~1 ; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]   ; |nianli|day:inst2|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]   ; out0             ;
++------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                           ;
++------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+; Node Name                                                              ; Output Port Name                                                       ; Output Port Type ;
++------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+; |nianli|dh[4]                                                          ; |nianli|dh[4]                                                          ; pin_out          ;
+; |nianli|dh[3]                                                          ; |nianli|dh[3]                                                          ; pin_out          ;
+; |nianli|k6                                                             ; |nianli|k6                                                             ; out              ;
+; |nianli|k7                                                             ; |nianli|k7                                                             ; out              ;
+; |nianli|k8                                                             ; |nianli|k8                                                             ; out              ;
+; |nianli|k2                                                             ; |nianli|k2                                                             ; out              ;
+; |nianli|mh[4]                                                          ; |nianli|mh[4]                                                          ; pin_out          ;
+; |nianli|mh[3]                                                          ; |nianli|mh[3]                                                          ; pin_out          ;
+; |nianli|mh[2]                                                          ; |nianli|mh[2]                                                          ; pin_out          ;
+; |nianli|y3[4]                                                          ; |nianli|y3[4]                                                          ; pin_out          ;
+; |nianli|y3[3]                                                          ; |nianli|y3[3]                                                          ; pin_out          ;
+; |nianli|y3[2]                                                          ; |nianli|y3[2]                                                          ; pin_out          ;
+; |nianli|jiaonian:inst7|inst1                                           ; |nianli|jiaonian:inst7|inst1                                           ; out0             ;
+; |nianli|year:inst|y1~0                                                 ; |nianli|year:inst|y1~0                                                 ; out              ;
+; |nianli|year:inst|y1~1                                                 ; |nianli|year:inst|y1~1                                                 ; out              ;
+; |nianli|year:inst|y1~2                                                 ; |nianli|year:inst|y1~2                                                 ; out              ;
+; |nianli|year:inst|y1~3                                                 ; |nianli|year:inst|y1~3                                                 ; out              ;
+; |nianli|year:inst|y2~0                                                 ; |nianli|year:inst|y2~0                                                 ; out              ;
+; |nianli|year:inst|y2~1                                                 ; |nianli|year:inst|y2~1                                                 ; out              ;
+; |nianli|year:inst|y2~2                                                 ; |nianli|year:inst|y2~2                                                 ; out              ;
+; |nianli|year:inst|y2~3                                                 ; |nianli|year:inst|y2~3                                                 ; out              ;
+; |nianli|year:inst|y1~4                                                 ; |nianli|year:inst|y1~4                                                 ; out              ;
+; |nianli|year:inst|y1~5                                                 ; |nianli|year:inst|y1~5                                                 ; out              ;
+; |nianli|year:inst|y1~6                                                 ; |nianli|year:inst|y1~6                                                 ; out              ;
+; |nianli|year:inst|y1~7                                                 ; |nianli|year:inst|y1~7                                                 ; out              ;
+; |nianli|year:inst|y3~0                                                 ; |nianli|year:inst|y3~0                                                 ; out              ;
+; |nianli|year:inst|y3~1                                                 ; |nianli|year:inst|y3~1                                                 ; out              ;
+; |nianli|year:inst|y3~2                                                 ; |nianli|year:inst|y3~2                                                 ; out              ;
+; |nianli|year:inst|y2~4                                                 ; |nianli|year:inst|y2~4                                                 ; out              ;
+; |nianli|year:inst|y2~5                                                 ; |nianli|year:inst|y2~5                                                 ; out              ;
+; |nianli|year:inst|y2~6                                                 ; |nianli|year:inst|y2~6                                                 ; out              ;
+; |nianli|year:inst|y2~7                                                 ; |nianli|year:inst|y2~7                                                 ; out              ;
+; |nianli|year:inst|y1~8                                                 ; |nianli|year:inst|y1~8                                                 ; out              ;
+; |nianli|year:inst|y1~9                                                 ; |nianli|year:inst|y1~9                                                 ; out              ;
+; |nianli|year:inst|y1~10                                                ; |nianli|year:inst|y1~10                                                ; out              ;
+; |nianli|year:inst|y1~11                                                ; |nianli|year:inst|y1~11                                                ; out              ;
+; |nianli|year:inst|y3~4                                                 ; |nianli|year:inst|y3~4                                                 ; out              ;
+; |nianli|year:inst|y3~5                                                 ; |nianli|year:inst|y3~5                                                 ; out              ;
+; |nianli|year:inst|y3~6                                                 ; |nianli|year:inst|y3~6                                                 ; out              ;
+; |nianli|year:inst|y2~8                                                 ; |nianli|year:inst|y2~8                                                 ; out              ;
+; |nianli|year:inst|y2~9                                                 ; |nianli|year:inst|y2~9                                                 ; out              ;
+; |nianli|year:inst|y2~10                                                ; |nianli|year:inst|y2~10                                                ; out              ;
+; |nianli|year:inst|y2~11                                                ; |nianli|year:inst|y2~11                                                ; out              ;
+; |nianli|year:inst|y1~12                                                ; |nianli|year:inst|y1~12                                                ; out              ;
+; |nianli|year:inst|y1~13                                                ; |nianli|year:inst|y1~13                                                ; out              ;
+; |nianli|year:inst|y1~14                                                ; |nianli|year:inst|y1~14                                                ; out              ;
+; |nianli|year:inst|y1~15                                                ; |nianli|year:inst|y1~15                                                ; out              ;
+; |nianli|year:inst|y3~8                                                 ; |nianli|year:inst|y3~8                                                 ; out              ;
+; |nianli|year:inst|y3~9                                                 ; |nianli|year:inst|y3~9                                                 ; out              ;
+; |nianli|year:inst|y3~10                                                ; |nianli|year:inst|y3~10                                                ; out              ;
+; |nianli|year:inst|y2~12                                                ; |nianli|year:inst|y2~12                                                ; out              ;
+; |nianli|year:inst|y2~13                                                ; |nianli|year:inst|y2~13                                                ; out              ;
+; |nianli|year:inst|y2~14                                                ; |nianli|year:inst|y2~14                                                ; out              ;
+; |nianli|year:inst|y2~15                                                ; |nianli|year:inst|y2~15                                                ; out              ;
+; |nianli|year:inst|y1~16                                                ; |nianli|year:inst|y1~16                                                ; out              ;
+; |nianli|year:inst|y1~17                                                ; |nianli|year:inst|y1~17                                                ; out              ;
+; |nianli|year:inst|y1~18                                                ; |nianli|year:inst|y1~18                                                ; out              ;
+; |nianli|year:inst|y1~19                                                ; |nianli|year:inst|y1~19                                                ; out              ;
+; |nianli|year:inst|y1~20                                                ; |nianli|year:inst|y1~20                                                ; out              ;
+; |nianli|year:inst|y1~21                                                ; |nianli|year:inst|y1~21                                                ; out              ;
+; |nianli|year:inst|y1~22                                                ; |nianli|year:inst|y1~22                                                ; out              ;
+; |nianli|year:inst|y1~23                                                ; |nianli|year:inst|y1~23                                                ; out              ;
+; |nianli|year:inst|y2~16                                                ; |nianli|year:inst|y2~16                                                ; out              ;
+; |nianli|year:inst|y2~17                                                ; |nianli|year:inst|y2~17                                                ; out              ;
+; |nianli|year:inst|y2~18                                                ; |nianli|year:inst|y2~18                                                ; out              ;
+; |nianli|year:inst|y2~19                                                ; |nianli|year:inst|y2~19                                                ; out              ;
+; |nianli|year:inst|y3~12                                                ; |nianli|year:inst|y3~12                                                ; out              ;
+; |nianli|year:inst|y3~13                                                ; |nianli|year:inst|y3~13                                                ; out              ;
+; |nianli|year:inst|y3~14                                                ; |nianli|year:inst|y3~14                                                ; out              ;
+; |nianli|year:inst|y3[1]                                                ; |nianli|year:inst|y3[1]                                                ; regout           ;
+; |nianli|year:inst|y3[2]                                                ; |nianli|year:inst|y3[2]                                                ; regout           ;
+; |nianli|year:inst|y3[3]                                                ; |nianli|year:inst|y3[3]                                                ; regout           ;
+; |nianli|year:inst|y2[0]                                                ; |nianli|year:inst|y2[0]                                                ; regout           ;
+; |nianli|year:inst|y2[1]                                                ; |nianli|year:inst|y2[1]                                                ; regout           ;
+; |nianli|year:inst|y2[2]                                                ; |nianli|year:inst|y2[2]                                                ; regout           ;
+; |nianli|year:inst|y2[3]                                                ; |nianli|year:inst|y2[3]                                                ; regout           ;
+; |nianli|year:inst|y1[0]                                                ; |nianli|year:inst|y1[0]                                                ; regout           ;
+; |nianli|year:inst|y1[1]                                                ; |nianli|year:inst|y1[1]                                                ; regout           ;
+; |nianli|year:inst|y1[2]                                                ; |nianli|year:inst|y1[2]                                                ; regout           ;
+; |nianli|year:inst|y1[3]                                                ; |nianli|year:inst|y1[3]                                                ; regout           ;
+; |nianli|jiaoyue:inst8|inst1                                            ; |nianli|jiaoyue:inst8|inst1                                            ; out0             ;
+; |nianli|month:inst1|mh~0                                               ; |nianli|month:inst1|mh~0                                               ; out              ;
+; |nianli|month:inst1|mh~1                                               ; |nianli|month:inst1|mh~1                                               ; out              ;
+; |nianli|month:inst1|mh~2                                               ; |nianli|month:inst1|mh~2                                               ; out              ;
+; |nianli|month:inst1|mh[3]                                              ; |nianli|month:inst1|mh[3]                                              ; regout           ;
+; |nianli|month:inst1|mh[2]                                              ; |nianli|month:inst1|mh[2]                                              ; regout           ;
+; |nianli|month:inst1|mh[1]                                              ; |nianli|month:inst1|mh[1]                                              ; regout           ;
+; |nianli|jiaori:inst9|inst1                                             ; |nianli|jiaori:inst9|inst1                                             ; out0             ;
+; |nianli|rilixiaochan:inst10|xiaochan:inst4|inst                        ; |nianli|rilixiaochan:inst10|xiaochan:inst4|inst                        ; regout           ;
+; |nianli|rilixiaochan:inst10|xiaochan:inst3|inst                        ; |nianli|rilixiaochan:inst10|xiaochan:inst3|inst                        ; regout           ;
+; |nianli|rilixiaochan:inst10|xiaochan:inst2|inst                        ; |nianli|rilixiaochan:inst10|xiaochan:inst2|inst                        ; regout           ;
+; |nianli|day:inst2|dh~0                                                 ; |nianli|day:inst2|dh~0                                                 ; out              ;
+; |nianli|day:inst2|dh~1                                                 ; |nianli|day:inst2|dh~1                                                 ; out              ;
+; |nianli|day:inst2|dh~4                                                 ; |nianli|day:inst2|dh~4                                                 ; out              ;
+; |nianli|day:inst2|dh~5                                                 ; |nianli|day:inst2|dh~5                                                 ; out              ;
+; |nianli|day:inst2|dh~8                                                 ; |nianli|day:inst2|dh~8                                                 ; out              ;
+; |nianli|day:inst2|dh~9                                                 ; |nianli|day:inst2|dh~9                                                 ; out              ;
+; |nianli|day:inst2|dh~12                                                ; |nianli|day:inst2|dh~12                                                ; out              ;
+; |nianli|day:inst2|dh~13                                                ; |nianli|day:inst2|dh~13                                                ; out              ;
+; |nianli|day:inst2|dh~16                                                ; |nianli|day:inst2|dh~16                                                ; out              ;
+; |nianli|day:inst2|dh~17                                                ; |nianli|day:inst2|dh~17                                                ; out              ;
+; |nianli|day:inst2|dh~20                                                ; |nianli|day:inst2|dh~20                                                ; out              ;
+; |nianli|day:inst2|dh~21                                                ; |nianli|day:inst2|dh~21                                                ; out              ;
+; |nianli|day:inst2|dh[2]                                                ; |nianli|day:inst2|dh[2]                                                ; regout           ;
+; |nianli|day:inst2|dh[3]                                                ; |nianli|day:inst2|dh[3]                                                ; regout           ;
+; |nianli|year:inst|Add0~1                                               ; |nianli|year:inst|Add0~1                                               ; out0             ;
+; |nianli|year:inst|Add0~2                                               ; |nianli|year:inst|Add0~2                                               ; out0             ;
+; |nianli|year:inst|Add0~3                                               ; |nianli|year:inst|Add0~3                                               ; out0             ;
+; |nianli|year:inst|Add0~4                                               ; |nianli|year:inst|Add0~4                                               ; out0             ;
+; |nianli|year:inst|Add1~0                                               ; |nianli|year:inst|Add1~0                                               ; out0             ;
+; |nianli|year:inst|Add1~1                                               ; |nianli|year:inst|Add1~1                                               ; out0             ;
+; |nianli|year:inst|Add1~2                                               ; |nianli|year:inst|Add1~2                                               ; out0             ;
+; |nianli|year:inst|Add1~3                                               ; |nianli|year:inst|Add1~3                                               ; out0             ;
+; |nianli|year:inst|Add1~4                                               ; |nianli|year:inst|Add1~4                                               ; out0             ;
+; |nianli|year:inst|Add2~0                                               ; |nianli|year:inst|Add2~0                                               ; out0             ;
+; |nianli|year:inst|Add2~1                                               ; |nianli|year:inst|Add2~1                                               ; out0             ;
+; |nianli|year:inst|Add2~2                                               ; |nianli|year:inst|Add2~2                                               ; out0             ;
+; |nianli|year:inst|Add2~3                                               ; |nianli|year:inst|Add2~3                                               ; out0             ;
+; |nianli|year:inst|Add2~4                                               ; |nianli|year:inst|Add2~4                                               ; out0             ;
+; |nianli|day:inst2|Add0~3                                               ; |nianli|day:inst2|Add0~3                                               ; out0             ;
+; |nianli|day:inst2|Add0~4                                               ; |nianli|day:inst2|Add0~4                                               ; out0             ;
+; |nianli|year:inst|Equal1~0                                             ; |nianli|year:inst|Equal1~0                                             ; out0             ;
+; |nianli|year:inst|Equal2~0                                             ; |nianli|year:inst|Equal2~0                                             ; out0             ;
+; |nianli|year:inst|Equal3~0                                             ; |nianli|year:inst|Equal3~0                                             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~0              ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~0              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~2              ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~2              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~4              ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~4              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|result_node[0]~0 ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~10             ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~10             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~12             ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~12             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|result_node[0]~1 ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|result_node[0]   ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|result_node[0]   ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~0              ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~0              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~2              ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~2              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~4              ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~4              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]~0 ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~10             ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~10             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~12             ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~12             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]~1 ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]   ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]   ; out0             ;
++------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                           ;
++------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+; Node Name                                                              ; Output Port Name                                                       ; Output Port Type ;
++------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+; |nianli|dh[4]                                                          ; |nianli|dh[4]                                                          ; pin_out          ;
+; |nianli|dh[3]                                                          ; |nianli|dh[3]                                                          ; pin_out          ;
+; |nianli|k6                                                             ; |nianli|k6                                                             ; out              ;
+; |nianli|k7                                                             ; |nianli|k7                                                             ; out              ;
+; |nianli|k8                                                             ; |nianli|k8                                                             ; out              ;
+; |nianli|k2                                                             ; |nianli|k2                                                             ; out              ;
+; |nianli|mh[4]                                                          ; |nianli|mh[4]                                                          ; pin_out          ;
+; |nianli|mh[3]                                                          ; |nianli|mh[3]                                                          ; pin_out          ;
+; |nianli|mh[2]                                                          ; |nianli|mh[2]                                                          ; pin_out          ;
+; |nianli|y3[4]                                                          ; |nianli|y3[4]                                                          ; pin_out          ;
+; |nianli|y3[3]                                                          ; |nianli|y3[3]                                                          ; pin_out          ;
+; |nianli|y3[2]                                                          ; |nianli|y3[2]                                                          ; pin_out          ;
+; |nianli|y3[1]                                                          ; |nianli|y3[1]                                                          ; pin_out          ;
+; |nianli|jiaonian:inst7|inst1                                           ; |nianli|jiaonian:inst7|inst1                                           ; out0             ;
+; |nianli|year:inst|y1~0                                                 ; |nianli|year:inst|y1~0                                                 ; out              ;
+; |nianli|year:inst|y1~1                                                 ; |nianli|year:inst|y1~1                                                 ; out              ;
+; |nianli|year:inst|y1~2                                                 ; |nianli|year:inst|y1~2                                                 ; out              ;
+; |nianli|year:inst|y1~3                                                 ; |nianli|year:inst|y1~3                                                 ; out              ;
+; |nianli|year:inst|y2~0                                                 ; |nianli|year:inst|y2~0                                                 ; out              ;
+; |nianli|year:inst|y2~1                                                 ; |nianli|year:inst|y2~1                                                 ; out              ;
+; |nianli|year:inst|y2~2                                                 ; |nianli|year:inst|y2~2                                                 ; out              ;
+; |nianli|year:inst|y2~3                                                 ; |nianli|year:inst|y2~3                                                 ; out              ;
+; |nianli|year:inst|y1~4                                                 ; |nianli|year:inst|y1~4                                                 ; out              ;
+; |nianli|year:inst|y1~5                                                 ; |nianli|year:inst|y1~5                                                 ; out              ;
+; |nianli|year:inst|y1~6                                                 ; |nianli|year:inst|y1~6                                                 ; out              ;
+; |nianli|year:inst|y1~7                                                 ; |nianli|year:inst|y1~7                                                 ; out              ;
+; |nianli|year:inst|y3~0                                                 ; |nianli|year:inst|y3~0                                                 ; out              ;
+; |nianli|year:inst|y3~1                                                 ; |nianli|year:inst|y3~1                                                 ; out              ;
+; |nianli|year:inst|y3~2                                                 ; |nianli|year:inst|y3~2                                                 ; out              ;
+; |nianli|year:inst|y3~3                                                 ; |nianli|year:inst|y3~3                                                 ; out              ;
+; |nianli|year:inst|y2~4                                                 ; |nianli|year:inst|y2~4                                                 ; out              ;
+; |nianli|year:inst|y2~5                                                 ; |nianli|year:inst|y2~5                                                 ; out              ;
+; |nianli|year:inst|y2~6                                                 ; |nianli|year:inst|y2~6                                                 ; out              ;
+; |nianli|year:inst|y2~7                                                 ; |nianli|year:inst|y2~7                                                 ; out              ;
+; |nianli|year:inst|y1~8                                                 ; |nianli|year:inst|y1~8                                                 ; out              ;
+; |nianli|year:inst|y1~9                                                 ; |nianli|year:inst|y1~9                                                 ; out              ;
+; |nianli|year:inst|y1~10                                                ; |nianli|year:inst|y1~10                                                ; out              ;
+; |nianli|year:inst|y1~11                                                ; |nianli|year:inst|y1~11                                                ; out              ;
+; |nianli|year:inst|y3~4                                                 ; |nianli|year:inst|y3~4                                                 ; out              ;
+; |nianli|year:inst|y3~5                                                 ; |nianli|year:inst|y3~5                                                 ; out              ;
+; |nianli|year:inst|y3~6                                                 ; |nianli|year:inst|y3~6                                                 ; out              ;
+; |nianli|year:inst|y3~7                                                 ; |nianli|year:inst|y3~7                                                 ; out              ;
+; |nianli|year:inst|y2~8                                                 ; |nianli|year:inst|y2~8                                                 ; out              ;
+; |nianli|year:inst|y2~9                                                 ; |nianli|year:inst|y2~9                                                 ; out              ;
+; |nianli|year:inst|y2~10                                                ; |nianli|year:inst|y2~10                                                ; out              ;
+; |nianli|year:inst|y2~11                                                ; |nianli|year:inst|y2~11                                                ; out              ;
+; |nianli|year:inst|y1~12                                                ; |nianli|year:inst|y1~12                                                ; out              ;
+; |nianli|year:inst|y1~13                                                ; |nianli|year:inst|y1~13                                                ; out              ;
+; |nianli|year:inst|y1~14                                                ; |nianli|year:inst|y1~14                                                ; out              ;
+; |nianli|year:inst|y1~15                                                ; |nianli|year:inst|y1~15                                                ; out              ;
+; |nianli|year:inst|y3~8                                                 ; |nianli|year:inst|y3~8                                                 ; out              ;
+; |nianli|year:inst|y3~9                                                 ; |nianli|year:inst|y3~9                                                 ; out              ;
+; |nianli|year:inst|y3~10                                                ; |nianli|year:inst|y3~10                                                ; out              ;
+; |nianli|year:inst|y2~12                                                ; |nianli|year:inst|y2~12                                                ; out              ;
+; |nianli|year:inst|y2~13                                                ; |nianli|year:inst|y2~13                                                ; out              ;
+; |nianli|year:inst|y2~14                                                ; |nianli|year:inst|y2~14                                                ; out              ;
+; |nianli|year:inst|y2~15                                                ; |nianli|year:inst|y2~15                                                ; out              ;
+; |nianli|year:inst|y1~16                                                ; |nianli|year:inst|y1~16                                                ; out              ;
+; |nianli|year:inst|y1~17                                                ; |nianli|year:inst|y1~17                                                ; out              ;
+; |nianli|year:inst|y1~18                                                ; |nianli|year:inst|y1~18                                                ; out              ;
+; |nianli|year:inst|y1~19                                                ; |nianli|year:inst|y1~19                                                ; out              ;
+; |nianli|year:inst|y1~20                                                ; |nianli|year:inst|y1~20                                                ; out              ;
+; |nianli|year:inst|y1~21                                                ; |nianli|year:inst|y1~21                                                ; out              ;
+; |nianli|year:inst|y1~22                                                ; |nianli|year:inst|y1~22                                                ; out              ;
+; |nianli|year:inst|y1~23                                                ; |nianli|year:inst|y1~23                                                ; out              ;
+; |nianli|year:inst|y2~16                                                ; |nianli|year:inst|y2~16                                                ; out              ;
+; |nianli|year:inst|y2~17                                                ; |nianli|year:inst|y2~17                                                ; out              ;
+; |nianli|year:inst|y2~18                                                ; |nianli|year:inst|y2~18                                                ; out              ;
+; |nianli|year:inst|y2~19                                                ; |nianli|year:inst|y2~19                                                ; out              ;
+; |nianli|year:inst|y3~12                                                ; |nianli|year:inst|y3~12                                                ; out              ;
+; |nianli|year:inst|y3~13                                                ; |nianli|year:inst|y3~13                                                ; out              ;
+; |nianli|year:inst|y3~14                                                ; |nianli|year:inst|y3~14                                                ; out              ;
+; |nianli|year:inst|y3[0]                                                ; |nianli|year:inst|y3[0]                                                ; regout           ;
+; |nianli|year:inst|y3[1]                                                ; |nianli|year:inst|y3[1]                                                ; regout           ;
+; |nianli|year:inst|y3[2]                                                ; |nianli|year:inst|y3[2]                                                ; regout           ;
+; |nianli|year:inst|y3[3]                                                ; |nianli|year:inst|y3[3]                                                ; regout           ;
+; |nianli|year:inst|y2[0]                                                ; |nianli|year:inst|y2[0]                                                ; regout           ;
+; |nianli|year:inst|y2[1]                                                ; |nianli|year:inst|y2[1]                                                ; regout           ;
+; |nianli|year:inst|y2[2]                                                ; |nianli|year:inst|y2[2]                                                ; regout           ;
+; |nianli|year:inst|y2[3]                                                ; |nianli|year:inst|y2[3]                                                ; regout           ;
+; |nianli|year:inst|y1[0]                                                ; |nianli|year:inst|y1[0]                                                ; regout           ;
+; |nianli|year:inst|y1[1]                                                ; |nianli|year:inst|y1[1]                                                ; regout           ;
+; |nianli|year:inst|y1[2]                                                ; |nianli|year:inst|y1[2]                                                ; regout           ;
+; |nianli|year:inst|y1[3]                                                ; |nianli|year:inst|y1[3]                                                ; regout           ;
+; |nianli|jiaoyue:inst8|inst1                                            ; |nianli|jiaoyue:inst8|inst1                                            ; out0             ;
+; |nianli|month:inst1|mh~0                                               ; |nianli|month:inst1|mh~0                                               ; out              ;
+; |nianli|month:inst1|mh~1                                               ; |nianli|month:inst1|mh~1                                               ; out              ;
+; |nianli|month:inst1|mh~2                                               ; |nianli|month:inst1|mh~2                                               ; out              ;
+; |nianli|month:inst1|mh[3]                                              ; |nianli|month:inst1|mh[3]                                              ; regout           ;
+; |nianli|month:inst1|mh[2]                                              ; |nianli|month:inst1|mh[2]                                              ; regout           ;
+; |nianli|month:inst1|mh[1]                                              ; |nianli|month:inst1|mh[1]                                              ; regout           ;
+; |nianli|jiaori:inst9|inst1                                             ; |nianli|jiaori:inst9|inst1                                             ; out0             ;
+; |nianli|rilixiaochan:inst10|xiaochan:inst5|inst                        ; |nianli|rilixiaochan:inst10|xiaochan:inst5|inst                        ; regout           ;
+; |nianli|rilixiaochan:inst10|xiaochan:inst4|inst                        ; |nianli|rilixiaochan:inst10|xiaochan:inst4|inst                        ; regout           ;
+; |nianli|rilixiaochan:inst10|xiaochan:inst3|inst                        ; |nianli|rilixiaochan:inst10|xiaochan:inst3|inst                        ; regout           ;
+; |nianli|rilixiaochan:inst10|xiaochan:inst2|inst                        ; |nianli|rilixiaochan:inst10|xiaochan:inst2|inst                        ; regout           ;
+; |nianli|day:inst2|dh~0                                                 ; |nianli|day:inst2|dh~0                                                 ; out              ;
+; |nianli|day:inst2|dh~1                                                 ; |nianli|day:inst2|dh~1                                                 ; out              ;
+; |nianli|day:inst2|dh~4                                                 ; |nianli|day:inst2|dh~4                                                 ; out              ;
+; |nianli|day:inst2|dh~5                                                 ; |nianli|day:inst2|dh~5                                                 ; out              ;
+; |nianli|day:inst2|dh~8                                                 ; |nianli|day:inst2|dh~8                                                 ; out              ;
+; |nianli|day:inst2|dh~9                                                 ; |nianli|day:inst2|dh~9                                                 ; out              ;
+; |nianli|day:inst2|dh~12                                                ; |nianli|day:inst2|dh~12                                                ; out              ;
+; |nianli|day:inst2|dh~13                                                ; |nianli|day:inst2|dh~13                                                ; out              ;
+; |nianli|day:inst2|dh~16                                                ; |nianli|day:inst2|dh~16                                                ; out              ;
+; |nianli|day:inst2|dh~17                                                ; |nianli|day:inst2|dh~17                                                ; out              ;
+; |nianli|day:inst2|dh~20                                                ; |nianli|day:inst2|dh~20                                                ; out              ;
+; |nianli|day:inst2|dh~21                                                ; |nianli|day:inst2|dh~21                                                ; out              ;
+; |nianli|day:inst2|dh[2]                                                ; |nianli|day:inst2|dh[2]                                                ; regout           ;
+; |nianli|day:inst2|dh[3]                                                ; |nianli|day:inst2|dh[3]                                                ; regout           ;
+; |nianli|year:inst|Add0~0                                               ; |nianli|year:inst|Add0~0                                               ; out0             ;
+; |nianli|year:inst|Add0~1                                               ; |nianli|year:inst|Add0~1                                               ; out0             ;
+; |nianli|year:inst|Add0~2                                               ; |nianli|year:inst|Add0~2                                               ; out0             ;
+; |nianli|year:inst|Add0~3                                               ; |nianli|year:inst|Add0~3                                               ; out0             ;
+; |nianli|year:inst|Add0~4                                               ; |nianli|year:inst|Add0~4                                               ; out0             ;
+; |nianli|year:inst|Add1~0                                               ; |nianli|year:inst|Add1~0                                               ; out0             ;
+; |nianli|year:inst|Add1~1                                               ; |nianli|year:inst|Add1~1                                               ; out0             ;
+; |nianli|year:inst|Add1~2                                               ; |nianli|year:inst|Add1~2                                               ; out0             ;
+; |nianli|year:inst|Add1~3                                               ; |nianli|year:inst|Add1~3                                               ; out0             ;
+; |nianli|year:inst|Add1~4                                               ; |nianli|year:inst|Add1~4                                               ; out0             ;
+; |nianli|year:inst|Add2~0                                               ; |nianli|year:inst|Add2~0                                               ; out0             ;
+; |nianli|year:inst|Add2~1                                               ; |nianli|year:inst|Add2~1                                               ; out0             ;
+; |nianli|year:inst|Add2~2                                               ; |nianli|year:inst|Add2~2                                               ; out0             ;
+; |nianli|year:inst|Add2~3                                               ; |nianli|year:inst|Add2~3                                               ; out0             ;
+; |nianli|year:inst|Add2~4                                               ; |nianli|year:inst|Add2~4                                               ; out0             ;
+; |nianli|day:inst2|Add0~3                                               ; |nianli|day:inst2|Add0~3                                               ; out0             ;
+; |nianli|day:inst2|Add0~4                                               ; |nianli|day:inst2|Add0~4                                               ; out0             ;
+; |nianli|year:inst|Equal1~0                                             ; |nianli|year:inst|Equal1~0                                             ; out0             ;
+; |nianli|year:inst|Equal2~0                                             ; |nianli|year:inst|Equal2~0                                             ; out0             ;
+; |nianli|year:inst|Equal3~0                                             ; |nianli|year:inst|Equal3~0                                             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~0              ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~0              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~2              ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~2              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~4              ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~4              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|result_node[0]~0 ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~10             ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~10             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~12             ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|_~12             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|result_node[0]~1 ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|result_node[0]   ; |nianli|day:inst2|lpm_mux:Mux2|mux_7qc:auto_generated|result_node[0]   ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~0              ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~0              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~2              ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~2              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~4              ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~4              ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]~0 ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~10             ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~10             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~12             ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|_~12             ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]~1 ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]   ; |nianli|day:inst2|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]   ; out0             ;
++------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
+    Info: Processing started: Tue Dec 11 13:57:49 2018
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off clock -c clock
+Info: Using vector source file "E:/baogao/EDAII DGDZ/project/nianli.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of nianli.vwf called clock.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      71.48 %
+Info: Number of transitions in simulation is 321115
+Info: Vector file nianli.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4326 megabytes
+    Info: Processing ended: Tue Dec 11 13:57:50 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
+
+

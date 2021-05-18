@@ -1,0 +1,49 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+ENTITY fenpin4 IS
+PORT(clk:IN STD_LOGIC;
+hz:buffer STD_LOGIC;
+hz2:buffer STD_LOGIC;
+hz500:buffer STD_LOGIC;
+hz100:buffer STD_LOGIC;
+khz:buffer STD_LOGIC);
+END fenpin4;
+
+ARCHITECTURE beh OF fenpin4 IS
+SIGNAL count:integer range 0 to 24000000;
+SIGNAL count1:integer range 0 to 24000000;
+SIGNAL count2:integer range 0 to 24000000;
+SIGNAL count3:integer range 0 to 24000000;
+SIGNAL count4:integer range 0 to 24000000;
+BEGIN
+PROCESS(clk)
+BEGIN
+IF(clk='1')THEN
+count<=count+1;
+count1<=count1+1;
+count2<=count2+1;
+count3<=count3+1;
+count4<=count4+1;
+IF(count=23999999)THEN
+count<=0;
+hz<=NOT hz;
+END IF;
+IF(count1=11999999)THEN
+count1<=0;
+hz2<=NOT hz2;
+END IF;
+IF(count2=23999)THEN
+count2<=0;
+khz<=NOT khz;
+END IF;
+IF(count4=239999)THEN
+count4<=0;
+hz100<=NOT hz100;
+END IF;
+IF(count3=47999)THEN
+count3<=0;
+hz500<=NOT hz500;
+END IF;
+END IF;
+END PROCESS;
+END beh;

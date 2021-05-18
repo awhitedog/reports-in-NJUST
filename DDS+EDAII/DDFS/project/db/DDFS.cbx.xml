@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="DDFS">
+		<CBX_INST_ENTRY INSTANCE_NAME="|circuite|AM:inst6|lpm_mult1:inst14|lpm_mult:lpm_mult_component" CBX_FILE_NAME="mult_eap.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|circuite|ROM:inst41|lpm_rom6:inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_3o91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|circuite|lpm_rom1:inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_6191.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|circuite|xuanze:inst3|lpm_rom4:inst4|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_6e91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|circuite|ROM:inst41|lpm_rom6:inst2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_3o91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|circuite|lpm_mux1:inst42|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_p7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|circuite|xuanze:inst3|lpm_mux2:inst3|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_s7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|circuite|xuanze:inst3|lpm_rom3:inst2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_ah91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|circuite|AM:inst6|lpm_add_sub1:inst16|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_jsh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|circuite|AM:inst6|lpm_mult2:inst15|lpm_mult:lpm_mult_component" CBX_FILE_NAME="mult_2en.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|circuite|lpm_rom0:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_b191.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|circuite|xuanze:inst3|lpm_rom2:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_6191.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|circuite|xuanze:inst3|lpm_rom5:inst5|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_ea91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|circuite|ROM:inst41|lpm_mux0:inst6|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_s7e.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

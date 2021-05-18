@@ -1,0 +1,41 @@
+GED
+
+	Undo Commands
+	     1.	Properties
+	     2.	Insert Node
+	     3.	Move
+	     4.	Copy
+	     5.	Delete
+	     6.	Delete
+	     7.	Delete
+	     8.	Resize
+	     9.	Delete
+	    10.	Delete
+
+
+GED
+
+	Undo Commands
+	     1.	Update Symbol or Block
+	     2.	Move
+	     3.	Move
+	     4.	Move
+	     5.	Move
+	     6.	Move
+	     7.	Move
+	     8.	Move
+
+
+GED
+
+	Undo Commands
+	     1.	Move
+
+
+WED
+
+	Undo Commands
+	     1.	Edit Waveform
+	     2.	Edit Waveform
+
+

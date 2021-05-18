@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="clock">
+		<CBX_INST_ENTRY INSTANCE_NAME="|all|lpm_mux0:inst11|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_f6e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|all|lpm_mux1:inst9|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_g6e.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

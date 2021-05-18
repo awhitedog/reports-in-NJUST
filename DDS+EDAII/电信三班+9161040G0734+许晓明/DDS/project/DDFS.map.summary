@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Dec 12 16:50:42 2018
+Quartus II 64-Bit Version : 9.1 Build 222 10/21/2009 SJ Full Version
+Revision Name : DDFS
+Top-level Entity Name : circuite
+Family : Cyclone III
+Total logic elements : 201
+    Total combinational functions : 173
+    Dedicated logic registers : 112
+Total registers : 112
+Total pins : 47
+Total virtual pins : 0
+Total memory bits : 81,920
+Embedded Multiplier 9-bit elements : 2
+Total PLLs : 0

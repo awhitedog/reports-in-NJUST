@@ -1,0 +1,4510 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+
+/*
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+
+HEADER
+{
+	VERSION = 1;
+	TIME_UNIT = ns;
+	DATA_OFFSET = 0.0;
+	DATA_DURATION = 100000.0;
+	SIMULATION_TIME = 100000.0;
+	GRID_PHASE = 0.0;
+	GRID_PERIOD = 10.0;
+	GRID_DUTY_CYCLE = 50;
+}
+
+SIGNAL("1hz")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("2hz")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("dh")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 4;
+	LSB_INDEX = 1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("dh[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dh";
+}
+
+SIGNAL("dh[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dh";
+}
+
+SIGNAL("dh[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dh";
+}
+
+SIGNAL("dh[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dh";
+}
+
+SIGNAL("dl")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 4;
+	LSB_INDEX = 1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("dl[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dl";
+}
+
+SIGNAL("dl[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dl";
+}
+
+SIGNAL("dl[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dl";
+}
+
+SIGNAL("dl[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dl";
+}
+
+SIGNAL("in1")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("k2")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("k5")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("k6")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("k7")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("k8")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("mh")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 4;
+	LSB_INDEX = 1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("mh[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "mh";
+}
+
+SIGNAL("mh[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "mh";
+}
+
+SIGNAL("mh[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "mh";
+}
+
+SIGNAL("mh[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "mh";
+}
+
+SIGNAL("ml")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 4;
+	LSB_INDEX = 1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("ml[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "ml";
+}
+
+SIGNAL("ml[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "ml";
+}
+
+SIGNAL("ml[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "ml";
+}
+
+SIGNAL("ml[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "ml";
+}
+
+SIGNAL("y3")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 4;
+	LSB_INDEX = 1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("y3[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "y3";
+}
+
+SIGNAL("y3[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "y3";
+}
+
+SIGNAL("y3[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "y3";
+}
+
+SIGNAL("y3[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "y3";
+}
+
+SIGNAL("y4")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 4;
+	LSB_INDEX = 1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("y4[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "y4";
+}
+
+SIGNAL("y4[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "y4";
+}
+
+SIGNAL("y4[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "y4";
+}
+
+SIGNAL("y4[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "y4";
+}
+
+TRANSITION_LIST("1hz")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 5000;
+			LEVEL 0 FOR 10.0;
+			LEVEL 1 FOR 10.0;
+		}
+	}
+}
+
+TRANSITION_LIST("2hz")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 10000;
+			LEVEL 0 FOR 5.0;
+			LEVEL 1 FOR 5.0;
+		}
+	}
+}
+
+TRANSITION_LIST("dh[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("dh[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("dh[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 403.459;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 179.948;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 239.948;
+			LEVEL 0 FOR 380.052;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 219.948;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 239.948;
+			LEVEL 0 FOR 380.052;
+		}
+		LEVEL 1 FOR 239.948;
+		LEVEL 0 FOR 380.052;
+		LEVEL 1 FOR 219.948;
+		LEVEL 0 FOR 380.052;
+		LEVEL 1 FOR 239.948;
+		LEVEL 0 FOR 520.052;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 239.948;
+			LEVEL 0 FOR 380.052;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 179.948;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 380.052;
+				LEVEL 1 FOR 239.948;
+				LEVEL 0 FOR 380.052;
+				LEVEL 1 FOR 219.948;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 380.052;
+				LEVEL 1 FOR 239.948;
+			}
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 219.948;
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 0 FOR 380.052;
+				LEVEL 1 FOR 239.948;
+			}
+			LEVEL 0 FOR 380.052;
+		}
+		LEVEL 1 FOR 179.948;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 239.948;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 219.948;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 239.948;
+		}
+		LEVEL 0 FOR 380.052;
+		LEVEL 1 FOR 219.948;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 239.948;
+		}
+		LEVEL 0 FOR 380.052;
+		LEVEL 1 FOR 199.948;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 380.052;
+				LEVEL 1 FOR 239.948;
+				LEVEL 0 FOR 380.052;
+				LEVEL 1 FOR 219.948;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 380.052;
+				LEVEL 1 FOR 239.948;
+			}
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 219.948;
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 0 FOR 380.052;
+				LEVEL 1 FOR 239.948;
+			}
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 179.948;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 239.948;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 219.948;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 239.948;
+		}
+		LEVEL 0 FOR 380.052;
+		LEVEL 1 FOR 219.948;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 239.948;
+		}
+		LEVEL 0 FOR 380.052;
+		LEVEL 1 FOR 179.948;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 239.948;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 219.948;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 239.948;
+		}
+		LEVEL 0 FOR 380.052;
+		LEVEL 1 FOR 219.948;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 239.948;
+		}
+		LEVEL 0 FOR 380.052;
+		LEVEL 1 FOR 199.948;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 380.052;
+				LEVEL 1 FOR 239.948;
+				LEVEL 0 FOR 380.052;
+				LEVEL 1 FOR 219.948;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 380.052;
+				LEVEL 1 FOR 239.948;
+			}
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 219.948;
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 0 FOR 380.052;
+				LEVEL 1 FOR 239.948;
+			}
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 179.948;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 239.948;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 219.948;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 239.948;
+		}
+		LEVEL 0 FOR 380.052;
+		LEVEL 1 FOR 219.948;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 239.948;
+		}
+		LEVEL 0 FOR 380.052;
+		LEVEL 1 FOR 179.948;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 239.948;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 219.948;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 239.948;
+		}
+		LEVEL 0 FOR 380.052;
+		LEVEL 1 FOR 219.948;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 239.948;
+		}
+		LEVEL 0 FOR 380.052;
+		LEVEL 1 FOR 199.948;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 239.948;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 219.948;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 239.948;
+		}
+		LEVEL 0 FOR 380.052;
+		LEVEL 1 FOR 219.948;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 239.948;
+		}
+		LEVEL 0 FOR 380.052;
+		LEVEL 1 FOR 179.948;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 239.948;
+			LEVEL 0 FOR 380.052;
+			LEVEL 1 FOR 219.948;
+		}
+		LEVEL 0 FOR 380.052;
+		LEVEL 1 FOR 56.541;
+	}
+}
+
+TRANSITION_LIST("dh[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 204.704;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 360.117;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 39.883;
+			LEVEL 0 FOR 180.117;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 19.883;
+			LEVEL 0 FOR 180.117;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 39.883;
+			LEVEL 0 FOR 180.117;
+		}
+		LEVEL 1 FOR 199.883;
+		LEVEL 0 FOR 200.117;
+		LEVEL 1 FOR 39.883;
+		LEVEL 0 FOR 180.117;
+		LEVEL 1 FOR 199.883;
+		LEVEL 0 FOR 200.117;
+		LEVEL 1 FOR 19.883;
+		LEVEL 0 FOR 180.117;
+		LEVEL 1 FOR 199.883;
+		LEVEL 0 FOR 200.117;
+		LEVEL 1 FOR 39.883;
+		LEVEL 0 FOR 180.117;
+		LEVEL 1 FOR 339.883;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 39.883;
+			LEVEL 0 FOR 180.117;
+			LEVEL 1 FOR 199.883;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 360.117;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 199.883;
+				LEVEL 0 FOR 200.117;
+				LEVEL 1 FOR 39.883;
+				LEVEL 0 FOR 180.117;
+				LEVEL 1 FOR 199.883;
+				LEVEL 0 FOR 200.117;
+				LEVEL 1 FOR 19.883;
+				LEVEL 0 FOR 180.117;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 199.883;
+				LEVEL 0 FOR 200.117;
+				LEVEL 1 FOR 39.883;
+				LEVEL 0 FOR 180.117;
+			}
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 19.883;
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 0 FOR 180.117;
+				LEVEL 1 FOR 199.883;
+				LEVEL 0 FOR 200.117;
+				LEVEL 1 FOR 39.883;
+			}
+			LEVEL 0 FOR 180.117;
+			LEVEL 1 FOR 199.883;
+		}
+		LEVEL 0 FOR 360.117;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 39.883;
+			LEVEL 0 FOR 180.117;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 19.883;
+			LEVEL 0 FOR 180.117;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 39.883;
+			LEVEL 0 FOR 180.117;
+		}
+		LEVEL 1 FOR 199.883;
+		LEVEL 0 FOR 200.117;
+		LEVEL 1 FOR 19.883;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 180.117;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 39.883;
+		}
+		LEVEL 0 FOR 180.117;
+		LEVEL 1 FOR 199.883;
+		LEVEL 0 FOR 380.117;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 199.883;
+				LEVEL 0 FOR 200.117;
+				LEVEL 1 FOR 39.883;
+				LEVEL 0 FOR 180.117;
+				LEVEL 1 FOR 199.883;
+				LEVEL 0 FOR 200.117;
+				LEVEL 1 FOR 19.883;
+				LEVEL 0 FOR 180.117;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 199.883;
+				LEVEL 0 FOR 200.117;
+				LEVEL 1 FOR 39.883;
+				LEVEL 0 FOR 180.117;
+			}
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 19.883;
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 0 FOR 180.117;
+				LEVEL 1 FOR 199.883;
+				LEVEL 0 FOR 200.117;
+				LEVEL 1 FOR 39.883;
+			}
+			LEVEL 0 FOR 180.117;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 360.117;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 39.883;
+			LEVEL 0 FOR 180.117;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 19.883;
+			LEVEL 0 FOR 180.117;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 39.883;
+			LEVEL 0 FOR 180.117;
+		}
+		LEVEL 1 FOR 199.883;
+		LEVEL 0 FOR 200.117;
+		LEVEL 1 FOR 19.883;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 180.117;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 39.883;
+		}
+		LEVEL 0 FOR 180.117;
+		LEVEL 1 FOR 199.883;
+		LEVEL 0 FOR 360.117;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 39.883;
+			LEVEL 0 FOR 180.117;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 19.883;
+			LEVEL 0 FOR 180.117;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 39.883;
+			LEVEL 0 FOR 180.117;
+		}
+		LEVEL 1 FOR 199.883;
+		LEVEL 0 FOR 200.117;
+		LEVEL 1 FOR 19.883;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 180.117;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 39.883;
+		}
+		LEVEL 0 FOR 180.117;
+		LEVEL 1 FOR 199.883;
+		LEVEL 0 FOR 380.117;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 199.883;
+				LEVEL 0 FOR 200.117;
+				LEVEL 1 FOR 39.883;
+				LEVEL 0 FOR 180.117;
+				LEVEL 1 FOR 199.883;
+				LEVEL 0 FOR 200.117;
+				LEVEL 1 FOR 19.883;
+				LEVEL 0 FOR 180.117;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 199.883;
+				LEVEL 0 FOR 200.117;
+				LEVEL 1 FOR 39.883;
+				LEVEL 0 FOR 180.117;
+			}
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 19.883;
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 0 FOR 180.117;
+				LEVEL 1 FOR 199.883;
+				LEVEL 0 FOR 200.117;
+				LEVEL 1 FOR 39.883;
+			}
+			LEVEL 0 FOR 180.117;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 360.117;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 39.883;
+			LEVEL 0 FOR 180.117;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 19.883;
+			LEVEL 0 FOR 180.117;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 39.883;
+			LEVEL 0 FOR 180.117;
+		}
+		LEVEL 1 FOR 199.883;
+		LEVEL 0 FOR 200.117;
+		LEVEL 1 FOR 19.883;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 180.117;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 39.883;
+		}
+		LEVEL 0 FOR 180.117;
+		LEVEL 1 FOR 199.883;
+		LEVEL 0 FOR 360.117;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 39.883;
+			LEVEL 0 FOR 180.117;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 19.883;
+			LEVEL 0 FOR 180.117;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 39.883;
+			LEVEL 0 FOR 180.117;
+		}
+		LEVEL 1 FOR 199.883;
+		LEVEL 0 FOR 200.117;
+		LEVEL 1 FOR 19.883;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 180.117;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 39.883;
+		}
+		LEVEL 0 FOR 180.117;
+		LEVEL 1 FOR 199.883;
+		LEVEL 0 FOR 380.117;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 39.883;
+			LEVEL 0 FOR 180.117;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 19.883;
+			LEVEL 0 FOR 180.117;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 39.883;
+			LEVEL 0 FOR 180.117;
+		}
+		LEVEL 1 FOR 199.883;
+		LEVEL 0 FOR 200.117;
+		LEVEL 1 FOR 19.883;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 180.117;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 39.883;
+		}
+		LEVEL 0 FOR 180.117;
+		LEVEL 1 FOR 199.883;
+		LEVEL 0 FOR 360.117;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 39.883;
+			LEVEL 0 FOR 180.117;
+			LEVEL 1 FOR 199.883;
+			LEVEL 0 FOR 200.117;
+			LEVEL 1 FOR 19.883;
+			LEVEL 0 FOR 180.117;
+		}
+		LEVEL 1 FOR 199.883;
+		LEVEL 0 FOR 55.413;
+	}
+}
+
+TRANSITION_LIST("dl[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 165.631;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+			LEVEL 1 FOR 19.959;
+			LEVEL 0 FOR 140.041;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 180.041;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 180.041;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 160.041;
+		}
+		LEVEL 1 FOR 39.959;
+		LEVEL 0 FOR 180.041;
+		NODE
+		{
+			REPEAT = 5;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 160.041;
+		}
+		LEVEL 1 FOR 39.959;
+		LEVEL 0 FOR 180.041;
+		LEVEL 1 FOR 39.959;
+		LEVEL 0 FOR 300.041;
+		LEVEL 1 FOR 39.959;
+		LEVEL 0 FOR 160.041;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 180.041;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 19.959;
+			LEVEL 0 FOR 140.041;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 180.041;
+				NODE
+				{
+					REPEAT = 5;
+					LEVEL 1 FOR 39.959;
+					LEVEL 0 FOR 160.041;
+				}
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 180.041;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 39.959;
+					LEVEL 0 FOR 160.041;
+				}
+			}
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 180.041;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 39.959;
+					LEVEL 0 FOR 160.041;
+				}
+			}
+		}
+		LEVEL 1 FOR 19.959;
+		LEVEL 0 FOR 140.041;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 160.041;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 180.041;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 180.041;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 160.041;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 180.041;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+		}
+		LEVEL 1 FOR 39.959;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 140.041;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 180.041;
+				NODE
+				{
+					REPEAT = 5;
+					LEVEL 1 FOR 39.959;
+					LEVEL 0 FOR 160.041;
+				}
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 180.041;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 39.959;
+					LEVEL 0 FOR 160.041;
+				}
+			}
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 180.041;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 39.959;
+					LEVEL 0 FOR 160.041;
+				}
+			}
+			LEVEL 1 FOR 19.959;
+		}
+		LEVEL 0 FOR 140.041;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 160.041;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 180.041;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 180.041;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 160.041;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 180.041;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+		}
+		LEVEL 1 FOR 19.959;
+		LEVEL 0 FOR 140.041;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 160.041;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 180.041;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 180.041;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 160.041;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 180.041;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+		}
+		LEVEL 1 FOR 39.959;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 140.041;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 180.041;
+				NODE
+				{
+					REPEAT = 5;
+					LEVEL 1 FOR 39.959;
+					LEVEL 0 FOR 160.041;
+				}
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 180.041;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 39.959;
+					LEVEL 0 FOR 160.041;
+				}
+			}
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 180.041;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 39.959;
+					LEVEL 0 FOR 160.041;
+				}
+			}
+			LEVEL 1 FOR 19.959;
+		}
+		LEVEL 0 FOR 140.041;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 160.041;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 180.041;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 180.041;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 160.041;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 180.041;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+		}
+		LEVEL 1 FOR 19.959;
+		LEVEL 0 FOR 140.041;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 160.041;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 180.041;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 180.041;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 160.041;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 180.041;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+		}
+		LEVEL 1 FOR 39.959;
+		LEVEL 0 FOR 140.041;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 160.041;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 180.041;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 180.041;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 160.041;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 180.041;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.959;
+				LEVEL 0 FOR 160.041;
+			}
+		}
+		LEVEL 1 FOR 19.959;
+		LEVEL 0 FOR 140.041;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 160.041;
+		}
+		LEVEL 1 FOR 39.959;
+		LEVEL 0 FOR 180.041;
+		NODE
+		{
+			REPEAT = 5;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 160.041;
+		}
+		LEVEL 1 FOR 39.959;
+		LEVEL 0 FOR 180.041;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 39.959;
+			LEVEL 0 FOR 160.041;
+		}
+		LEVEL 1 FOR 39.959;
+		LEVEL 0 FOR 54.41;
+	}
+}
+
+TRANSITION_LIST("dl[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 83.904;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 80.103;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 140.103;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 140.103;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 120.103;
+		}
+		LEVEL 1 FOR 79.897;
+		LEVEL 0 FOR 140.103;
+		NODE
+		{
+			REPEAT = 5;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 120.103;
+		}
+		LEVEL 1 FOR 79.897;
+		LEVEL 0 FOR 140.103;
+		LEVEL 1 FOR 79.897;
+		LEVEL 0 FOR 120.103;
+		LEVEL 1 FOR 219.897;
+		LEVEL 0 FOR 120.103;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 140.103;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 80.103;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 140.103;
+				NODE
+				{
+					REPEAT = 5;
+					LEVEL 1 FOR 79.897;
+					LEVEL 0 FOR 120.103;
+				}
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 140.103;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 79.897;
+					LEVEL 0 FOR 120.103;
+				}
+			}
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 140.103;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 79.897;
+					LEVEL 0 FOR 120.103;
+				}
+			}
+		}
+		LEVEL 1 FOR 79.897;
+		LEVEL 0 FOR 80.103;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 120.103;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 140.103;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 140.103;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 120.103;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 140.103;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+		}
+		LEVEL 1 FOR 79.897;
+		LEVEL 0 FOR 100.103;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 140.103;
+				NODE
+				{
+					REPEAT = 5;
+					LEVEL 1 FOR 79.897;
+					LEVEL 0 FOR 120.103;
+				}
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 140.103;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 79.897;
+					LEVEL 0 FOR 120.103;
+				}
+			}
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 140.103;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 79.897;
+					LEVEL 0 FOR 120.103;
+				}
+			}
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 80.103;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 120.103;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 140.103;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 140.103;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 120.103;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 140.103;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+		}
+		LEVEL 1 FOR 79.897;
+		LEVEL 0 FOR 80.103;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 120.103;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 140.103;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 140.103;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 120.103;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 140.103;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+		}
+		LEVEL 1 FOR 79.897;
+		LEVEL 0 FOR 100.103;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 140.103;
+				NODE
+				{
+					REPEAT = 5;
+					LEVEL 1 FOR 79.897;
+					LEVEL 0 FOR 120.103;
+				}
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 140.103;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 79.897;
+					LEVEL 0 FOR 120.103;
+				}
+			}
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 140.103;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 79.897;
+					LEVEL 0 FOR 120.103;
+				}
+			}
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 80.103;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 120.103;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 140.103;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 140.103;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 120.103;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 140.103;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+		}
+		LEVEL 1 FOR 79.897;
+		LEVEL 0 FOR 80.103;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 120.103;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 140.103;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 140.103;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 120.103;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 140.103;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+		}
+		LEVEL 1 FOR 79.897;
+		LEVEL 0 FOR 100.103;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 120.103;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 140.103;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 140.103;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 120.103;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 140.103;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 79.897;
+				LEVEL 0 FOR 120.103;
+			}
+		}
+		LEVEL 1 FOR 79.897;
+		LEVEL 0 FOR 80.103;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 120.103;
+		}
+		LEVEL 1 FOR 79.897;
+		LEVEL 0 FOR 140.103;
+		NODE
+		{
+			REPEAT = 5;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 120.103;
+		}
+		LEVEL 1 FOR 79.897;
+		LEVEL 0 FOR 140.103;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 79.897;
+			LEVEL 0 FOR 120.103;
+		}
+		LEVEL 1 FOR 79.897;
+		LEVEL 0 FOR 96.199;
+	}
+}
+
+TRANSITION_LIST("dl[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 45.234;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+			}
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+			}
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 100.142;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+			}
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 100.142;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 80.142;
+		}
+		LEVEL 1 FOR 39.858;
+		LEVEL 0 FOR 40.142;
+		LEVEL 1 FOR 39.858;
+		LEVEL 0 FOR 100.142;
+		NODE
+		{
+			REPEAT = 5;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 80.142;
+		}
+		LEVEL 1 FOR 39.858;
+		LEVEL 0 FOR 40.142;
+		LEVEL 1 FOR 39.858;
+		LEVEL 0 FOR 100.142;
+		LEVEL 1 FOR 39.858;
+		LEVEL 0 FOR 40.142;
+		LEVEL 1 FOR 39.858;
+		LEVEL 0 FOR 80.142;
+		LEVEL 1 FOR 39.858;
+		LEVEL 0 FOR 180.142;
+		LEVEL 1 FOR 39.858;
+		LEVEL 0 FOR 80.142;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 100.142;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 100.142;
+				NODE
+				{
+					REPEAT = 5;
+					LEVEL 1 FOR 39.858;
+					LEVEL 0 FOR 40.142;
+					LEVEL 1 FOR 39.858;
+					LEVEL 0 FOR 80.142;
+				}
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 100.142;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 39.858;
+					LEVEL 0 FOR 40.142;
+					LEVEL 1 FOR 39.858;
+					LEVEL 0 FOR 80.142;
+				}
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+			}
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+			}
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 100.142;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 39.858;
+					LEVEL 0 FOR 40.142;
+					LEVEL 1 FOR 39.858;
+					LEVEL 0 FOR 80.142;
+				}
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 80.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 100.142;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+			}
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 100.142;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+			}
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 80.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 100.142;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+			}
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+		}
+		LEVEL 1 FOR 39.858;
+		LEVEL 0 FOR 60.142;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 80.142;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 100.142;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 100.142;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 80.142;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 100.142;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 100.142;
+				NODE
+				{
+					REPEAT = 5;
+					LEVEL 1 FOR 39.858;
+					LEVEL 0 FOR 40.142;
+					LEVEL 1 FOR 39.858;
+					LEVEL 0 FOR 80.142;
+				}
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 100.142;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 39.858;
+					LEVEL 0 FOR 40.142;
+					LEVEL 1 FOR 39.858;
+					LEVEL 0 FOR 80.142;
+				}
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+			}
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+			}
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 100.142;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 39.858;
+					LEVEL 0 FOR 40.142;
+					LEVEL 1 FOR 39.858;
+					LEVEL 0 FOR 80.142;
+				}
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 80.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 100.142;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+			}
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 100.142;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+			}
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 80.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 100.142;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+			}
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+		}
+		LEVEL 1 FOR 39.858;
+		LEVEL 0 FOR 60.142;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 80.142;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 100.142;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 100.142;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 80.142;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 100.142;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 100.142;
+				NODE
+				{
+					REPEAT = 5;
+					LEVEL 1 FOR 39.858;
+					LEVEL 0 FOR 40.142;
+					LEVEL 1 FOR 39.858;
+					LEVEL 0 FOR 80.142;
+				}
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 100.142;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 39.858;
+					LEVEL 0 FOR 40.142;
+					LEVEL 1 FOR 39.858;
+					LEVEL 0 FOR 80.142;
+				}
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+			}
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+			}
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 100.142;
+				NODE
+				{
+					REPEAT = 2;
+					LEVEL 1 FOR 39.858;
+					LEVEL 0 FOR 40.142;
+					LEVEL 1 FOR 39.858;
+					LEVEL 0 FOR 80.142;
+				}
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 80.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 100.142;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+			}
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 100.142;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+			}
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 80.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 100.142;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+			}
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+		}
+		LEVEL 1 FOR 39.858;
+		LEVEL 0 FOR 60.142;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 80.142;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 100.142;
+			NODE
+			{
+				REPEAT = 5;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 100.142;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 80.142;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 100.142;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 40.142;
+				LEVEL 1 FOR 39.858;
+				LEVEL 0 FOR 80.142;
+			}
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 80.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+		}
+		LEVEL 1 FOR 39.858;
+		LEVEL 0 FOR 100.142;
+		NODE
+		{
+			REPEAT = 5;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 80.142;
+		}
+		LEVEL 1 FOR 39.858;
+		LEVEL 0 FOR 40.142;
+		LEVEL 1 FOR 39.858;
+		LEVEL 0 FOR 100.142;
+		NODE
+		{
+			REPEAT = 5;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 40.142;
+			LEVEL 1 FOR 39.858;
+			LEVEL 0 FOR 80.142;
+		}
+		LEVEL 1 FOR 14.766;
+	}
+}
+
+TRANSITION_LIST("dl[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 23.044;
+		NODE
+		{
+			REPEAT = 29;
+			LEVEL 1 FOR 19.958;
+			LEVEL 0 FOR 20.042;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 39.958;
+			NODE
+			{
+				REPEAT = 28;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+			LEVEL 0 FOR 20.042;
+		}
+		LEVEL 1 FOR 19.958;
+		LEVEL 0 FOR 20.042;
+		LEVEL 1 FOR 39.958;
+		NODE
+		{
+			REPEAT = 29;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 19.958;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 39.958;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+		}
+		NODE
+		{
+			REPEAT = 15;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 19.958;
+		}
+		LEVEL 0 FOR 20.042;
+		LEVEL 1 FOR 39.958;
+		NODE
+		{
+			REPEAT = 6;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 19.958;
+		}
+		LEVEL 0 FOR 20.042;
+		LEVEL 1 FOR 159.958;
+		NODE
+		{
+			REPEAT = 7;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 19.958;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 39.958;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 39.958;
+			NODE
+			{
+				REPEAT = 28;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+		}
+		LEVEL 0 FOR 20.042;
+		LEVEL 1 FOR 19.958;
+		LEVEL 0 FOR 20.042;
+		LEVEL 1 FOR 39.958;
+		NODE
+		{
+			REPEAT = 29;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 19.958;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 39.958;
+				NODE
+				{
+					REPEAT = 14;
+					LEVEL 0 FOR 20.042;
+					LEVEL 1 FOR 19.958;
+				}
+			}
+			NODE
+			{
+				REPEAT = 15;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 39.958;
+				NODE
+				{
+					REPEAT = 14;
+					LEVEL 0 FOR 20.042;
+					LEVEL 1 FOR 19.958;
+				}
+			}
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 39.958;
+				NODE
+				{
+					REPEAT = 29;
+					LEVEL 0 FOR 20.042;
+					LEVEL 1 FOR 19.958;
+				}
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 39.958;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+		}
+		NODE
+		{
+			REPEAT = 15;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 19.958;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 39.958;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+		}
+		LEVEL 0 FOR 20.042;
+		LEVEL 1 FOR 39.958;
+		NODE
+		{
+			REPEAT = 14;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 19.958;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 39.958;
+			NODE
+			{
+				REPEAT = 13;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+		}
+		LEVEL 0 FOR 20.042;
+		LEVEL 1 FOR 19.958;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 39.958;
+				NODE
+				{
+					REPEAT = 29;
+					LEVEL 0 FOR 20.042;
+					LEVEL 1 FOR 19.958;
+				}
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 39.958;
+				NODE
+				{
+					REPEAT = 14;
+					LEVEL 0 FOR 20.042;
+					LEVEL 1 FOR 19.958;
+				}
+			}
+			NODE
+			{
+				REPEAT = 15;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 39.958;
+				NODE
+				{
+					REPEAT = 14;
+					LEVEL 0 FOR 20.042;
+					LEVEL 1 FOR 19.958;
+				}
+			}
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 39.958;
+			NODE
+			{
+				REPEAT = 29;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 39.958;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+		}
+		NODE
+		{
+			REPEAT = 15;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 19.958;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 39.958;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+		}
+		NODE
+		{
+			REPEAT = 14;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 19.958;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 39.958;
+			NODE
+			{
+				REPEAT = 29;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 39.958;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+		}
+		NODE
+		{
+			REPEAT = 15;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 19.958;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 39.958;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+		}
+		LEVEL 0 FOR 20.042;
+		LEVEL 1 FOR 39.958;
+		NODE
+		{
+			REPEAT = 14;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 19.958;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 39.958;
+			NODE
+			{
+				REPEAT = 13;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+		}
+		LEVEL 0 FOR 20.042;
+		LEVEL 1 FOR 19.958;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 39.958;
+				NODE
+				{
+					REPEAT = 29;
+					LEVEL 0 FOR 20.042;
+					LEVEL 1 FOR 19.958;
+				}
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 39.958;
+				NODE
+				{
+					REPEAT = 14;
+					LEVEL 0 FOR 20.042;
+					LEVEL 1 FOR 19.958;
+				}
+			}
+			NODE
+			{
+				REPEAT = 15;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 39.958;
+				NODE
+				{
+					REPEAT = 14;
+					LEVEL 0 FOR 20.042;
+					LEVEL 1 FOR 19.958;
+				}
+			}
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 39.958;
+			NODE
+			{
+				REPEAT = 29;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 39.958;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+		}
+		NODE
+		{
+			REPEAT = 15;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 19.958;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 39.958;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+		}
+		NODE
+		{
+			REPEAT = 14;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 19.958;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 39.958;
+			NODE
+			{
+				REPEAT = 29;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 39.958;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+		}
+		NODE
+		{
+			REPEAT = 15;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 19.958;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 39.958;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+		}
+		LEVEL 0 FOR 20.042;
+		LEVEL 1 FOR 39.958;
+		NODE
+		{
+			REPEAT = 14;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 19.958;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 39.958;
+			NODE
+			{
+				REPEAT = 13;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+		}
+		LEVEL 0 FOR 20.042;
+		LEVEL 1 FOR 19.958;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 39.958;
+			NODE
+			{
+				REPEAT = 29;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 39.958;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+		}
+		NODE
+		{
+			REPEAT = 15;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 19.958;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 39.958;
+			NODE
+			{
+				REPEAT = 14;
+				LEVEL 0 FOR 20.042;
+				LEVEL 1 FOR 19.958;
+			}
+		}
+		NODE
+		{
+			REPEAT = 14;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 19.958;
+		}
+		LEVEL 0 FOR 20.042;
+		LEVEL 1 FOR 39.958;
+		NODE
+		{
+			REPEAT = 29;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 19.958;
+		}
+		LEVEL 0 FOR 20.042;
+		LEVEL 1 FOR 39.958;
+		NODE
+		{
+			REPEAT = 25;
+			LEVEL 0 FOR 20.042;
+			LEVEL 1 FOR 19.958;
+		}
+		LEVEL 0 FOR 16.998;
+	}
+}
+
+TRANSITION_LIST("in1")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 6940.0;
+		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 92920.0;
+	}
+}
+
+TRANSITION_LIST("k2")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("k5")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("k6")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("k7")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("k8")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("mh[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("mh[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("mh[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("mh[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 6063.153;
+		LEVEL 1 FOR 1999.923;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 0 FOR 5460.077;
+			LEVEL 1 FOR 1859.923;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 5480.077;
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 1859.923;
+				LEVEL 0 FOR 5460.077;
+			}
+			LEVEL 1 FOR 1859.923;
+		}
+		LEVEL 0 FOR 5480.077;
+		LEVEL 1 FOR 1859.923;
+		LEVEL 0 FOR 4036.924;
+	}
+}
+
+TRANSITION_LIST("ml[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 4844.675;
+		LEVEL 1 FOR 1219.761;
+		LEVEL 0 FOR 6240.239;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 1219.761;
+			LEVEL 0 FOR 6100.239;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 1219.761;
+			LEVEL 0 FOR 6120.239;
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 1219.761;
+				LEVEL 0 FOR 6100.239;
+			}
+		}
+		LEVEL 1 FOR 1219.761;
+		LEVEL 0 FOR 6120.239;
+		LEVEL 1 FOR 1219.761;
+		LEVEL 0 FOR 5895.564;
+	}
+}
+
+TRANSITION_LIST("ml[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 2404.388;
+		LEVEL 1 FOR 2439.842;
+		LEVEL 0 FOR 5020.158;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 2439.842;
+			LEVEL 0 FOR 4880.158;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 2439.842;
+			LEVEL 0 FOR 4900.158;
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 2439.842;
+				LEVEL 0 FOR 4880.158;
+			}
+		}
+		LEVEL 1 FOR 2439.842;
+		LEVEL 0 FOR 4900.158;
+		LEVEL 1 FOR 2439.842;
+		LEVEL 0 FOR 4880.158;
+		LEVEL 1 FOR 2235.612;
+	}
+}
+
+TRANSITION_LIST("ml[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1223.44;
+		LEVEL 1 FOR 1179.898;
+		LEVEL 0 FOR 1220.102;
+		LEVEL 1 FOR 1219.898;
+		LEVEL 0 FOR 2600.102;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 619.898;
+			LEVEL 0 FOR 620.102;
+			LEVEL 1 FOR 1179.898;
+			LEVEL 0 FOR 1220.102;
+			LEVEL 1 FOR 1219.898;
+			LEVEL 0 FOR 2460.102;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 619.898;
+			LEVEL 0 FOR 620.102;
+			LEVEL 1 FOR 1199.898;
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 0 FOR 1220.102;
+				LEVEL 1 FOR 1219.898;
+				LEVEL 0 FOR 2460.102;
+				LEVEL 1 FOR 619.898;
+				LEVEL 0 FOR 620.102;
+				LEVEL 1 FOR 1179.898;
+			}
+			LEVEL 0 FOR 1220.102;
+			LEVEL 1 FOR 1219.898;
+			LEVEL 0 FOR 2460.102;
+		}
+		LEVEL 1 FOR 619.898;
+		LEVEL 0 FOR 620.102;
+		LEVEL 1 FOR 1199.898;
+		LEVEL 0 FOR 1220.102;
+		LEVEL 1 FOR 1219.898;
+		LEVEL 0 FOR 2460.102;
+		LEVEL 1 FOR 619.898;
+		LEVEL 0 FOR 620.102;
+		LEVEL 1 FOR 1179.898;
+		LEVEL 0 FOR 1220.102;
+		LEVEL 1 FOR 1016.56;
+	}
+}
+
+TRANSITION_LIST("ml[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 603.95;
+		LEVEL 1 FOR 619.897;
+		LEVEL 0 FOR 560.103;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 619.897;
+			LEVEL 0 FOR 600.103;
+		}
+		LEVEL 1 FOR 619.897;
+		LEVEL 0 FOR 620.103;
+		LEVEL 1 FOR 599.897;
+		LEVEL 0 FOR 620.103;
+		LEVEL 1 FOR 759.897;
+		LEVEL 0 FOR 620.103;
+		LEVEL 1 FOR 619.897;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 560.103;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 619.897;
+				LEVEL 0 FOR 600.103;
+			}
+			LEVEL 1 FOR 619.897;
+			LEVEL 0 FOR 620.103;
+			LEVEL 1 FOR 599.897;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 620.103;
+				LEVEL 1 FOR 619.897;
+			}
+		}
+		LEVEL 0 FOR 560.103;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 619.897;
+			LEVEL 0 FOR 600.103;
+		}
+		LEVEL 1 FOR 619.897;
+		LEVEL 0 FOR 620.103;
+		LEVEL 1 FOR 599.897;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 620.103;
+			LEVEL 1 FOR 619.897;
+		}
+		LEVEL 0 FOR 580.103;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 619.897;
+				LEVEL 0 FOR 600.103;
+			}
+			LEVEL 1 FOR 619.897;
+			LEVEL 0 FOR 620.103;
+			LEVEL 1 FOR 599.897;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 620.103;
+				LEVEL 1 FOR 619.897;
+			}
+			LEVEL 0 FOR 560.103;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 619.897;
+			LEVEL 0 FOR 600.103;
+		}
+		LEVEL 1 FOR 619.897;
+		LEVEL 0 FOR 620.103;
+		LEVEL 1 FOR 599.897;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 620.103;
+			LEVEL 1 FOR 619.897;
+		}
+		LEVEL 0 FOR 560.103;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 619.897;
+			LEVEL 0 FOR 600.103;
+		}
+		LEVEL 1 FOR 619.897;
+		LEVEL 0 FOR 620.103;
+		LEVEL 1 FOR 599.897;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 620.103;
+			LEVEL 1 FOR 619.897;
+		}
+		LEVEL 0 FOR 580.103;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 619.897;
+				LEVEL 0 FOR 600.103;
+			}
+			LEVEL 1 FOR 619.897;
+			LEVEL 0 FOR 620.103;
+			LEVEL 1 FOR 599.897;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 620.103;
+				LEVEL 1 FOR 619.897;
+			}
+			LEVEL 0 FOR 560.103;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 619.897;
+			LEVEL 0 FOR 600.103;
+		}
+		LEVEL 1 FOR 619.897;
+		LEVEL 0 FOR 620.103;
+		LEVEL 1 FOR 599.897;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 620.103;
+			LEVEL 1 FOR 619.897;
+		}
+		LEVEL 0 FOR 560.103;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 619.897;
+			LEVEL 0 FOR 600.103;
+		}
+		LEVEL 1 FOR 619.897;
+		LEVEL 0 FOR 620.103;
+		LEVEL 1 FOR 599.897;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 620.103;
+			LEVEL 1 FOR 619.897;
+		}
+		LEVEL 0 FOR 580.103;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 619.897;
+			LEVEL 0 FOR 600.103;
+		}
+		LEVEL 1 FOR 619.897;
+		LEVEL 0 FOR 620.103;
+		LEVEL 1 FOR 599.897;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 620.103;
+			LEVEL 1 FOR 619.897;
+		}
+		LEVEL 0 FOR 560.103;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 619.897;
+			LEVEL 0 FOR 600.103;
+		}
+		LEVEL 1 FOR 416.05;
+	}
+}
+
+TRANSITION_LIST("y3[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("y3[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("y3[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("y3[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 73983.945;
+		LEVEL 1 FOR 26016.055;
+	}
+}
+
+TRANSITION_LIST("y4[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 59323.816;
+		LEVEL 1 FOR 14659.831;
+		LEVEL 0 FOR 26016.353;
+	}
+}
+
+TRANSITION_LIST("y4[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 30025.825;
+		LEVEL 1 FOR 29299.839;
+		LEVEL 0 FOR 40674.336;
+	}
+}
+
+TRANSITION_LIST("y4[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 15384.315;
+		LEVEL 1 FOR 14639.713;
+		LEVEL 0 FOR 14660.287;
+		LEVEL 1 FOR 14639.713;
+		LEVEL 0 FOR 29300.287;
+		LEVEL 1 FOR 11375.685;
+	}
+}
+
+TRANSITION_LIST("y4[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 8065.556;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 7319.909;
+			LEVEL 0 FOR 7320.091;
+			LEVEL 1 FOR 7319.909;
+			LEVEL 0 FOR 7340.091;
+		}
+		LEVEL 1 FOR 4034.444;
+	}
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "1hz";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 0;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "2hz";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 1;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dh";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 2;
+	TREE_LEVEL = 0;
+	CHILDREN = 3, 4, 5, 6;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dh[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 3;
+	TREE_LEVEL = 1;
+	PARENT = 2;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dh[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 4;
+	TREE_LEVEL = 1;
+	PARENT = 2;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dh[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 5;
+	TREE_LEVEL = 1;
+	PARENT = 2;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dh[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 6;
+	TREE_LEVEL = 1;
+	PARENT = 2;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dl";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 7;
+	TREE_LEVEL = 0;
+	CHILDREN = 8, 9, 10, 11;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dl[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 8;
+	TREE_LEVEL = 1;
+	PARENT = 7;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dl[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 9;
+	TREE_LEVEL = 1;
+	PARENT = 7;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dl[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 10;
+	TREE_LEVEL = 1;
+	PARENT = 7;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dl[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 11;
+	TREE_LEVEL = 1;
+	PARENT = 7;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "in1";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 12;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "k2";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 13;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "k5";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 14;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "k6";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 15;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "k7";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 16;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "k8";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 17;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "mh";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 18;
+	TREE_LEVEL = 0;
+	CHILDREN = 19, 20, 21, 22;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "mh[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 19;
+	TREE_LEVEL = 1;
+	PARENT = 18;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "mh[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 20;
+	TREE_LEVEL = 1;
+	PARENT = 18;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "mh[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 21;
+	TREE_LEVEL = 1;
+	PARENT = 18;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "mh[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 22;
+	TREE_LEVEL = 1;
+	PARENT = 18;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ml";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 23;
+	TREE_LEVEL = 0;
+	CHILDREN = 24, 25, 26, 27;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ml[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 24;
+	TREE_LEVEL = 1;
+	PARENT = 23;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ml[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 25;
+	TREE_LEVEL = 1;
+	PARENT = 23;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ml[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 26;
+	TREE_LEVEL = 1;
+	PARENT = 23;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ml[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 27;
+	TREE_LEVEL = 1;
+	PARENT = 23;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "y3";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 28;
+	TREE_LEVEL = 0;
+	CHILDREN = 29, 30, 31, 32;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "y3[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 29;
+	TREE_LEVEL = 1;
+	PARENT = 28;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "y3[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 30;
+	TREE_LEVEL = 1;
+	PARENT = 28;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "y3[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 31;
+	TREE_LEVEL = 1;
+	PARENT = 28;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "y3[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 32;
+	TREE_LEVEL = 1;
+	PARENT = 28;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "y4";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 33;
+	TREE_LEVEL = 0;
+	CHILDREN = 34, 35, 36, 37;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "y4[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 34;
+	TREE_LEVEL = 1;
+	PARENT = 33;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "y4[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 35;
+	TREE_LEVEL = 1;
+	PARENT = 33;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "y4[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 36;
+	TREE_LEVEL = 1;
+	PARENT = 33;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "y4[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 37;
+	TREE_LEVEL = 1;
+	PARENT = 33;
+}
+
+TIME_BAR
+{
+	TIME = 100000;
+	MASTER = TRUE;
+}
+
+TIME_BAR
+{
+	TIME = 360000;
+	MASTER = FALSE;
+}
+;

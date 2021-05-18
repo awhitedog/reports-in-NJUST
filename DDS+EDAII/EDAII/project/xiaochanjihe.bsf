@@ -1,0 +1,106 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 192 176)
+	(text "xiaochanjihe" (rect 5 0 75 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 144 25 156)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "fIN" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "fIN" (rect 21 27 36 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "k1IN" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "k1IN" (rect 21 43 44 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "kclrIN" (rect 0 0 30 14)(font "Arial" (font_size 8)))
+		(text "kclrIN" (rect 21 59 51 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "kjiaofenIN" (rect 0 0 54 14)(font "Arial" (font_size 8)))
+		(text "kjiaofenIN" (rect 21 75 75 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "kjiaoshiIN" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "kjiaoshiIN" (rect 21 91 72 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "kjiaoxqIN" (rect 0 0 49 14)(font "Arial" (font_size 8)))
+		(text "kjiaoxqIN" (rect 21 107 70 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
+	)
+	(port
+		(pt 176 32)
+		(output)
+		(text "k1OUT" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "k1OUT" (rect 118 27 155 41)(font "Arial" (font_size 8)))
+		(line (pt 176 32)(pt 160 32)(line_width 1))
+	)
+	(port
+		(pt 176 48)
+		(output)
+		(text "clr" (rect 0 0 14 14)(font "Arial" (font_size 8)))
+		(text "clr" (rect 141 43 155 57)(font "Arial" (font_size 8)))
+		(line (pt 176 48)(pt 160 48)(line_width 1))
+	)
+	(port
+		(pt 176 64)
+		(output)
+		(text "kjiaofenOUT" (rect 0 0 68 14)(font "Arial" (font_size 8)))
+		(text "kjiaofenOUT" (rect 87 59 155 73)(font "Arial" (font_size 8)))
+		(line (pt 176 64)(pt 160 64)(line_width 1))
+	)
+	(port
+		(pt 176 80)
+		(output)
+		(text "kjiaoshiOUT" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "kjiaoshiOUT" (rect 89 75 155 89)(font "Arial" (font_size 8)))
+		(line (pt 176 80)(pt 160 80)(line_width 1))
+	)
+	(port
+		(pt 176 96)
+		(output)
+		(text "kjiaoxqOUT" (rect 0 0 63 14)(font "Arial" (font_size 8)))
+		(text "kjiaoxqOUT" (rect 92 91 155 105)(font "Arial" (font_size 8)))
+		(line (pt 176 96)(pt 160 96)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 160 144)(line_width 1))
+	)
+)
