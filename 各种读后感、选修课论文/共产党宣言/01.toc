@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {1}导言}{2}{section.1}
+\contentsline {section}{\numberline {2}《宣言》内容简要回顾}{2}{section.2}
+\contentsline {section}{\numberline {3}《宣言》部分内容感触与疑惑}{2}{section.3}
+\contentsline {subsection}{\numberline {3.1}贫穷与人性间的对立}{2}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}经济危机、生产力与生产关系}{3}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}剥削与雇佣}{3}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}国家与民族}{4}{subsection.3.4}
+\contentsline {section}{\numberline {4}赞与弹}{4}{section.4}
+\contentsline {section}{\numberline {5}道德绑架（？）的补充讨论}{4}{section.5}
