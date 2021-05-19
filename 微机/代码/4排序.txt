@@ -1,0 +1,62 @@
+STACK SEGMENT STACK
+    DB 16(?)
+STACK ENDS
+DATA SEGMENT 
+ARRY DW 7856H,0B010H,0001H,0002H,0003H,0004H,0005H,0006H,0007H,0008H
+ARRY2 DW 20 DUP(?),'$'
+DATA ENDS
+CODE SEGMENT
+     ASSUME CS:CODE,DS:DATA,SS:STACK
+     DISP      PROC
+     
+     PUSH BX
+     MOV CL,4
+     SHR BH,CL
+     CMP BH,9
+     JBE D1
+     ADD BH,7
+  D1:ADD BH,30H
+     MOV [DI],BH
+     INC DI
+     POP BX
+     AND BH,0FH
+     CMP BH,9
+     JBE D2
+     ADD BH,07
+D2:  ADD BH,30H
+     MOV [DI],BH
+     INC DI
+     
+          RET
+DISP ENDP
+
+START :  MOV AX,DATA
+         MOV DS,AX
+         
+         LEA SI,ARRY
+         L3:MOV DX,9
+         L4:MOV CX,9
+  L2:       MOV BX,[SI]
+         CMP BX,[SI+2]
+         JLE L1
+         XCHG BX,[SI+2]
+         XCHG BX,[SI]
+L1: 
+INC SI
+INC SI
+DEC CX
+JNZ L2
+LEA SI,ARRY
+DEC DX
+JNZ L4
+
+
+
+        MOV AX,4C00H
+        INT 21H
+CODE ENDS
+        END START
+         
+
+          
+          

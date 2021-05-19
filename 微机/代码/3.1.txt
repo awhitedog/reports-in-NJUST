@@ -1,0 +1,59 @@
+data segment
+    sum dw 0
+data  ends
+stack segment stack
+    buff db 100 dup(0)
+stack ends
+code segment 
+    assume cs:code,ds:data,ss:stack
+start:
+    mov ax,data
+    mov ds,ax  
+    mov ax,0
+    mov bh,1
+    mov bl,2
+    mov dx,0
+l1: mov al,bl
+    mul bh
+    add sum,ax                   
+    inc bh
+    inc bl
+    cmp ax,200
+    jna l1
+   
+    mov ax,sum 
+    mov bx,ax
+    and bh,0f0h
+    mov cl,4
+    shr bh,cl
+    add bh,30h
+    mov dl,bh
+    mov ah,2
+    int 21h
+    mov bh,ah
+    and bh,0fh
+    add bh,30h
+    mov dl,bh
+    mov ah,2
+    int 21h
+    mov bl,al
+    and bl,0f0h
+    mov cl,4
+    shr bl,cl
+    add bl,30h
+    mov dl,bh
+    mov ah,2
+    int 21h
+     mov bl,al
+    and bl,0fh
+    add bl,47h
+    
+    mov dl,bl
+    mov ah,2
+    int 21h
+    mov ah,4ch
+    int 21h
+   
+    
+code ends
+end start                                                                              
