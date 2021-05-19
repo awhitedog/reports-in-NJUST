@@ -1,0 +1,45 @@
+\contentsline {section}{\numberline {1}问题重述}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}问题的背景}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}需要解决的问题}{1}{subsection.1.2}
+\contentsline {section}{\numberline {2}问题假设}{1}{section.2}
+\contentsline {section}{\numberline {3}符号说明}{1}{section.3}
+\contentsline {section}{\numberline {4}模型的建立及求解}{5}{section.4}
+\contentsline {subsection}{\numberline {4.1}模型一：基于逐步回归的收得率影响因素权重分析模型}{5}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}数据预处理}{5}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}历史收得率计算}{5}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}相关性计算}{6}{subsubsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.4}模型的建立}{6}{subsubsection.4.1.4}
+\contentsline {subsubsection}{\numberline {4.1.5}模型的求解}{6}{subsubsection.4.1.5}
+\contentsline {subsection}{\numberline {4.2}模型二：基于多项式回归拟合的收得率预测模型}{7}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}模型的建立}{7}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}模型的求解}{8}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}考虑高次项实现的模型优化}{8}{subsubsection.4.2.3}
+\contentsline {subsection}{\numberline {4.3}模型三：基于约束优化算法的成本优化模型}{13}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}模型的建立}{14}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}模型的求解}{14}{subsubsection.4.3.2}
+\contentsline {section}{\numberline {5}给炼钢厂领导的建议信}{16}{section.5}
+\contentsline {section}{\numberline {6}模型的分析}{17}{section.6}
+\contentsline {subsection}{\numberline {6.1}假设的合理性分析}{17}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}模型的合理性分析}{17}{subsection.6.2}
+\contentsline {section}{\numberline {7}模型的评价与优化}{17}{section.7}
+\contentsline {subsection}{\numberline {7.1}模型的优点}{17}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}模型的缺点}{17}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}模型的优化}{18}{subsection.7.3}
+\contentsline {section}{参考文献}{18}{Item.23}
+\contentsline {section}{附录}{18}{Item.23}
+\contentsline {subsection}{附表}{18}{section*.10}
+\contentsline {subsection}{权重分析模型的MATLAB程序}{25}{table.5}
+\contentsline {subsubsection}{主程序}{25}{section*.11}
+\contentsline {subsubsection}{数据读取程序}{26}{lstnumber.-1.18}
+\contentsline {subsubsection}{数据预处理程序}{26}{lstnumber.-2.21}
+\contentsline {subsubsection}{影响因素读取程序}{27}{lstnumber.-3.22}
+\contentsline {subsection}{收得率预测模型的MATLAB程序}{28}{lstnumber.-4.19}
+\contentsline {subsubsection}{主程序}{28}{section*.12}
+\contentsline {subsection}{成本优化模型的MATLAB程序}{28}{lstnumber.-5.19}
+\contentsline {subsubsection}{拉格朗日乘子导入程序}{28}{section*.13}
+\contentsline {subsubsection}{主程序}{29}{lstnumber.-6.9}
+\contentsline {subsubsection}{目标函数导入程序}{30}{lstnumber.-7.32}
+\contentsline {subsubsection}{约束函数导入程序}{30}{lstnumber.-8.3}
+\contentsline {subsubsection}{约束函数判断程序}{31}{lstnumber.-9.39}
+\contentsline {subsubsection}{目标函数判断程序}{31}{lstnumber.-10.13}
+\contentsfinish 

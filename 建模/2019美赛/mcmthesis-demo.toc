@@ -1,0 +1,33 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Background}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Restatement of the Problem}{3}{subsection.1.2}
+\contentsline {section}{\numberline {2}Assumptions and Justifications}{3}{section.2}
+\contentsline {section}{\numberline {3}Symbol Description}{4}{section.3}
+\contentsline {section}{\numberline {4}Model 1:Propagation Analysis and Prediction Model}{4}{section.4}
+\contentsline {subsection}{\numberline {4.1}Propagation Analysis Model based on SIR model}{4}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Preparation of Analysis Model}{5}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Establishment of Analysis Model}{5}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}Results of Analysis Model}{6}{subsubsection.4.1.3}
+\contentsline {subsection}{\numberline {4.2}Prediction Model Combined with Entropy Method and ARIMA }{7}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Establishment of Prediction Model}{7}{subsubsection.4.2.1}
+\contentsline {paragraph}{Entropy Method}{7}{section*.5}
+\contentsline {paragraph}{ARIMA}{8}{section*.6}
+\contentsline {paragraph}{Prediction Model}{8}{section*.7}
+\contentsline {subsubsection}{\numberline {4.2.2}Results of Prediction Model}{9}{subsubsection.4.2.2}
+\contentsline {section}{\numberline {5}Model 2:Weight Analysis Model}{11}{section.5}
+\contentsline {subsection}{\numberline {5.1}Preparation of Model 2}{11}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Establishment of Model 2}{11}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Results of Model 2}{13}{subsection.5.3}
+\contentsline {section}{\numberline {6}Solution to the Opioids Crisis}{13}{section.6}
+\contentsline {subsection}{\numberline {6.1}Some Solutions to the Opioids Crisis}{13}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Program Feasibility Demonstration}{14}{subsection.6.2}
+\contentsline {section}{\numberline {7}Validating the Model}{14}{section.7}
+\contentsline {section}{\numberline {8}Conclusions}{16}{section.8}
+\contentsline {section}{\numberline {9}Evaluate of the Mode}{16}{section.9}
+\contentsline {subsection}{\numberline {9.1}Strengths}{16}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Weaknesses}{16}{subsection.9.2}
+\contentsline {section}{\numberline {10}Memo}{17}{section.10}
+\contentsline {section}{References}{19}{section*.18}
+\contentsline {section}{Appendices}{20}{section*.19}
+\contentsline {section}{Appendix \numberline {A}The Tables}{20}{Appendix.a.A}
+\contentsline {section}{Appendix \numberline {B}The Programmes}{22}{Appendix.a.B}

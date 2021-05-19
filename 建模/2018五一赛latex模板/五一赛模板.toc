@@ -1,0 +1,41 @@
+\contentsline {section}{\numberline {1}问题重述}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}问题背景}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}需要解决的问题}{1}{subsection.1.2}
+\contentsline {section}{\numberline {2}模型假设}{1}{section.2}
+\contentsline {section}{\numberline {3}符号说明}{2}{section.3}
+\contentsline {section}{\numberline {4}问题分析}{2}{section.4}
+\contentsline {subsection}{\numberline {4.1}问题的重要性分析}{2}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}相关文献综述}{2}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}问题的思路分析}{2}{subsection.4.3}
+\contentsline {section}{\numberline {5}模型的建立与求解}{3}{section.5}
+\contentsline {subsection}{\numberline {5.1}问题一}{3}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}游览路线设计之路程最短（模型一）的建立}{3}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}游览路线设计之路程最短（模型一）的求解}{4}{subsubsection.5.1.2}
+\contentsline {subsection}{\numberline {5.2}问题二}{4}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}游览路线设计之游览时间最长（模型二）的准备}{6}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}游览路线设计之游览时间最长（模型二）的建立与求解}{6}{subsubsection.5.2.2}
+\contentsline {subsection}{\numberline {5.3}问题三}{7}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}游览路线设计之游览时间最长（模型三）的准备}{7}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}游览路线设计之游览时间最长（模型三）的建立与求解}{7}{subsubsection.5.3.2}
+\contentsline {subsection}{\numberline {5.4}问题四}{9}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}游览路线设计之游览时间最长（模型四）的建立}{9}{subsubsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.2}游览路线设计之游览时间最长（模型四）的求解}{9}{subsubsection.5.4.2}
+\contentsline {subsection}{\numberline {5.5}问题五}{10}{subsection.5.5}
+\contentsline {subsubsection}{\numberline {5.5.1}游览路线设计之不同时间出发的游览时间最长（模型五-1）的建立}{10}{subsubsection.5.5.1}
+\contentsline {subsubsection}{\numberline {5.5.2}游览路线设计之等待时间未定的游览时间最长（模型五-2）的建立}{13}{subsubsection.5.5.2}
+\contentsline {section}{\numberline {6}模型检验与分析}{13}{section.6}
+\contentsline {subsection}{\numberline {6.1}假设的合理性分析}{13}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}可靠性分析（给出模型的使用范围）}{13}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}模型的合理性分析}{14}{subsection.6.3}
+\contentsline {section}{\numberline {7}模型的评价与推广}{14}{section.7}
+\contentsline {subsection}{\numberline {7.1}模型的优缺点分析}{14}{subsection.7.1}
+\contentsline {subsubsection}{\numberline {7.1.1}模型的优点}{14}{subsubsection.7.1.1}
+\contentsline {subsubsection}{\numberline {7.1.2}模型的缺点}{14}{subsubsection.7.1.2}
+\contentsline {subsection}{\numberline {7.2}模型的优化}{14}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}模型的应用邻域及推广}{15}{subsection.7.3}
+\contentsline {section}{参考文献}{15}{section*.12}
+\contentsline {section}{附录}{15}{section*.13}
+\contentsline {subsection}{徐州潘安湖风景区景点相关信息}{15}{section*.14}
+\contentsline {subsection}{Matlab模型源代码}{16}{section*.17}
+\contentsline {subsubsection}{模型一、二}{16}{section*.18}
+\contentsline {subsubsection}{模型三、四、五}{21}{section*.19}

@@ -1,0 +1,30 @@
+\contentsline {section}{\numberline {1}问题重述}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}问题的背景}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}需要解决的问题}{1}{subsection.1.2}
+\contentsline {section}{\numberline {2}问题分析}{1}{section.2}
+\contentsline {subsection}{\numberline {2.1}问题的重要性分析}{1}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}文献综述}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}问题的思路分析}{2}{subsection.2.3}
+\contentsline {section}{\numberline {3}问题假设}{2}{section.3}
+\contentsline {section}{\numberline {4}符号说明}{2}{section.4}
+\contentsline {section}{\numberline {5}模型的建立及求解}{3}{section.5}
+\contentsline {subsection}{\numberline {5.1}模型一：基于多项式回归的利润最大化模型}{3}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}模型的准备}{3}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}模型的建立}{3}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.3}模型的求解}{6}{subsubsection.5.1.3}
+\contentsline {subsection}{\numberline {5.2}模型二：考虑购买人群的管理优化模型}{11}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}模型的准备}{11}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}模型的建立与求解}{12}{subsubsection.5.2.2}
+\contentsline {section}{\numberline {6}Nokia 8110香蕉机全面评估报告}{13}{section.6}
+\contentsline {section}{\numberline {7}模型分析}{14}{section.7}
+\contentsline {subsection}{\numberline {7.1}假设的合理性分析}{14}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}模型的合理性分析}{14}{subsection.7.2}
+\contentsline {section}{\numberline {8}模型的评价与优化}{14}{section.8}
+\contentsline {subsection}{\numberline {8.1}模型的优点}{14}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}模型的缺点}{15}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}模型的优化}{15}{subsection.8.3}
+\contentsline {section}{\numberline {9}模型应用领域及推广}{15}{section.9}
+\contentsline {section}{参考文献}{15}{section.9}
+\contentsline {section}{附录}{15}{section.9}
+\contentsline {subsection}{ MATLAB程序代码}{15}{section*.17}
+\contentsfinish 

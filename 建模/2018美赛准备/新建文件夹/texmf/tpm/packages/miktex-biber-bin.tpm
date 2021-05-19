@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:TPM="http://texlive.dante.de/"><rdf:Description about="http://www.miktex.org/packages/miktex-biber-bin"><TPM:Name>miktex-biber-bin</TPM:Name><TPM:Creator>mpc</TPM:Creator><TPM:Title>A BibTeX replacement for users of BibLaTeX</TPM:Title><TPM:Version>2.9</TPM:Version><TPM:TargetSystem>windows-x86</TPM:TargetSystem><TPM:Description>Biber is a BibTeX replacement for users of BibLaTeX.
+
+Biber supports full UTF-8, can (re)-encode input and output, supports
+highly configurable sorting, dynamic bibliography sets and many other
+features.
+</TPM:Description><TPM:RunFiles size="26437256">texmf\miktex\bin\biber.exe texmf\tpm\packages\miktex-biber-bin.tpm</TPM:RunFiles><TPM:TimePackaged>1511730111</TPM:TimePackaged><TPM:MD5>f83e4f63a0529595c50c7f0edcc08714</TPM:MD5><TPM:Copyright owner="François Charette and Philip Kime" year="2009-2017"/><TPM:License type="artistic"/></rdf:Description></rdf:RDF>

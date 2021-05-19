@@ -1,0 +1,21 @@
+function [ output_args ] = factor( element, table1 )
+%factor Export the valid factors in Table 1
+%   Need to enter Table 1 as a parameter
+%   output_args:[temperature, initial_value, weight_of_molten_steel, final_value, input_material]
+    if element == 'C'
+        range_line = 810;
+        element_id = 1;
+    elseif element == 'Mn'
+        range_line = 251;
+        element_id = 2;
+    end
+
+    temperature             =   table1(:, 4);
+    initial_value           =   table1(:, 5:9);
+    weight_of_molten_steel  =   table1(:, 10);
+    final_value             =   table1(:, 11:28);
+    input_material          =   table1(:, 29:44);
+    
+    output_args = [temperature, initial_value, weight_of_molten_steel, final_value, input_material];
+end
+
